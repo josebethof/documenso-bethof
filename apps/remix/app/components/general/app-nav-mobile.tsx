@@ -124,7 +124,8 @@ export const AppNavMobile = ({ isMenuOpen, onMenuOpenChange }: AppNavMobileProps
           </div>
 
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Documenso, Inc.
+            {/* Bethof: Bethof name first, keeping the Documenso copyright notice. */}
+            Bethof · © {new Date().getFullYear()} Documenso, Inc.
             <br />
             <Trans>All rights reserved.</Trans>
           </p>
