@@ -1,0 +1,4853 @@
+# Bethof: tradução pt-BR completa e revisada do aplicativo inteiro (painel, configurações, administração, e-mails).
+# Gerada em 25/10/2026 a partir do catálogo oficial do Documenso v2.20.0:
+#  - textos que estavam sem tradução e foram traduzidos;
+#  - textos já traduzidos que foram corrigidos (maiúsculas no estilo inglês, termos diferentes do glossário, travessão, erros).
+# Termos fixos: documento, modelo, destinatário, signatário, equipe, organização, pasta, campo, carregar, chave de acesso.
+# Aplicada antes de traducoes-pt-BR.po (que tem as correções da tela de assinatura e dos e-mails e prevalece).
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Language: pt-BR\n"
+
+msgid "(line {0})"
+msgstr "(linha {0})"
+
+msgid "{0, plural, one {# CSS rule was dropped during sanitisation.} other {# CSS rules were dropped during sanitisation.}}"
+msgstr "{0, plural, one {# regra de CSS foi removida na verificação de segurança.} other {# regras de CSS foram removidas na verificação de segurança.}}"
+
+msgid "{0, plural, one {# document cancelled.} other {# documents cancelled.}} {1, plural, one {# document could not be cancelled.} other {# documents could not be cancelled.}}"
+msgstr "{0, plural, one {# documento cancelado.} other {# documentos cancelados.}} {1, plural, one {# documento não pôde ser cancelado.} other {# documentos não puderam ser cancelados.}}"
+
+msgid "{0, plural, one {# document downloaded.} other {# documents downloaded.}} {failedDownloads, plural, one {# document could not be downloaded.} other {# documents could not be downloaded.}}"
+msgstr "{0, plural, one {# documento baixado.} other {# documentos baixados.}} {failedDownloads, plural, one {# documento não pôde ser baixado.} other {# documentos não puderam ser baixados.}}"
+
+msgid "{0, plural, one {# document has been cancelled.} other {# documents have been cancelled.}}"
+msgstr "{0, plural, one {# documento foi cancelado.} other {# documentos foram cancelados.}}"
+
+msgid "{0, plural, one {# document has been downloaded.} other {# documents have been downloaded.}}"
+msgstr "{0, plural, one {# documento foi baixado.} other {# documentos foram baixados.}}"
+
+msgid "{0, plural, one {# Event} other {# Events}}"
+msgstr "{0, plural, one {# evento} other {# eventos}}"
+
+msgid "{0, plural, one {# item deleted.} other {# items deleted.}} {1, plural, one {# item could not be deleted.} other {# items could not be deleted.}}"
+msgstr "{0, plural, one {# item excluído.} other {# itens excluídos.}} {1, plural, one {# item não pôde ser excluído.} other {# itens não puderam ser excluídos.}}"
+
+msgid "{0, plural, one {# item has been deleted.} other {# items have been deleted.}}"
+msgstr "{0, plural, one {# item foi excluído.} other {# itens foram excluídos.}}"
+
+msgid "{0, plural, one {# recipient have been added from AI detection.} other {# recipients have been added from AI detection.}}"
+msgstr "{0, plural, one {# destinatário foi adicionado pela detecção com IA.} other {# destinatários foram adicionados pela detecção com IA.}}"
+
+msgid "{0, plural, one {# Recipient} other {# Recipients}}"
+msgstr "{0, plural, one {# destinatário} other {# destinatários}}"
+
+msgid "{0, plural, one {1 field will be deleted because the new PDF has fewer pages than the current one.} other {# fields will be deleted because the new PDF has fewer pages than the current one.}}"
+msgstr "{0, plural, one {1 campo será excluído porque o novo PDF tem menos páginas que o atual.} other {# campos serão excluídos porque o novo PDF tem menos páginas que o atual.}}"
+
+msgid "{0, plural, one {1 page} other {# pages}}"
+msgstr "{0, plural, one {1 página} other {# páginas}}"
+
+msgid "{0, plural, one {1 Recipient} other {# Recipients}}"
+msgstr "{0, plural, one {1 destinatário} other {# destinatários}}"
+
+msgid "{0, plural, one {Page {1} of {2} - # field found} other {Page {3} of {4} - # fields found}}"
+msgstr "{0, plural, one {Página {1} de {2}: # campo encontrado} other {Página {3} de {4}: # campos encontrados}}"
+
+msgid "{0, plural, one {Page {1} of {2} - # recipient found} other {Page {3} of {4} - # recipients found}}"
+msgstr "{0, plural, one {Página {1} de {2}: # destinatário encontrado} other {Página {3} de {4}: # destinatários encontrados}}"
+
+msgid "{0, plural, one {Recipient added} other {Recipients added}}"
+msgstr "{0, plural, one {Destinatário adicionado} other {Destinatários adicionados}}"
+
+msgid "{0, plural, one {Select a folder to move the selected document to.} other {Select a folder to move the # selected documents to.}}"
+msgstr "{0, plural, one {Escolha a pasta para onde mover o documento selecionado.} other {Escolha a pasta para onde mover os # documentos selecionados.}}"
+
+msgid "{0, plural, one {Select a folder to move the selected template to.} other {Select a folder to move the # selected templates to.}}"
+msgstr "{0, plural, one {Escolha a pasta para onde mover o modelo selecionado.} other {Escolha a pasta para onde mover os # modelos selecionados.}}"
+
+msgid "{0, plural, one {Select the version to download for the selected document.} other {Select the version to download for each of the # selected documents.}}"
+msgstr "{0, plural, one {Escolha a versão que deseja baixar do documento selecionado.} other {Escolha a versão que deseja baixar de cada um dos # documentos selecionados.}}"
+
+msgid "{0, plural, one {We found # field in your document.} other {We found # fields in your document.}}"
+msgstr "{0, plural, one {Encontramos # campo no seu documento.} other {Encontramos # campos no seu documento.}}"
+
+msgid "{0, plural, one {We found # recipient in your document.} other {We found # recipients in your document.}}"
+msgstr "{0, plural, one {Encontramos # destinatário no seu documento.} other {Encontramos # destinatários no seu documento.}}"
+
+msgid "{0, plural, one {You are about to cancel the selected document.} other {You are about to cancel # documents.}}"
+msgstr "{0, plural, one {Você está prestes a cancelar o documento selecionado.} other {Você está prestes a cancelar # documentos.}}"
+
+msgid "{0, plural, one {You are about to delete the selected document.} other {You are about to delete # documents.}}"
+msgstr "{0, plural, one {Você está prestes a excluir o documento selecionado.} other {Você está prestes a excluir # documentos.}}"
+
+msgid "{0, plural, one {You are about to delete the selected template.} other {You are about to delete # templates.}}"
+msgstr "{0, plural, one {Você está prestes a excluir o modelo selecionado.} other {Você está prestes a excluir # modelos.}}"
+
+msgid "{0} direct signing templates"
+msgstr "{0} modelos de link direto"
+
+msgid "{0} has invited you to sign this document."
+msgstr "{0} convidou você para assinar este documento."
+
+msgid "{0} Plan"
+msgstr "Plano {0}"
+
+msgid "{0} results"
+msgstr "{0} resultados"
+
+msgid "{0} Teams"
+msgstr "{0} equipes"
+
+msgctxt "The step counter"
+msgid "{0}/{1}"
+msgstr "{0} de {1}"
+
+msgid "{MAX_BULK_DOWNLOAD_ENVELOPES, plural, one {You can download up to # document at a time. Deselect some documents to continue.} other {You can download up to # documents at a time. Deselect some documents to continue.}}"
+msgstr "{MAX_BULK_DOWNLOAD_ENVELOPES, plural, one {Você pode baixar até # documento por vez. Desmarque alguns documentos para continuar.} other {Você pode baixar até # documentos por vez. Desmarque alguns documentos para continuar.}}"
+
+msgid "{MAXIMUM_PASSKEYS, plural, one {You cannot have more than # passkey.} other {You cannot have more than # passkeys.}}"
+msgstr "{MAXIMUM_PASSKEYS, plural, one {Você não pode ter mais de # chave de acesso.} other {Você não pode ter mais de # chaves de acesso.}}"
+
+msgid "{maximumEnvelopeItemCount, plural, one {You cannot upload more than # item per envelope.} other {You cannot upload more than # items per envelope.}}"
+msgstr "{maximumEnvelopeItemCount, plural, one {Você não pode carregar mais de # item por envelope.} other {Você não pode carregar mais de # itens por envelope.}}"
+
+msgid "{organisationClaimCount, plural, one {# Organisation claim} other {# Organisation claims}}"
+msgstr "{organisationClaimCount, plural, one {# liberação de plano de organização} other {# liberações de plano de organização}}"
+
+msgid "{selectedCount} selected"
+msgstr "Selecionados: {selectedCount}"
+
+msgid "{subscriptionClaimCount, plural, one {# Subscription claim} other {# Subscription claims}}"
+msgstr "{subscriptionClaimCount, plural, one {# liberação de plano} other {# liberações de plano}}"
+
+msgid "{totalVisibleCount, plural, one {# item} other {# items}}"
+msgstr "{totalVisibleCount, plural, one {# item} other {# itens}}"
+
+msgid "{totalVisibleCount, plural, one {# result} other {# results}}"
+msgstr "{totalVisibleCount, plural, one {# resultado} other {# resultados}}"
+
+msgid "{user} added a field"
+msgstr "{user} adicionou um campo"
+
+msgid "{user} added a recipient"
+msgstr "{user} adicionou um destinatário"
+
+msgid "{user} approved the document"
+msgstr "{user} aprovou o documento"
+
+msgid "{user} authenticated with the signing provider"
+msgstr "{user} se autenticou no provedor de assinatura"
+
+msgid "{user} authorised the remote signature"
+msgstr "{user} autorizou a assinatura remota"
+
+msgid "{user} cancelled the document"
+msgstr "{user} cancelou o documento"
+
+msgid "{user} CC'd the document"
+msgstr "{user} recebeu o documento em cópia"
+
+msgid "{user} completed their task"
+msgstr "{user} concluiu a tarefa"
+
+msgid "{user} created an envelope item with title {0}"
+msgstr "{user} criou um item do envelope com o título {0}"
+
+msgid "{user} created the document"
+msgstr "{user} criou o documento"
+
+msgid "{user} deleted an envelope item with title {0}"
+msgstr "{user} excluiu um item do envelope com o título {0}"
+
+msgid "{user} deleted the document"
+msgstr "{user} excluiu o documento"
+
+msgid "{user} failed to validate a 2FA token for the document"
+msgstr "{user} não conseguiu validar um código 2FA do documento"
+
+msgid "{user} moved the document to team"
+msgstr "{user} moveu o documento para a equipe"
+
+msgid "{user} opened the document"
+msgstr "{user} abriu o documento"
+
+msgid "{user} prefilled a field"
+msgstr "{user} preencheu um campo com antecedência"
+
+msgid "{user} rejected the document"
+msgstr "{user} recusou o documento"
+
+msgid "{user} removed a field"
+msgstr "{user} removeu um campo"
+
+msgid "{user} removed a recipient"
+msgstr "{user} removeu um destinatário"
+
+msgid "{user} replaced the PDF for envelope item {0}"
+msgstr "{user} substituiu o PDF do item do envelope {0}"
+
+msgid "{user} requested a 2FA token for the document"
+msgstr "{user} pediu um código 2FA do documento"
+
+msgid "{user} requested a remote signature"
+msgstr "{user} pediu uma assinatura remota"
+
+msgid "{user} resent an email to {0}"
+msgstr "{user} reenviou um e-mail para {0}"
+
+msgid "{user} sent an email to {0}"
+msgstr "{user} enviou um e-mail para {0}"
+
+msgid "{user} sent the document"
+msgstr "{user} enviou o documento"
+
+msgid "{user} signed a field"
+msgstr "{user} assinou um campo"
+
+msgid "{user} signed the document"
+msgstr "{user} assinou o documento"
+
+msgid "{user} unsigned a field"
+msgstr "{user} desfez a assinatura de um campo"
+
+msgid "{user} updated a field"
+msgstr "{user} atualizou um campo"
+
+msgid "{user} updated a recipient"
+msgstr "{user} atualizou um destinatário"
+
+msgid "{user} updated an envelope item"
+msgstr "{user} atualizou um item do envelope"
+
+msgid "{user} updated the document"
+msgstr "{user} atualizou o documento"
+
+msgid "{user} updated the document access auth requirements"
+msgstr "{user} atualizou as exigências de autenticação para acessar o documento"
+
+msgid "{user} updated the document external ID"
+msgstr "{user} atualizou o ID externo do documento"
+
+msgid "{user} updated the document signing auth requirements"
+msgstr "{user} atualizou as exigências de autenticação para assinar o documento"
+
+msgid "{user} updated the document title"
+msgstr "{user} atualizou o título do documento"
+
+msgid "{user} updated the document visibility"
+msgstr "{user} atualizou a visibilidade do documento"
+
+msgid "{user} validated a 2FA token for the document"
+msgstr "{user} validou um código 2FA do documento"
+
+msgid "{user} viewed the document"
+msgstr "{user} visualizou o documento"
+
+msgid "{user}'s remote signature was applied"
+msgstr "A assinatura remota de {user} foi aplicada"
+
+msgid "{user}'s signing provider authentication failed"
+msgstr "A autenticação de {user} no provedor de assinatura falhou"
+
+msgid "\"{0}\" is not a valid email address."
+msgstr "\"{0}\" não é um e-mail válido."
+
+msgid "\"{placeholderEmail}\" on behalf of \"Team Name\" has invited you to sign \"example document\"."
+msgstr "\"{placeholderEmail}\" em nome de \"Nome da equipe\" convidou você para assinar \"exemplo de documento\"."
+
+msgid "\"{title}\" has been successfully cancelled"
+msgstr "\"{title}\" foi cancelado com sucesso"
+
+msgid "\"{title}\" has been successfully deleted"
+msgstr "\"{title}\" foi excluído com sucesso"
+
+msgid "\"{title}\" has been successfully hidden"
+msgstr "\"{title}\" foi ocultado com sucesso"
+
+msgid "\"Team Name\" has invited you to sign \"example document\"."
+msgstr "\"Nome da equipe\" convidou você para assinar \"exemplo de documento\"."
+
+msgid "+{extraCount} more"
+msgstr "e mais {extraCount}"
+
+msgid "<0>{organisationName}</0> does not have an active subscription. Please contact the organisation administrator to renew their plan before accepting this invitation."
+msgstr "<0>{organisationName}</0> não tem um plano ativo. Fale com o administrador da organização para renovar o plano antes de aceitar este convite."
+
+msgid "<0>{organisationName}</0> has reached its member limit. Please contact the organisation administrator to upgrade their plan before accepting this invitation."
+msgstr "<0>{organisationName}</0> chegou ao limite de membros. Fale com o administrador da organização para mudar de plano antes de aceitar este convite."
+
+msgid "<0>{organisationName}</0> has requested to link your current Documenso account to their organisation."
+msgstr "<0>{organisationName}</0> solicitou vincular sua conta atual do portal Bethof à organização deles."
+
+msgid "<0>{teamName}</0> has requested to use your email address for their team on Documenso."
+msgstr "<0>{teamName}</0> solicitou o uso do seu endereço de e-mail para a equipe deles no portal Bethof."
+
+msgid "<0>{teamName}</0> would like to use <1>{email}</1> as their team email."
+msgstr "<0>{teamName}</0> quer usar <1>{email}</1> como e-mail da equipe."
+
+msgid "<0>Admins only</0> - Only admins can access and view the document"
+msgstr "<0>Apenas administradores</0>: apenas administradores podem acessar e visualizar o documento"
+
+msgid "<0>Drawn</0> - A signature that is drawn using a mouse or stylus."
+msgstr "<0>Desenhada</0>: uma assinatura desenhada com o mouse ou uma caneta."
+
+msgid "<0>Email</0> - The recipient will be emailed the document to sign, approve, etc."
+msgstr "<0>E-mail</0>: o destinatário receberá o documento por e-mail para assinar, aprovar etc."
+
+msgid "<0>Everyone</0> - Everyone can access and view the document"
+msgstr "<0>Todos</0>: todos podem acessar e visualizar o documento"
+
+msgid "<0>Inherit authentication method</0> - Use the global action signing authentication method configured in the \"General Settings\" step"
+msgstr "<0>Herdar método de autenticação</0>: usar o método global de autenticação para assinatura definido na etapa \"Configurações gerais\""
+
+msgid "<0>Managers and above</0> - Only managers and above can access and view the document"
+msgstr "<0>Gerentes e acima</0>: apenas gerentes e cargos superiores podem acessar e visualizar o documento"
+
+msgid "<0>No restrictions</0> - No authentication required"
+msgstr "<0>Sem restrições</0>: nenhuma autenticação necessária"
+
+msgid "<0>No restrictions</0> - The document can be accessed directly by the URL sent to the recipient"
+msgstr "<0>Sem restrições</0>: o documento pode ser acessado diretamente pelo link enviado ao destinatário"
+
+msgid "<0>None</0> - No authentication required"
+msgstr "<0>Nenhum</0>: nenhuma autenticação necessária"
+
+msgid "<0>None</0> - We will generate links which you can send to the recipients manually."
+msgstr "<0>Nenhum</0>: vamos gerar links para você enviar aos destinatários manualmente."
+
+msgid "<0>Note</0> - If you use Links in combination with direct templates, you will need to manually send the links to the remaining recipients."
+msgstr "<0>Nota</0>: se você usar links junto com modelos de link direto, precisará enviar manualmente os links aos destinatários restantes."
+
+msgid "<0>Organisation</0> templates are shared across all teams in your organisation but can only be edited by the owning team."
+msgstr "Os modelos da <0>organização</0> são compartilhados com todas as equipes da sua organização, mas só a equipe dona pode editá-los."
+
+msgid "<0>Private</0> templates can only be used by your team."
+msgstr "Os modelos <0>privados</0> só podem ser usados pela sua equipe."
+
+msgid "<0>Public</0> templates are linked to your public profile."
+msgstr "Os modelos <0>públicos</0> ficam ligados ao seu perfil público."
+
+msgid "<0>Require 2FA</0> - The recipient must have an account and 2FA enabled via their settings"
+msgstr "<0>Exigir 2FA</0>: o destinatário precisa ter uma conta com 2FA ativado nas configurações"
+
+msgid "<0>Require account</0> - The recipient must be signed in to view the document"
+msgstr "<0>Exigir conta</0>: o destinatário precisa entrar na conta para visualizar o documento"
+
+msgid "<0>Require passkey</0> - The recipient must have an account and passkey configured via their settings"
+msgstr "<0>Exigir chave de acesso</0>: o destinatário precisa ter uma conta com chave de acesso cadastrada nas configurações"
+
+msgid "<0>Require password</0> - The recipient must have an account and password configured via their settings, the password will be verified during signing"
+msgstr "<0>Exigir senha</0>: o destinatário precisa ter uma conta com senha cadastrada nas configurações. A senha será verificada durante a assinatura"
+
+msgid "<0>Typed</0> - A signature that is typed using a keyboard."
+msgstr "<0>Digitada</0>: uma assinatura digitada no teclado."
+
+msgid "<0>Uploaded</0> - A signature that is uploaded from a file."
+msgstr "<0>Carregada</0>: uma assinatura carregada de um arquivo."
+
+msgid "404 Not Found"
+msgstr "404 Não encontrado"
+
+msgid "5 Documents a month"
+msgstr "5 documentos por mês"
+
+msgid "500 Internal Server Error"
+msgstr "500 Erro interno do servidor"
+
+msgid "A document was created by your direct template that requires you to {recipientActionVerb} it."
+msgstr "Um documento foi criado pelo seu modelo de link direto. Você precisa {recipientActionVerb} esse documento."
+
+msgid "A member has joined your organisation on Documenso"
+msgstr "Um membro entrou na sua organização no portal Bethof"
+
+msgid "A member has left your organisation on Documenso"
+msgstr "Um membro deixou sua organização no portal Bethof"
+
+msgid "A name to help you identify this token later."
+msgstr "Um nome para ajudar você a reconhecer este token depois."
+
+msgid "A password reset email has been sent, if you have an account you should see it in your inbox shortly."
+msgstr "Enviamos um e-mail para redefinir a senha. Se você tiver uma conta, ele deve chegar na sua caixa de entrada em breve."
+
+msgid "A request has been made to link your Documenso account"
+msgstr "Uma solicitação foi feita para vincular sua conta do portal Bethof"
+
+msgid "A request to use your email has been initiated by {0} on Documenso"
+msgstr "Uma solicitação para usar seu e-mail foi iniciada por {0} no portal Bethof"
+
+msgid "A secret that will be sent to your URL so you can verify that the request has been sent by Documenso."
+msgstr "Um segredo que será enviado para sua URL para que você possa verificar se a solicitação foi enviada pelo portal Bethof."
+
+msgid "A valid email is required"
+msgstr "Informe um e-mail válido"
+
+msgid "Accept & Link Account"
+msgstr "Aceitar e vincular conta"
+
+msgid "Accept invitation to join an organisation on Documenso"
+msgstr "Aceitar convite para entrar em uma organização no portal Bethof"
+
+msgid "Accept team email request for {teamName} on Documenso"
+msgstr "Aceitar solicitação de e-mail da equipe {teamName} no portal Bethof"
+
+msgid "Acceptance and Consent"
+msgstr "Aceitação e consentimento"
+
+msgid "Account Authentication"
+msgstr "Autenticação da conta"
+
+msgid "Account Creation Request"
+msgstr "Solicitação de criação de conta"
+
+msgid "Account Linking Request"
+msgstr "Solicitação de vínculo de conta"
+
+msgid "Account Re-Authentication"
+msgstr "Reautenticação da conta"
+
+msgid "Account Settings"
+msgstr "Configurações da conta"
+
+msgid "Accounts are automatically added to your organisation on sign-in"
+msgstr "As contas são adicionadas automaticamente à sua organização quando a pessoa entra"
+
+msgid "Active Sessions"
+msgstr "Sessões ativas"
+
+msgid "Active Subscriptions"
+msgstr "Planos ativos"
+
+msgid "Add an authenticator to serve as a secondary authentication method when signing in, or when signing documents."
+msgstr "Adicione um autenticador para servir como um método de autenticação secundário ao entrar ou ao assinar documentos."
+
+msgid "Add an external ID to the template. This can be used to identify in external systems."
+msgstr "Adicione um ID externo ao modelo. Isso pode ser usado para identificar o modelo em sistemas externos."
+
+msgid "Add an optional reason for cancelling these documents"
+msgstr "Informe o motivo do cancelamento destes documentos (opcional)"
+
+msgid "Add an optional reason for cancelling this document"
+msgstr "Informe o motivo do cancelamento deste documento (opcional)"
+
+msgid "Add Attachment"
+msgstr "Adicionar anexo"
+
+msgid "Add Custom Email Domain"
+msgstr "Adicionar domínio de e-mail personalizado"
+
+msgid "Add Email"
+msgstr "Adicionar e-mail"
+
+msgid "Add Email Domain"
+msgstr "Adicionar domínio de e-mail"
+
+msgid "Add Email Transport"
+msgstr "Adicionar serviço de envio de e-mail"
+
+msgid "Add Fields"
+msgstr "Adicionar campos"
+
+msgid "Add Members"
+msgstr "Adicionar membros"
+
+msgid "Add Myself"
+msgstr "Adicionar a mim mesmo"
+
+msgid "Add Organisation Email"
+msgstr "Adicionar e-mail da organização"
+
+msgid "Add passkey"
+msgstr "Adicionar chave de acesso"
+
+msgid "Add Placeholder Recipient"
+msgstr "Adicionar destinatário de espaço reservado"
+
+msgid "Add Placeholders"
+msgstr "Adicionar espaços reservados"
+
+msgid "Add rate limit window"
+msgstr "Adicionar intervalo de limite"
+
+msgid "Add Recipients"
+msgstr "Adicionar destinatários"
+
+msgid "Add recipients to your document"
+msgstr "Adicione destinatários ao seu documento"
+
+msgid "Add Signer"
+msgstr "Adicionar signatário"
+
+msgid "Add Signers"
+msgstr "Adicionar signatários"
+
+msgid "Add the recipients to create the document with"
+msgstr "Adicione os destinatários com os quais o documento será criado"
+
+msgid "Add transport"
+msgstr "Adicionar serviço de envio"
+
+msgid "Admin"
+msgstr "Administrador"
+
+msgid "Admin Actions"
+msgstr "Ações de administrador"
+
+msgid "Admin Panel"
+msgstr "Painel de administração"
+
+msgid "Advanced — Custom CSS"
+msgstr "Avançado: CSS personalizado"
+
+msgid "Advanced Options"
+msgstr "Opções avançadas"
+
+msgid "Advanced Settings"
+msgstr "Configurações avançadas"
+
+msgid "AI features"
+msgstr "Recursos de IA"
+
+msgid "AI features are disabled for your team. Please ask your team owner or organisation owner to enable them."
+msgstr "Os recursos de IA estão desativados para a sua equipe. Peça ao dono da equipe ou da organização para ativá-los."
+
+msgid "All claims"
+msgstr "Todas as liberações de plano"
+
+msgid "All Folders"
+msgstr "Todas as pastas"
+
+msgid "All items must be of the same type."
+msgstr "Todos os itens precisam ser do mesmo tipo."
+
+msgid "All rights reserved."
+msgstr "Todos os direitos reservados."
+
+msgid "All Statuses"
+msgstr "Todos os status"
+
+msgid "All Time"
+msgstr "Todo o período"
+
+msgid "Allow Personal Organisations"
+msgstr "Permitir organizações pessoais"
+
+msgid "Allowed Email Domains"
+msgstr "Domínios de e-mail permitidos"
+
+msgid "Allowed Signature Types"
+msgstr "Tipos de assinatura permitidos"
+
+msgid "Already have an account? <0>Sign in instead</0>"
+msgstr "Já tem uma conta? <0>Entrar</0>"
+
+msgid "An administrator has created a Documenso account for you."
+msgstr "Um administrador criou uma conta para você no portal Bethof."
+
+msgid "An email with this address already exists."
+msgstr "Este endereço de e-mail já está cadastrado."
+
+msgid "An error occurred while auto-signing the document, some fields may not be signed. Please review and manually sign any remaining fields."
+msgstr "Ocorreu um erro ao assinar o documento automaticamente. Alguns campos podem não ter sido assinados. Revise e assine manualmente os campos restantes."
+
+msgid "An error occurred while cancelling the documents."
+msgstr "Ocorreu um erro ao cancelar os documentos."
+
+msgid "An error occurred while creating the webhook. Please try again."
+msgstr "Ocorreu um erro ao criar o webhook. Tente novamente."
+
+msgid "An error occurred while deleting the items."
+msgstr "Ocorreu um erro ao excluir os itens."
+
+msgid "An error occurred while distributing the document."
+msgstr "Ocorreu um erro ao enviar o documento."
+
+msgid "An error occurred while downloading the documents."
+msgstr "Ocorreu um erro ao baixar os documentos."
+
+msgid "An error occurred while moving the items."
+msgstr "Ocorreu um erro ao mover os itens."
+
+msgid "An error occurred while resetting two factor authentication for the user."
+msgstr "Ocorreu um erro ao redefinir a verificação em duas etapas (2FA) do usuário."
+
+msgid "An error occurred while trying to create a checkout session."
+msgstr "Ocorreu um erro ao tentar criar uma sessão de pagamento."
+
+msgid "An error occurred while uploading your document."
+msgstr "Ocorreu um erro ao carregar seu documento."
+
+msgid "An error occurred. Please try again later."
+msgstr "Ocorreu um erro. Tente novamente mais tarde."
+
+msgid "An organisation has exceeded their fair use limits"
+msgstr "Uma organização passou dos limites de uso justo"
+
+msgid "An organisation is nearing their fair use limits"
+msgstr "Uma organização está perto dos limites de uso justo"
+
+msgid "An organisation wants to create an account for you. Please review the details below."
+msgstr "Uma organização deseja criar uma conta para você. Confira os detalhes abaixo."
+
+msgid "An organisation wants to link your account. Please review the details below."
+msgstr "Uma organização deseja vincular sua conta. Confira os detalhes abaixo."
+
+msgid "Any documents that you have been invited to will appear here"
+msgstr "Os documentos para os quais você for convidado aparecerão aqui"
+
+msgid "Any Source"
+msgstr "Qualquer origem"
+
+msgid "Any Status"
+msgstr "Qualquer status"
+
+msgid "API"
+msgstr "API"
+
+msgid "API key"
+msgstr "Chave de API"
+
+msgid "API requests"
+msgstr "Requisições de API"
+
+msgid "API requests have been temporarily paused"
+msgstr "As requisições de API foram pausadas por enquanto"
+
+msgid "API usage is approaching fair use limits"
+msgstr "O uso da API está perto dos limites de uso justo"
+
+msgid "App Version"
+msgstr "Versão do aplicativo"
+
+msgid "Approaching fair use limit"
+msgstr "Perto do limite de uso justo"
+
+msgid "Approaching Your Plan Limits"
+msgstr "Você está perto dos limites do seu plano"
+
+msgid "Are you sure you want to delete the following claim?"
+msgstr "Tem certeza de que deseja excluir a seguinte liberação do plano?"
+
+msgid "Are you sure you want to delete the following transport?"
+msgstr "Tem certeza de que deseja excluir este serviço de envio?"
+
+msgid "Are you sure you want to remove the <0>{passkeyName}</0> passkey?"
+msgstr "Tem certeza de que deseja remover a chave de acesso <0>{passkeyName}</0>?"
+
+msgid "Assigned Teams"
+msgstr "Equipes atribuídas"
+
+msgctxt "Recipient role action verb"
+msgid "Assist"
+msgstr "Auxiliar"
+
+msgid "Assist Document"
+msgstr "Auxiliar no documento"
+
+msgid "Assist with signing"
+msgstr "Auxiliar na assinatura"
+
+msgid "Assistants and Copy roles are currently not compatible with the multi-sign experience."
+msgstr "As funções de assistente e em cópia ainda não são compatíveis com a assinatura múltipla."
+
+msgid "Assisted"
+msgstr "Auxiliado"
+
+msgctxt "Recipient role actioned"
+msgid "Assisted"
+msgstr "Auxiliado"
+
+msgctxt "Recipient role progressive verb"
+msgid "Assisting"
+msgstr "Auxiliando"
+
+msgid "Attempts sealing the document again, useful for after a code change has occurred to resolve an erroneous document."
+msgstr "Tenta selar o documento de novo. Útil depois de uma mudança no código, para corrigir um documento com erro."
+
+msgid "Audit Log"
+msgstr "Histórico de auditoria"
+
+msgid "Audit Log Details"
+msgstr "Detalhes do histórico de auditoria"
+
+msgid "Audit Logs"
+msgstr "Históricos de auditoria"
+
+msgid "Authentication Level"
+msgstr "Nível de autenticação"
+
+msgid "Authentication Portal Not Found"
+msgstr "Portal de autenticação não encontrado"
+
+msgid "Avatar Updated"
+msgstr "Avatar atualizado"
+
+msgid "Background"
+msgstr "Fundo"
+
+msgid "Background Color"
+msgstr "Cor de fundo"
+
+msgid "Background Jobs"
+msgstr "Tarefas em segundo plano"
+
+msgid "Backport email transport"
+msgstr "Aplicar o serviço de envio às organizações existentes"
+
+msgid "Backup Code"
+msgstr "Código de recuperação"
+
+msgid "Backup codes"
+msgstr "Códigos de recuperação"
+
+msgid "Banner Updated"
+msgstr "Banner atualizado"
+
+msgid "Base background colour."
+msgstr "Cor de fundo principal."
+
+msgid "Base text colour."
+msgstr "Cor principal do texto."
+
+msgid "Billing"
+msgstr "Cobrança"
+
+msgid "Bio"
+msgstr "Bio"
+
+msgid "Block signups from additional email domains on top of the bundled disposable email list. Subdomains are matched automatically (e.g. blocking \"bad.com\" also blocks \"foo.bad.com\")."
+msgstr "Bloqueie a criação de contas com outros domínios de e-mail, além da lista de e-mails descartáveis que já vem no sistema. Os subdomínios entram automaticamente (por exemplo, bloquear \"bad.com\" também bloqueia \"foo.bad.com\")."
+
+msgid "Blocked"
+msgstr "Bloqueado"
+
+msgid "Blocked Domains"
+msgstr "Domínios bloqueados"
+
+msgid "Border"
+msgstr "Borda"
+
+msgid "Border radius"
+msgstr "Arredondamento das bordas"
+
+msgid "Border Radius"
+msgstr "Arredondamento das bordas"
+
+msgid "Border radius size in REM units (e.g. 0.5rem)."
+msgstr "Tamanho do arredondamento das bordas em REM (por exemplo, 0.5rem)."
+
+msgid "Brand accent"
+msgstr "Cor de destaque da marca"
+
+msgid "Brand Colours"
+msgstr "Cores da marca"
+
+msgid "Brand colours, including background, foreground, primary, and border colours"
+msgstr "Cores da marca, incluindo as cores de fundo, de texto, principal e de borda"
+
+msgid "Brand Details"
+msgstr "Detalhes da marca"
+
+msgid "Brand Website"
+msgstr "Site da marca"
+
+msgid "Brand website and brand details"
+msgstr "Site e dados da marca"
+
+msgid "Branding company details"
+msgstr "Dados da empresa na marca"
+
+msgid "Branding logo"
+msgstr "Logo da marca"
+
+msgid "Branding Logo"
+msgstr "Logo da marca"
+
+msgid "Branding Preferences"
+msgstr "Preferências da marca"
+
+msgid "Branding preferences updated with warnings"
+msgstr "Preferências de marca atualizadas com avisos"
+
+msgid "Branding URL"
+msgstr "URL da marca"
+
+msgid "Bulk Copy"
+msgstr "Cópia em massa"
+
+msgid "Bulk Import"
+msgstr "Importação em massa"
+
+msgid "Bulk Send Complete: {0}"
+msgstr "Envio em massa concluído: {0}"
+
+msgid "Bulk Send Template via CSV"
+msgstr "Enviar modelo em massa por CSV"
+
+msgid "Bulk Send via CSV"
+msgstr "Envio em massa por CSV"
+
+msgid "By enabling 2FA, you will be required to enter a code from your authenticator app every time you sign in using email password."
+msgstr "Ao ativar a 2FA, você precisará inserir um código do seu aplicativo autenticador toda vez que entrar com e-mail e senha."
+
+msgid "By proceeding to use the electronic signature service provided by Documenso, you affirm that you have read and understood this disclosure. You agree to all terms and conditions related to the use of electronic signatures and electronic transactions as outlined herein."
+msgstr "Ao continuar usando o serviço de assinatura eletrônica oferecido pela Bethof, você confirma que leu e entendeu este aviso. Você concorda com todos os termos e condições sobre o uso de assinaturas e transações eletrônicas descritos aqui."
+
+msgid "By proceeding, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>."
+msgstr "Ao continuar, você concorda com nossos <0>Termos de serviço</0> e nossa <1>Política de privacidade</1>."
+
+msgid "By using the electronic signature feature, you are consenting to conduct transactions and receive disclosures electronically. You acknowledge that your electronic signature on documents is binding and that you accept the terms outlined in the documents you are signing."
+msgstr "Ao usar o recurso de assinatura eletrônica, você concorda em realizar transações e receber comunicados por meio eletrônico. Você reconhece que sua assinatura eletrônica nos documentos é válida e que aceita os termos dos documentos que está assinando."
+
+msgid "Can't find someone?"
+msgstr "Não encontrou quem procura?"
+
+msgid "Cancel document"
+msgstr "Cancelar documento"
+
+msgid "Cancel documents"
+msgstr "Cancelar documentos"
+
+msgid "Cancel Documents"
+msgstr "Cancelar documentos"
+
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgid "Cannot upload items after the document has been sent"
+msgstr "Não é possível carregar itens após o envio do documento"
+
+msgid "Capabilities enabled for this organisation."
+msgstr "Recursos ativados para esta organização."
+
+msgctxt "Recipient role name"
+msgid "Cc"
+msgstr "Em cópia"
+
+msgid "Certificate preferences updated"
+msgstr "Preferências de certificado atualizadas"
+
+msgid "Certificates"
+msgstr "Certificados"
+
+msgid "Change Field Type"
+msgstr "Alterar tipo de campo"
+
+msgid "Change language"
+msgstr "Mudar idioma"
+
+msgid "Change Recipient"
+msgstr "Alterar destinatário"
+
+msgid "Change theme"
+msgstr "Mudar tema"
+
+msgid "Character Limit"
+msgstr "Limite de caracteres"
+
+msgid "Checkbox option"
+msgstr "Opção da caixa de seleção"
+
+msgid "Checkbox Settings"
+msgstr "Configurações da caixa de seleção"
+
+msgid "Checkout"
+msgstr "Pagamento"
+
+msgid "Chinese"
+msgstr "Chinês"
+
+msgid "Choose Direct Link Recipient"
+msgstr "Escolher destinatário do link direto"
+
+msgid "Choose how to distribute your document to recipients. Email will send notifications, None will generate signing links for manual distribution."
+msgstr "Escolha como enviar o documento aos destinatários. A opção E-mail envia avisos por e-mail. A opção Nenhum gera links de assinatura para você enviar por conta própria."
+
+msgid "Claim"
+msgstr "Liberação do plano"
+
+msgid "Claims"
+msgstr "Liberações do plano"
+
+msgid "Clear"
+msgstr "Limpar"
+
+msgid "Clear selection"
+msgstr "Limpar seleção"
+
+msgid "Click here to upload"
+msgstr "Clique aqui para carregar"
+
+msgid "Client ID"
+msgstr "ID do cliente"
+
+msgid "Client ID is required"
+msgstr "O ID do cliente é obrigatório"
+
+msgid "Client Secret"
+msgstr "Segredo do cliente"
+
+msgid "Client secret is required"
+msgstr "O segredo do cliente é obrigatório"
+
+msgid "Comma-separated list of email domains to block from signing up."
+msgstr "Lista de domínios de e-mail, separados por vírgula, que não podem criar conta."
+
+msgid "Company details"
+msgstr "Dados da empresa"
+
+msgid "Company details and website in email footers"
+msgstr "Dados da empresa e site no rodapé dos e-mails"
+
+msgid "Complete Document"
+msgstr "Concluir documento"
+
+msgid "Completed At"
+msgstr "Concluído em"
+
+msgid "Completed Documents"
+msgstr "Documentos concluídos"
+
+msgid "Configuration Error"
+msgstr "Erro de configuração"
+
+msgid "Configure {0} Field"
+msgstr "Configurar campo {0}"
+
+msgid "Configure Direct Recipient"
+msgstr "Configurar destinatário do link direto"
+
+msgid "Configure Document"
+msgstr "Configurar documento"
+
+msgid "Configure document settings and options before sending."
+msgstr "Ajuste as configurações e opções do documento antes de enviar."
+
+msgid "Configure Fields"
+msgstr "Configurar campos"
+
+msgid "Configure general settings for the document."
+msgstr "Ajuste as configurações gerais do documento."
+
+msgid "Configure general settings for the template."
+msgstr "Ajuste as configurações gerais do modelo."
+
+msgid "Configure notification settings for the document."
+msgstr "Defina as configurações de notificação do documento."
+
+msgid "Configure security settings for the document."
+msgstr "Defina as configurações de segurança do documento."
+
+msgid "Configure signing reminder settings for the document."
+msgstr "Defina os lembretes de assinatura do documento."
+
+msgid "Configure Template"
+msgstr "Configurar modelo"
+
+msgid "Configure when and how often reminder emails are sent to recipients who have not yet completed signing. Uses the team default when set to inherit."
+msgstr "Defina quando e com que frequência os e-mails de lembrete vão para os destinatários que ainda não assinaram. Se estiver marcado para herdar, usa o padrão da equipe."
+
+msgid "Confirm Deletion"
+msgstr "Confirmar exclusão"
+
+msgid "Consent to Electronic Transactions"
+msgstr "Consentimento para transações eletrônicas"
+
+msgid "Contact Information"
+msgstr "Informações de contato"
+
+msgid "Contact Sales"
+msgstr "Falar com vendas"
+
+msgid "Contact us"
+msgstr "Fale conosco"
+
+msgid "Contact your organisation owner to upgrade plans."
+msgstr "Fale com o dono da organização para mudar de plano."
+
+msgid "Continue to login"
+msgstr "Continuar para entrar"
+
+msgid "Continue with SSO"
+msgstr "Continuar com SSO"
+
+msgid "Controls how long recipients have to complete signing before the document expires. After expiration, recipients can no longer sign the document."
+msgstr "Define quanto tempo os destinatários têm para assinar antes de o documento vencer. Depois do vencimento, os destinatários não podem mais assinar o documento."
+
+msgid "Controls the default email settings when new documents or templates are created. Updating these settings will not affect existing documents or templates."
+msgstr "Define as configurações de e-mail padrão para novos documentos e modelos. Mudar estas configurações não afeta os documentos e modelos que já existem."
+
+msgid "Controls the default language of an uploaded document. This will be used as the language in email communications with the recipients."
+msgstr "Controla o idioma padrão de um documento carregado. Esse idioma será usado nos e-mails enviados aos destinatários."
+
+msgid "Controls the default visibility of an uploaded document."
+msgstr "Controla a visibilidade padrão de um documento carregado."
+
+msgid "Controls when and how often reminder emails are sent to recipients who have not yet completed signing."
+msgstr "Define quando e com que frequência os e-mails de lembrete vão para os destinatários que ainda não assinaram."
+
+msgid "Controls whether the audit logs will be included in the document when it is downloaded. The audit logs can still be downloaded from the logs page separately."
+msgstr "Controla se o histórico de auditoria será incluído no documento quando ele for baixado. O histórico de auditoria ainda pode ser baixado separadamente na página de histórico."
+
+msgid "Controls whether the signing certificate will be included in the document when it is downloaded. The signing certificate can still be downloaded from the logs page separately."
+msgstr "Controla se o certificado de assinatura será incluído no documento quando ele for baixado. O certificado de assinatura ainda pode ser baixado separadamente na página de histórico."
+
+msgid "Copy license key"
+msgstr "Copiar chave de licença"
+
+msgid "Copy Link"
+msgstr "Copiar link"
+
+msgid "Copy organisation ID"
+msgstr "Copiar ID da organização"
+
+msgid "Copy Shareable Link"
+msgstr "Copiar link compartilhável"
+
+msgid "Copy Signing Links"
+msgstr "Copiar links de assinatura"
+
+msgid "Copy team ID"
+msgstr "Copiar ID da equipe"
+
+msgid "Copy Value"
+msgstr "Copiar valor"
+
+msgid "Copy your token now. For security reasons you will not be able to see it again."
+msgstr "Copie o seu token agora. Por segurança, você não vai conseguir vê-lo de novo."
+
+msgid "Counter reset."
+msgstr "Contador zerado."
+
+msgid "Create a new user. A welcome email will be sent with a link to set their password."
+msgstr "Crie um novo usuário. Ele vai receber um e-mail de boas-vindas com um link para criar a senha."
+
+msgid "Create a support ticket"
+msgstr "Abrir um chamado de suporte"
+
+msgid "Create a template from this document."
+msgstr "Crie um modelo a partir deste documento."
+
+msgid "Create and manage API tokens. See our <0>documentation</0> for more information."
+msgstr "Crie e gerencie tokens de API. Veja a <0>documentação</0> para saber mais."
+
+msgid "Create API token"
+msgstr "Criar token de API"
+
+msgid "Create claim"
+msgstr "Criar liberação do plano"
+
+msgid "Create Claim"
+msgstr "Criar liberação do plano"
+
+msgid "Create Direct Link"
+msgstr "Criar link direto"
+
+msgid "Create Direct Signing Link"
+msgstr "Criar link direto de assinatura"
+
+msgid "Create Document"
+msgstr "Criar documento"
+
+msgid "Create Email"
+msgstr "Criar e-mail"
+
+msgid "Create Folder"
+msgstr "Criar pasta"
+
+msgid "Create Groups"
+msgstr "Criar grupos"
+
+msgid "Create New Folder"
+msgstr "Criar nova pasta"
+
+msgid "Create Organisation"
+msgstr "Criar organização"
+
+msgid "Create subscription"
+msgstr "Criar assinatura do plano"
+
+msgid "Create Subscription Claim"
+msgstr "Criar liberação do plano"
+
+msgid "Create Team"
+msgstr "Criar equipe"
+
+msgid "Create Template"
+msgstr "Criar modelo"
+
+msgid "Create User"
+msgstr "Criar usuário"
+
+msgid "Create Webhook"
+msgstr "Criar webhook"
+
+msgid "Create your account and start using state-of-the-art document signing. Open and beautiful signing is within your grasp."
+msgstr "Crie sua conta e comece a assinar documentos de um jeito simples e seguro."
+
+msgid "Creating Document"
+msgstr "Criando documento"
+
+msgid "Creating Template"
+msgstr "Criando modelo"
+
+msgid "CSS rules were dropped during sanitisation"
+msgstr "Algumas regras de CSS foram removidas na verificação de segurança"
+
+msgid "Current Password"
+msgstr "Senha atual"
+
+msgid "Current usage against organisation limits."
+msgstr "Uso atual em relação aos limites da organização."
+
+msgid "Custom branding enabled setting"
+msgstr "Opção de ativar a marca personalizada"
+
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+msgid "Custom CSS is sanitised on save. Layout-breaking properties, remote URLs, and pseudo-elements are stripped automatically. Any rules dropped during sanitisation will be shown after you save."
+msgstr "O CSS personalizado passa por uma verificação de segurança ao salvar. Propriedades que quebram o layout, URLs externas e pseudoelementos são removidos automaticamente. As regras removidas aparecem depois que você salvar."
+
+msgid "Custom Organisation Groups"
+msgstr "Grupos personalizados da organização"
+
+msgid "Custom Plan"
+msgstr "Plano personalizado"
+
+msgid "Customise the colours used on your signing pages."
+msgstr "Personalize as cores das suas páginas de assinatura."
+
+msgid "Danger Zone"
+msgstr "Zona de risco"
+
+msgid "Dark Mode"
+msgstr "Modo escuro"
+
+msgid "Date format"
+msgstr "Formato de data"
+
+msgid "Date Format"
+msgstr "Formato de data"
+
+msgid "Date Settings"
+msgstr "Configurações de data"
+
+msgid "David is the Employee, Lucas is the Manager"
+msgstr "David é o funcionário, Lucas é o gerente"
+
+msgid "Default (system mailer)"
+msgstr "Padrão (envio do sistema)"
+
+msgid "Default border colour."
+msgstr "Cor padrão da borda."
+
+msgid "Default date format"
+msgstr "Formato de data padrão"
+
+msgid "Default Date Format"
+msgstr "Formato de data padrão"
+
+msgid "Default document language"
+msgstr "Idioma padrão do documento"
+
+msgid "Default Document Language"
+msgstr "Idioma padrão do documento"
+
+msgid "Default document visibility"
+msgstr "Visibilidade padrão do documento"
+
+msgid "Default Document Visibility"
+msgstr "Visibilidade padrão do documento"
+
+msgid "Default Email"
+msgstr "E-mail padrão"
+
+msgid "Default Email Settings"
+msgstr "Configurações padrão de e-mail"
+
+msgid "Default Envelope Expiration"
+msgstr "Vencimento padrão do envelope"
+
+msgid "Default Organisation Role for New Users"
+msgstr "Função padrão na organização para novos usuários"
+
+msgid "Default recipients"
+msgstr "Destinatários padrão"
+
+msgid "Default Recipients"
+msgstr "Destinatários padrão"
+
+msgid "Default settings applied to this organisation."
+msgstr "Configurações padrão aplicadas a esta organização."
+
+msgid "Default settings applied to this team. Inherited values come from the organisation."
+msgstr "Configurações padrão aplicadas a esta equipe. Os valores herdados vêm da organização."
+
+msgid "Default signature settings"
+msgstr "Configurações padrão de assinatura"
+
+msgid "Default Signature Settings"
+msgstr "Configurações padrão de assinatura"
+
+msgid "Default Signing Reminders"
+msgstr "Lembretes de assinatura padrão"
+
+msgid "Default time zone"
+msgstr "Fuso horário padrão"
+
+msgid "Default Time Zone"
+msgstr "Fuso horário padrão"
+
+msgid "Default value"
+msgstr "Valor padrão"
+
+msgid "Default Value"
+msgstr "Valor padrão"
+
+msgid "Delegate document ownership"
+msgstr "Delegar a titularidade do documento"
+
+msgid "Delegate Document Ownership"
+msgstr "Delegar a titularidade do documento"
+
+msgid "delete {organisationName}"
+msgstr "excluir {organisationName}"
+
+msgid "Delete Account"
+msgstr "Excluir conta"
+
+msgid "Delete Document"
+msgstr "Excluir documento"
+
+msgid "Delete Documents"
+msgstr "Excluir documentos"
+
+msgid "Delete Email Domain"
+msgstr "Excluir domínio de e-mail"
+
+msgid "Delete Email Transport"
+msgstr "Excluir serviço de envio de e-mail"
+
+msgid "Delete Envelope"
+msgstr "Excluir envelope"
+
+msgid "Delete Folder"
+msgstr "Excluir pasta"
+
+msgid "Delete passkey"
+msgstr "Excluir chave de acesso"
+
+msgid "Delete Subscription Claim"
+msgstr "Excluir liberação do plano"
+
+msgid "Delete Template"
+msgstr "Excluir modelo"
+
+msgid "Delete Templates"
+msgstr "Excluir modelos"
+
+msgid "Delete the users account and all its contents. This action is irreversible and will cancel their subscription, so proceed with caution."
+msgstr "Excluir a conta do usuário e todo o seu conteúdo. Esta ação é irreversível e cancelará a assinatura do plano, portanto, prossiga com cautela."
+
+msgid "Delete token"
+msgstr "Excluir token"
+
+msgid "Delete Webhook"
+msgstr "Excluir webhook"
+
+msgid "Delete your account and all its contents, including completed documents. This action is irreversible and will cancel your subscription, so proceed with caution."
+msgstr "Exclua sua conta e todo o seu conteúdo, incluindo documentos concluídos. Esta ação é irreversível e cancelará a assinatura do seu plano, portanto, prossiga com cautela."
+
+msgid "Deletion scheduled"
+msgstr "Exclusão agendada"
+
+msgid "Developer Mode"
+msgstr "Modo desenvolvedor"
+
+msgid "Didn't request a password change? We are here to help you secure your account, just <0>contact us</0>."
+msgstr "Não pediu para trocar a senha? Podemos ajudar a proteger a sua conta. É só <0>falar com a gente</0>."
+
+msgid "Direct Link"
+msgstr "Link direto"
+
+msgid "Direct link receiver"
+msgstr "Destinatário do link direto"
+
+msgid "Direct Link Signing"
+msgstr "Assinatura por link direto"
+
+msgid "Direct links associated with templates will be removed"
+msgstr "Os links diretos ligados aos modelos serão removidos"
+
+msgid "Direct template link deleted"
+msgstr "Link direto do modelo excluído"
+
+msgid "Direct template link usage exceeded ({0}/{1})"
+msgstr "Uso do link direto do modelo excedido ({0}/{1})"
+
+msgid "Disable Account"
+msgstr "Desativar conta"
+
+msgid "Disable Two Factor Authentication before deleting your account."
+msgstr "Desative a verificação em duas etapas (2FA) antes de excluir sua conta."
+
+msgid "Disabling the user results in the user not being able to use the account. It also disables all the related contents such as subscription, webhooks, teams, and API keys."
+msgstr "Desativar o usuário impede que ele use a conta. Também desativa todo o conteúdo relacionado, como assinatura do plano, webhooks, equipes e chaves de API."
+
+msgid "Display Name"
+msgstr "Nome de exibição"
+
+msgid "Disposable email addresses are not allowed. Please sign up with a permanent email address."
+msgstr "E-mails descartáveis não são aceitos. Crie a conta com um e-mail permanente."
+
+msgid "Distribute Document"
+msgstr "Enviar documento"
+
+msgid "Distribution Method"
+msgstr "Forma de envio"
+
+msgid "Do not proceed if you are unsure about this request."
+msgstr "Não continue se tiver dúvida sobre este pedido."
+
+msgid "Documenso License"
+msgstr "Licença do Documenso"
+
+msgid "Documenso will delete <0>all of your documents</0>, along with all of your completed documents, signatures, and all other resources belonging to your Account."
+msgstr "O portal Bethof excluirá <0>todos os seus documentos</0>, junto com os documentos concluídos, as assinaturas e todos os outros recursos da sua conta."
+
+msgid "Document (Legacy)"
+msgstr "Documento (legado)"
+
+msgid "Document & Recipients"
+msgstr "Documento e destinatários"
+
+msgid "Document All"
+msgstr "Todos os documentos"
+
+msgid "Document already completed"
+msgstr "O documento já foi concluído"
+
+msgid "Document cancelled"
+msgstr "Documento cancelado"
+
+msgctxt "Audit log format"
+msgid "Document cancelled"
+msgstr "Documento cancelado"
+
+msgid "Document Completed!"
+msgstr "Documento concluído!"
+
+msgid "Document conversion is temporarily unavailable. Please try again shortly or upload a PDF."
+msgstr "A conversão de documentos está indisponível no momento. Tente de novo daqui a pouco ou carregue um PDF."
+
+msgid "Document Created"
+msgstr "Documento criado"
+
+msgid "Document created from direct template"
+msgstr "Documento criado a partir de modelo de link direto"
+
+msgid "Document Creation"
+msgstr "Criação de documento"
+
+msgid "Document creation has been temporarily paused"
+msgstr "A criação de documentos foi pausada por enquanto"
+
+msgid "Document Deleted!"
+msgstr "Documento excluído!"
+
+msgid "Document Distribution Method"
+msgstr "Forma de envio do documento"
+
+msgid "Document draft"
+msgstr "Documento em rascunho"
+
+msgid "Document Duplicated"
+msgstr "Documento duplicado"
+
+msgid "Document Editor"
+msgstr "Editor de documento"
+
+msgid "Document expired"
+msgstr "Documento vencido"
+
+msgid "Document hidden"
+msgstr "Documento ocultado"
+
+msgid "Document ID"
+msgstr "ID do documento"
+
+msgid "Document ID (Legacy)"
+msgstr "ID do documento (legado)"
+
+msgid "Document language"
+msgstr "Idioma do documento"
+
+msgid "Document Limit Exceeded!"
+msgstr "Limite de documentos excedido!"
+
+msgid "Document no longer available"
+msgstr "O documento não está mais disponível"
+
+msgid "Document not ready"
+msgstr "O documento ainda não está pronto"
+
+msgid "Document Preferences"
+msgstr "Preferências do documento"
+
+msgid "Document Renamed"
+msgstr "Documento renomeado"
+
+msgid "Document resent"
+msgstr "Documento reenviado"
+
+msgid "Document Settings"
+msgstr "Configurações do documento"
+
+msgid "Document timezone"
+msgstr "Fuso horário do documento"
+
+msgid "Document Title"
+msgstr "Título do documento"
+
+msgid "Document Updated"
+msgstr "Documento atualizado"
+
+msgid "Document upload disabled due to unpaid invoices"
+msgstr "Carregamento de documentos desativado por causa de faturas não pagas"
+
+msgid "Document usage is approaching fair use limits"
+msgstr "O uso de documentos está perto dos limites de uso justo"
+
+msgid "Document Volume"
+msgstr "Volume de documentos"
+
+msgid "Documents cancelled"
+msgstr "Documentos cancelados"
+
+msgid "Documents Completed"
+msgstr "Documentos concluídos"
+
+msgid "Documents Created"
+msgstr "Documentos criados"
+
+msgid "Documents deleted"
+msgstr "Documentos excluídos"
+
+msgid "Documents downloaded"
+msgstr "Documentos baixados"
+
+msgid "Documents partially cancelled"
+msgstr "Documentos cancelados em parte"
+
+msgid "Documents partially deleted"
+msgstr "Documentos excluídos em parte"
+
+msgid "Documents partially downloaded"
+msgstr "Documentos baixados em parte"
+
+msgid "Documents Received"
+msgstr "Documentos recebidos"
+
+msgid "Documents Viewed"
+msgstr "Documentos visualizados"
+
+msgid "Documents where all recipients have signed but the document has not been sealed. Documents stuck for more than 6 hours are no longer retried by the sweep job."
+msgstr "Documentos em que todos os destinatários já assinaram, mas que ainda não foram selados. Documentos parados há mais de 6 horas não são mais reprocessados pela rotina automática."
+
+msgid "Documents, emails and api values may not be accurate since they record the amount of times the action was attempted. Meaning these values may go over the actual quota, get rejected, and will still be recorded."
+msgstr "Os valores de documentos, e-mails e API podem não ser exatos, porque registram quantas vezes a ação foi tentada. Ou seja, esses valores podem passar da cota real, ser recusados e mesmo assim ficar registrados."
+
+msgid "Domain Added"
+msgstr "Domínio adicionado"
+
+msgid "Domain Name"
+msgstr "Nome do domínio"
+
+msgid "Domain re-registered"
+msgstr "Domínio registrado de novo"
+
+msgid "Don't have an account? <0>Sign up</0>"
+msgstr "Não tem uma conta? <0>Criar conta</0>"
+
+msgid "Don't transfer (Delete all documents)"
+msgstr "Não transferir (excluir todos os documentos)"
+
+msgid "Done"
+msgstr "Pronto"
+
+msgid "Download Audit Logs"
+msgstr "Baixar histórico de auditoria"
+
+msgid "Download Certificate"
+msgstr "Baixar certificado"
+
+msgid "Download Documents"
+msgstr "Baixar documentos"
+
+msgid "Download Files"
+msgstr "Baixar arquivos"
+
+msgid "Download Template CSV"
+msgstr "Baixar modelo de CSV"
+
+msgid "Download version for {0}"
+msgstr "Versão para baixar de {0}"
+
+msgid "Downloading {progress} / {0}..."
+msgstr "Baixando {progress} de {0}..."
+
+msgid "Draft documents"
+msgstr "Documentos em rascunho"
+
+msgid "Drafted Documents"
+msgstr "Documentos em rascunho"
+
+msgid "Drag & drop your document here."
+msgstr "Arraste e solte o seu documento aqui."
+
+msgid "Drag and drop your document here"
+msgstr "Arraste e solte o seu documento aqui"
+
+msgid "Draw signature"
+msgstr "Desenhar assinatura"
+
+msgid "Drop PDF here or click to select"
+msgstr "Solte o PDF aqui ou clique para escolher"
+
+msgid "Duplicate Document"
+msgstr "Duplicar documento"
+
+msgid "Duplicate Envelope"
+msgstr "Duplicar envelope"
+
+msgid "Duplicate Template"
+msgstr "Duplicar modelo"
+
+msgid "Dutch"
+msgstr "Holandês"
+
+msgid "E.g. 0"
+msgstr "Ex.: 0"
+
+msgid "E.g. 100"
+msgstr "Ex.: 100"
+
+msgid "e.g. Resend (free plans)"
+msgstr "Ex.: Resend (planos gratuitos)"
+
+msgid "Easy DNS setup with auto-generated DKIM and SPF records"
+msgstr "Configuração de DNS fácil, com registros DKIM e SPF gerados automaticamente"
+
+msgid "Edit Email Transport"
+msgstr "Editar serviço de envio de e-mail"
+
+msgid "Edit Item"
+msgstr "Editar item"
+
+msgid "Edit Template"
+msgstr "Editar modelo"
+
+msgid "eg. Legal"
+msgstr "Ex.: Jurídico"
+
+msgid "eg. Mac"
+msgstr "Ex.: Mac"
+
+msgid "Electronic Delivery of Documents"
+msgstr "Entrega eletrônica de documentos"
+
+msgid "Electronic Signature Disclosure"
+msgstr "Aviso sobre assinatura eletrônica"
+
+msgid "Email Address"
+msgstr "Endereço de e-mail"
+
+msgid "Email already in use"
+msgstr "Este e-mail já está em uso"
+
+msgid "Email Blocklist"
+msgstr "Lista de bloqueio de e-mails"
+
+msgid "Email Blocklist Updated"
+msgstr "Lista de bloqueio de e-mails atualizada"
+
+msgid "Email Confirmed!"
+msgstr "E-mail confirmado!"
+
+msgid "Email Created"
+msgstr "E-mail criado"
+
+msgid "Email distribution needs to be enabled in the general settings tab to configure recipient email related settings."
+msgstr "Para configurar os e-mails dos destinatários, ative o envio por e-mail na aba de configurações gerais."
+
+msgid "Email document settings"
+msgstr "Configurações de e-mail do documento"
+
+msgid "Email Domain"
+msgstr "Domínio de e-mail"
+
+msgid "Email Domain Settings"
+msgstr "Configurações de domínio de e-mail"
+
+msgid "Email Domains"
+msgstr "Domínios de e-mail"
+
+msgid "Email Options"
+msgstr "Opções de e-mail"
+
+msgid "Email Preferences"
+msgstr "Preferências de e-mail"
+
+msgid "Email reply-to"
+msgstr "E-mail de resposta"
+
+msgctxt "Audit log format"
+msgid "Email resent"
+msgstr "E-mail reenviado"
+
+msgid "Email Sender"
+msgstr "Remetente do e-mail"
+
+msgid "Email sending has been temporarily paused"
+msgstr "O envio de e-mails foi pausado por enquanto"
+
+msgctxt "Audit log format"
+msgid "Email sent"
+msgstr "E-mail enviado"
+
+msgid "Email Settings"
+msgstr "Configurações de e-mail"
+
+msgid "Email the organisation owner to notify them of the deletion."
+msgstr "Enviar um e-mail ao dono da organização avisando da exclusão."
+
+msgid "Email transport"
+msgstr "Serviço de envio de e-mail"
+
+msgid "Email Transports"
+msgstr "Serviços de envio de e-mail"
+
+msgid "Email usage is approaching fair use limits"
+msgstr "O uso de e-mails está perto dos limites de uso justo"
+
+msgid "Empty quota means unlimited, 0 blocks the resource. Rate limit windows accept values like 5m, 1h or 24h."
+msgstr "Cota vazia significa sem limite. Cota 0 bloqueia o recurso. Os intervalos de limite aceitam valores como 5m, 1h ou 24h."
+
+msgid "Enable Account"
+msgstr "Ativar conta"
+
+msgid "Enable AI detection"
+msgstr "Ativar detecção com IA"
+
+msgid "Enable AI features"
+msgstr "Ativar recursos de IA"
+
+msgid "Enable Authenticator App"
+msgstr "Ativar aplicativo autenticador"
+
+msgid "Enable Custom Branding"
+msgstr "Ativar marca personalizada"
+
+msgid "Enable Direct Link Signing"
+msgstr "Ativar assinatura por link direto"
+
+msgid "Enable team API tokens to delegate document ownership to another team member."
+msgstr "Permite que os tokens de API da equipe definam outro membro da equipe como dono do documento."
+
+msgid "Enclosed Document"
+msgstr "Documento anexo"
+
+msgid "Enclosed Documents"
+msgstr "Documentos incluídos"
+
+msgid "Endpoint (optional)"
+msgstr "Endpoint (opcional)"
+
+msgid "English"
+msgstr "Inglês"
+
+msgid "Ensure that you are using the embedding token, not the API token"
+msgstr "Confira se você está usando o token de incorporação, e não o token de API"
+
+msgid "Enter"
+msgstr "Inserir"
+
+msgid "Enter a max request count greater than 0"
+msgstr "Informe um número máximo de requisições maior que 0"
+
+msgid "Enter a new title"
+msgstr "Digite um novo título"
+
+msgid "Enter a window, e.g. 5m"
+msgstr "Informe um intervalo, por exemplo 5m"
+
+msgid "Enter claim name"
+msgstr "Digite o nome da liberação do plano"
+
+msgid "Enter Email"
+msgstr "Digite seu e-mail"
+
+msgid "Enter Initials"
+msgstr "Digite suas iniciais"
+
+msgid "Enter Name"
+msgstr "Digite seu nome"
+
+msgid "Enter Number"
+msgstr "Digite o número"
+
+msgid "Enter Text"
+msgstr "Digite o texto"
+
+msgid "Envelope distributed"
+msgstr "Envelope enviado"
+
+msgid "Envelope ID"
+msgstr "ID do envelope"
+
+msgid "Envelope Item Count"
+msgstr "Quantidade de itens do envelope"
+
+msgctxt "Audit log format"
+msgid "Envelope item PDF replaced"
+msgstr "PDF do item do envelope substituído"
+
+msgctxt "Audit log format"
+msgid "Envelope item updated"
+msgstr "Item do envelope atualizado"
+
+msgid "Envelope Title"
+msgstr "Título do envelope"
+
+msgid "esc"
+msgstr "esc"
+
+msgid "Event Type"
+msgstr "Tipo de evento"
+
+msgid "Exceeded"
+msgstr "Excedido"
+
+msgid "Expiration"
+msgstr "Vencimento"
+
+msgctxt "Subscription status"
+msgid "Expired"
+msgstr "Vencida"
+
+msgid "Expired"
+msgstr "Vencido"
+
+msgid "Expires"
+msgstr "Vence em"
+
+msgid "Expires {0}"
+msgstr "Vence em {0}"
+
+msgid "Expires in"
+msgstr "Vence em"
+
+msgid "External ID"
+msgstr "ID externo"
+
+msgid "Failed to create document. Please try again."
+msgstr "Não foi possível criar o documento. Tente novamente."
+
+msgid "Failed to create subscription claim."
+msgstr "Falha ao criar a liberação do plano."
+
+msgid "Failed to create transport."
+msgstr "Não foi possível cadastrar o serviço de envio."
+
+msgid "Failed to delete subscription claim."
+msgstr "Falha ao excluir a liberação do plano."
+
+msgid "Failed to delete transport."
+msgstr "Não foi possível excluir o serviço de envio."
+
+msgid "Failed to download audit logs. Please try again later."
+msgstr "Não foi possível baixar o histórico de auditoria. Tente novamente mais tarde."
+
+msgid "Failed to move subscription. Please try again."
+msgstr "Não foi possível transferir a assinatura do plano. Tente novamente."
+
+msgid "Failed to re-register email domain"
+msgstr "Não foi possível registrar novamente o domínio de e-mail"
+
+msgid "Failed to read file"
+msgstr "Não foi possível ler o arquivo"
+
+msgid "Failed to reset counter."
+msgstr "Não foi possível zerar o contador."
+
+msgid "Failed to save transport."
+msgstr "Não foi possível salvar o serviço de envio."
+
+msgid "Failed to sync license"
+msgstr "Não foi possível sincronizar a licença"
+
+msgid "Failed to sync subscription"
+msgstr "Não foi possível sincronizar a assinatura do plano"
+
+msgid "Failed to trigger seal"
+msgstr "Não foi possível iniciar a selagem"
+
+msgid "Failed to update envelope. Please try again."
+msgstr "Não foi possível atualizar o envelope. Tente novamente."
+
+msgid "Failed to update item"
+msgstr "Não foi possível atualizar o item"
+
+msgid "Failed to update subscription claim."
+msgstr "Falha ao atualizar a liberação do plano."
+
+msgid "Fair use limit exceeded"
+msgstr "Limite de uso justo excedido"
+
+msgid "Feature Flags"
+msgstr "Sinalizadores de recurso"
+
+msgid "Features"
+msgstr "Recursos"
+
+msgid "Fetch the latest subscription data from Stripe and apply it to this organisation."
+msgstr "Buscar os dados mais recentes da assinatura do plano no Stripe e aplicar nesta organização."
+
+msgid "Field ID:"
+msgstr "ID do campo:"
+
+msgctxt "Audit log format"
+msgid "Field unsigned"
+msgstr "Assinatura do campo removida"
+
+msgid "Fill in the details to create a new email transport."
+msgstr "Preencha os dados para cadastrar um novo serviço de envio de e-mail."
+
+msgid "Fill in the details to create a new subscription claim."
+msgstr "Preencha os dados para criar uma nova liberação do plano."
+
+msgid "Filter by status"
+msgstr "Filtrar por status"
+
+msgid "Focus ring colour."
+msgstr "Cor do contorno de foco."
+
+msgid "For any questions regarding this disclosure, electronic signatures, or any related process, please contact us at: <0>{SUPPORT_EMAIL}</0>"
+msgstr "Se tiver dúvidas sobre este aviso, assinaturas eletrônicas ou qualquer processo relacionado, fale conosco em: <0>{SUPPORT_EMAIL}</0>"
+
+msgid "For each recipient, provide their email (required) and name (optional) in separate columns. Download the template CSV below for the correct format."
+msgstr "Para cada destinatário, informe o e-mail (obrigatório) e o nome (opcional) em colunas separadas. Baixe o modelo de CSV abaixo para ver o formato correto."
+
+msgid "For example, if the claim has a new flag \"FLAG_1\" set to true, then this organisation will get that flag added."
+msgstr "Por exemplo, se a liberação do plano tiver um novo sinalizador \"FLAG_1\" definido como verdadeiro, essa organização receberá esse sinalizador."
+
+msgid "Foreground"
+msgstr "Texto"
+
+msgid "Forgot password"
+msgstr "Esqueci a senha"
+
+msgid "Forgot Password"
+msgstr "Esqueci a senha"
+
+msgctxt "Subscription status"
+msgid "Free (Pending)"
+msgstr "Gratuito (pendente)"
+
+msgid "Free Signature"
+msgstr "Assinatura gratuita"
+
+msgid "Free Signature Settings"
+msgstr "Configurações de assinatura gratuita"
+
+msgid "French"
+msgstr "Francês"
+
+msgid "From"
+msgstr "Remetente"
+
+msgid "From address"
+msgstr "E-mail do remetente"
+
+msgid "From name"
+msgstr "Nome do remetente"
+
+msgid "General settings"
+msgstr "Configurações gerais"
+
+msgid "Generate DKIM Records"
+msgstr "Gerar registros DKIM"
+
+msgid "Generate Links"
+msgstr "Gerar links"
+
+msgid "German"
+msgstr "Alemão"
+
+msgid "Give your members a dedicated single sign-on portal. The SSO portal is available on the Enterprise plan."
+msgstr "Dê aos seus membros um portal próprio de acesso único (SSO). O portal SSO está disponível no plano Enterprise."
+
+msgid "Global"
+msgstr "Global"
+
+msgid "Global recipient action authentication"
+msgstr "Autenticação global de ação do destinatário"
+
+msgid "Global Settings"
+msgstr "Configurações globais"
+
+msgid "Go to first page"
+msgstr "Ir para a primeira página"
+
+msgid "Go to last page"
+msgstr "Ir para a última página"
+
+msgid "Go to next page"
+msgstr "Ir para a próxima página"
+
+msgid "Go to owner"
+msgstr "Ir para o dono do documento"
+
+msgid "Go to previous page"
+msgstr "Ir para a página anterior"
+
+msgid "Go to your settings"
+msgstr "Ir para suas configurações"
+
+msgid "Group Name"
+msgstr "Nome do grupo"
+
+msgid "Height:"
+msgstr "Altura:"
+
+msgid "Here you can edit your team's details."
+msgstr "Aqui você pode editar os dados da sua equipe."
+
+msgid "Here you can set branding preferences for your team."
+msgstr "Aqui você pode definir as preferências de marca da sua equipe."
+
+msgid "Here you can set certificate and audit log preferences for your organisation. Teams will inherit these settings by default."
+msgstr "Aqui você pode definir as preferências de certificado e de histórico de auditoria da sua organização. As equipes herdam essas configurações por padrão."
+
+msgid "Here you can set certificate and audit log preferences for your team."
+msgstr "Aqui você pode definir as preferências de certificado e de histórico de auditoria da sua equipe."
+
+msgid "Here you can set expiration and signing reminder preferences for your organisation. Teams will inherit these settings by default."
+msgstr "Aqui você pode definir as preferências de vencimento e de lembretes de assinatura da sua organização. As equipes herdam essas configurações por padrão."
+
+msgid "Here you can set expiration and signing reminder preferences for your team."
+msgstr "Aqui você pode definir as preferências de vencimento e de lembretes de assinatura da sua equipe."
+
+msgid "Hi {userName},"
+msgstr "Olá, {userName},"
+
+msgid "Hide license key"
+msgstr "Ocultar chave da licença"
+
+msgid "Home (No Folder)"
+msgstr "Início (sem pasta)"
+
+msgid "Host"
+msgstr "Host"
+
+msgid "How long recipients have to complete this document after it is sent. Uses the team default when set to inherit."
+msgstr "Quanto tempo os destinatários têm para concluir este documento depois do envio. Na opção herdar, vale o padrão da equipe."
+
+msgid "I am required to receive a copy of this document"
+msgstr "Estou em cópia neste documento"
+
+msgid "I am the owner of this document"
+msgstr "Sou o dono deste documento"
+
+msgid "If there is any issue with your subscription, please contact us at <0>{SUPPORT_EMAIL}</0>."
+msgstr "Se houver algum problema com a assinatura do seu plano, fale conosco em <0>{SUPPORT_EMAIL}</0>."
+
+msgid "If you are using staging, ensure that you have set the host prop on the embedding component to the staging domain (https://stg-app.documenso.com)"
+msgstr "Se você estiver usando o ambiente de testes (staging), confira se a propriedade host do componente incorporado aponta para o domínio de staging (https://stg-app.documenso.com)"
+
+msgid "If you didn't expect this account or have any questions, please <0>contact support</0>."
+msgstr "Se você não esperava esta conta ou tiver alguma dúvida, <0>fale com o suporte</0>."
+
+msgid "If you expect to need higher limits, please contact support at {SUPPORT_EMAIL} and we will review your account."
+msgstr "Se você precisar de limites maiores, fale com o suporte pelo e-mail {SUPPORT_EMAIL}. Vamos analisar sua conta."
+
+msgid "Important: What This Means"
+msgstr "Importante: o que isso significa"
+
+msgid "Include audit log"
+msgstr "Incluir histórico de auditoria"
+
+msgid "Include Fields"
+msgstr "Incluir campos"
+
+msgid "Include Recipients"
+msgstr "Incluir destinatários"
+
+msgid "Include sender details"
+msgstr "Incluir dados do remetente"
+
+msgid "Include signing certificate"
+msgstr "Incluir certificado de assinatura"
+
+msgid "Include the Audit Logs in the Document"
+msgstr "Incluir o histórico de auditoria no documento"
+
+msgid "Include the Signing Certificate in the Document"
+msgstr "Incluir o certificado de assinatura no documento"
+
+msgid "Includes:"
+msgstr "Inclui:"
+
+msgid "Inherited"
+msgstr "Herdado"
+
+msgid "Inherited subscription claim"
+msgstr "Liberação do plano herdada"
+
+msgid "Initials Settings"
+msgstr "Configurações de iniciais"
+
+msgid "Instance Stats"
+msgstr "Estatísticas da instância"
+
+msgid "Invalid code. Please try again."
+msgstr "Código inválido. Tente novamente."
+
+msgid "Invalid direct link template"
+msgstr "Modelo de link direto inválido"
+
+msgid "Invalid Embedding Parameters"
+msgstr "Parâmetros de incorporação inválidos"
+
+msgid "Invalid embedding presign token provided"
+msgstr "O token de autorização da incorporação é inválido"
+
+msgid "Invalid License Key"
+msgstr "Chave de licença inválida"
+
+msgid "Invalid License Type - Your Documenso instance is using features that are not part of your license."
+msgstr "Tipo de licença inválido: sua instalação do Documenso usa recursos que não fazem parte da sua licença."
+
+msgid "Invalid Token"
+msgstr "Token inválido"
+
+msgid "Invalid token provided. Please try again."
+msgstr "Token inválido. Tente novamente."
+
+msgid "Invitation already accepted"
+msgstr "Convite já aceito"
+
+msgid "Invite Members"
+msgstr "Convidar membros"
+
+msgid "Invite them to the organisation first"
+msgstr "Primeiro, convide a pessoa para a organização"
+
+msgid "Invited"
+msgstr "Convidado"
+
+msgid "Irreversible actions for this organisation"
+msgstr "Ações irreversíveis nesta organização"
+
+msgid "Issuer URL"
+msgstr "URL do emissor"
+
+msgid "It's currently not your turn to sign. Please check back soon as this document should be available for you to sign shortly."
+msgstr "No momento, não é sua vez de assinar. Volte daqui a pouco: o documento deve ficar disponível para você em breve."
+
+msgid "It's not your turn to sign yet"
+msgstr "Ainda não é a sua vez de assinar"
+
+msgid "Italian"
+msgstr "Italiano"
+
+msgid "Japanese"
+msgstr "Japonês"
+
+msgid "Join {organisationName} on Documenso"
+msgstr "Junte-se a {organisationName} no portal Bethof"
+
+msgid "Jump to"
+msgstr "Ir para"
+
+msgid "Key identifiers and relationships for this team."
+msgstr "Identificadores principais e vínculos desta equipe."
+
+msgid "Korean"
+msgstr "Coreano"
+
+msgid "Last 30 Days"
+msgstr "Últimos 30 dias"
+
+msgid "Last 90 Days"
+msgstr "Últimos 90 dias"
+
+msgid "Last Active"
+msgstr "Última atividade"
+
+msgid "Last Retried"
+msgstr "Última tentativa"
+
+msgid "Last Signed"
+msgstr "Última assinatura"
+
+msgid "Last Updated"
+msgstr "Última atualização"
+
+msgid "Last Used"
+msgstr "Último uso"
+
+msgid "Last Verified"
+msgstr "Última verificação"
+
+msgid "Last Year"
+msgstr "Último ano"
+
+msgid "Learn more"
+msgstr "Saiba mais"
+
+msgid "Leave blank to keep current"
+msgstr "Deixe em branco para manter o atual"
+
+msgid "Legality of Electronic Signatures"
+msgstr "Legalidade das assinaturas eletrônicas"
+
+msgid "Letter Spacing"
+msgstr "Espaçamento entre letras"
+
+msgid "License"
+msgstr "Licença"
+
+msgid "License Expired - Please renew your license to continue using enterprise features."
+msgstr "Licença vencida: renove a licença para continuar usando os recursos Enterprise."
+
+msgid "License Key"
+msgstr "Chave da licença"
+
+msgid "License Payment Overdue - Please update your payment to avoid service disruptions."
+msgstr "Pagamento da licença em atraso: atualize o pagamento para evitar a interrupção do serviço."
+
+msgid "License synced"
+msgstr "Licença sincronizada"
+
+msgid "Light Mode"
+msgstr "Modo claro"
+
+msgid "Limit reached"
+msgstr "Limite atingido"
+
+msgid "Limits"
+msgstr "Limites"
+
+msgid "Line Height"
+msgstr "Altura da linha"
+
+msgid "Link your Documenso account"
+msgstr "Vincule sua conta do portal Bethof"
+
+msgid "Linked Accounts"
+msgstr "Contas vinculadas"
+
+msgid "Links Generated"
+msgstr "Links gerados"
+
+msgid "Loading Document..."
+msgstr "Carregando documento..."
+
+msgid "Manage a custom SSO login portal for your organisation."
+msgstr "Gerencie um portal de acesso SSO personalizado para sua organização."
+
+msgid "Manage all email transports"
+msgstr "Gerenciar todos os serviços de envio de e-mail"
+
+msgid "Manage all subscription claims"
+msgstr "Gerenciar todas as liberações de plano"
+
+msgid "Manage billing"
+msgstr "Gerenciar cobrança"
+
+msgid "Manage Billing"
+msgstr "Gerenciar cobrança"
+
+msgid "Manage billing and subscriptions for organisations where you have billing management permissions."
+msgstr "Gerencie a cobrança e as assinaturas de plano das organizações em que você tem permissão para gerenciar a cobrança."
+
+msgid "Manage details for this public template"
+msgstr "Gerenciar detalhes deste modelo público"
+
+msgid "Manage Direct Link"
+msgstr "Gerenciar link direto"
+
+msgid "Manage Organisation"
+msgstr "Gerenciar organização"
+
+msgid "Manage passkeys"
+msgstr "Gerenciar chaves de acesso"
+
+msgid "Manage subscription"
+msgstr "Gerenciar assinatura do plano"
+
+msgid "Manage team"
+msgstr "Gerenciar equipe"
+
+msgid "Manage the {0} organisation subscription"
+msgstr "Gerenciar a assinatura do plano da organização {0}"
+
+msgid "Manage the {0} team"
+msgstr "Gerenciar a equipe {0}"
+
+msgid "Manage the direct link signing for this template"
+msgstr "Gerencie a assinatura por link direto deste modelo"
+
+msgid "Manage your passkeys."
+msgstr "Gerencie suas chaves de acesso."
+
+msgid "Mark as Viewed"
+msgstr "Marcar como visualizado"
+
+msgid "Max requests"
+msgstr "Máximo de solicitações"
+
+msgid "Maximum file size: 4MB. Maximum 100 rows per upload. Blank values will use template defaults."
+msgstr "Tamanho máximo do arquivo: 4 MB. Máximo de 100 linhas por arquivo. Valores em branco usarão os padrões do modelo."
+
+msgid "Maximum number of recipients per document allowed. 0 = Unlimited"
+msgstr "Número máximo de destinatários por documento. 0 significa sem limite"
+
+msgid "Maximum number of uploaded files per envelope allowed"
+msgstr "Número máximo de arquivos carregados por envelope"
+
+msgid "Member Count"
+msgstr "Quantidade de membros"
+
+msgid "Member has been removed from the organisation."
+msgstr "O membro foi removido da organização."
+
+msgid "Member has been removed from the team."
+msgstr "O membro foi removido da equipe."
+
+msgid "Member Since"
+msgstr "Membro desde"
+
+msgid "Members that currently belong to this team."
+msgstr "Membros atuais desta equipe."
+
+msgid "Message <0>(Optional)</0>"
+msgstr "Mensagem <0>(opcional)</0>"
+
+msgid "Missing License - Your Documenso instance is using features that require a license."
+msgstr "Licença ausente: sua instalação do Documenso usa recursos que exigem licença."
+
+msgid "Missing Recipients"
+msgstr "Destinatários ausentes"
+
+msgid "Missing signature fields"
+msgstr "Faltam campos de assinatura"
+
+msgid "Modify the details of the email transport."
+msgstr "Altere os dados do serviço de envio de e-mail."
+
+msgid "Modify the details of the subscription claim."
+msgstr "Modifique os detalhes da liberação do plano."
+
+msgid "Monthly Active Users: Users that created at least one Document"
+msgstr "Usuários ativos mensais: usuários que criaram pelo menos um documento"
+
+msgid "Monthly Active Users: Users that had at least one of their documents completed"
+msgstr "Usuários ativos mensais: usuários que tiveram pelo menos um documento concluído"
+
+msgid "Monthly quota"
+msgstr "Cota mensal"
+
+msgid "Monthly usage"
+msgstr "Uso mensal"
+
+msgid "Move Documents to Folder"
+msgstr "Mover documentos para a pasta"
+
+msgid "Move Folder"
+msgstr "Mover pasta"
+
+msgid "Move Subscription"
+msgstr "Transferir assinatura do plano"
+
+msgid "Move Templates to Folder"
+msgstr "Mover modelos para a pasta"
+
+msgid "Move the subscription from \"{sourceOrganisationName}\" to another organisation owned by this user."
+msgstr "Transferir a assinatura do plano da organização \"{sourceOrganisationName}\" para outra organização deste usuário."
+
+msgid "Move to Folder"
+msgstr "Mover para pasta"
+
+msgid "Multiple access methods can be selected."
+msgstr "É possível selecionar mais de um método de acesso."
+
+msgid "My Folder"
+msgstr "Minha pasta"
+
+msgid "Name Settings"
+msgstr "Configurações de nome"
+
+msgid "Named senders with defaults per team, template or document"
+msgstr "Remetentes com nome próprio e padrão por equipe, modelo ou documento"
+
+msgid "Navigate"
+msgstr "Navegar"
+
+msgid "Near limit"
+msgstr "Perto do limite"
+
+msgid "New option"
+msgstr "Nova opção"
+
+msgid "New option {0}"
+msgstr "Nova opção {0}"
+
+msgid "New Password"
+msgstr "Nova senha"
+
+msgid "No eligible organisations found. The target must be on the free plan."
+msgstr "Nenhuma organização elegível encontrada. A organização de destino precisa estar no plano gratuito."
+
+msgid "No emails configured for this domain."
+msgstr "Nenhum e-mail configurado para este domínio."
+
+msgid "No expired documents"
+msgstr "Nenhum documento vencido"
+
+msgid "No features enabled"
+msgstr "Nenhum recurso ativado"
+
+msgid "No field type matching this description was found."
+msgstr "Nenhum tipo de campo corresponde a esta descrição."
+
+msgid "No folders yet."
+msgstr "Nenhuma pasta ainda."
+
+msgid "No groups found"
+msgstr "Nenhum grupo encontrado"
+
+msgid "No inherited claim"
+msgstr "Nenhuma liberação do plano herdada"
+
+msgid "No License Configured"
+msgstr "Nenhuma licença configurada"
+
+msgid "No members found"
+msgstr "Nenhum membro encontrado"
+
+msgid "No members selected"
+msgstr "Nenhum membro selecionado"
+
+msgid "No organisation members available"
+msgstr "Nenhum membro da organização disponível"
+
+msgid "No organisation templates are shared with your team yet."
+msgstr "Ainda não há modelos da organização compartilhados com sua equipe."
+
+msgid "No rejected documents"
+msgstr "Nenhum documento recusado"
+
+msgid "No results for “{trimmedSearch}”"
+msgstr "Nenhum resultado para “{trimmedSearch}”"
+
+msgid "No subscription found"
+msgstr "Nenhuma assinatura do plano encontrada"
+
+msgid "No triggers available"
+msgstr "Nenhum gatilho disponível"
+
+msgid "No valid direct templates found"
+msgstr "Nenhum modelo de link direto válido encontrado"
+
+msgid "None (Overrides global settings)"
+msgstr "Nenhuma (substitui as configurações globais)"
+
+msgid "Not Found"
+msgstr "Não encontrado"
+
+msgid "Not set"
+msgstr "Não definido"
+
+msgid "Nothing cancelled"
+msgstr "Nenhum documento cancelado"
+
+msgid "Notifications"
+msgstr "Notificações"
+
+msgid "Number Settings"
+msgstr "Configurações de número"
+
+msgid "Off"
+msgstr "Desativado"
+
+msgid "On"
+msgstr "Ativado"
+
+msgid "On this page, you can create new Webhooks and manage the existing ones."
+msgstr "Nesta página, você pode criar novos webhooks e gerenciar os existentes."
+
+msgid "Once confirmed, the following will be reset:"
+msgstr "Ao confirmar, estes itens voltam ao padrão:"
+
+msgid "Once confirmed, the following will occur:"
+msgstr "Após a confirmação, acontecerá o seguinte:"
+
+msgid "Once you update your DNS records, it may take up to 48 hours for it to be propogated. Once the DNS propagation is complete you will need to come back and press the \"Sync\" domains button."
+msgstr "Depois que você atualizar os registros DNS, a propagação pode levar até 48 horas. Quando a propagação terminar, volte aqui e clique no botão \"Sincronizar\" dos domínios."
+
+msgid "One or more of your required fields have not been saved. Please refresh the page, complete any empty required fields, and try again."
+msgstr "Um ou mais campos obrigatórios não foram salvos. Atualize a página, preencha os campos obrigatórios vazios e tente novamente."
+
+msgid "Only managers and above can access and view the document"
+msgstr "Apenas gerentes e cargos superiores podem acessar e visualizar o documento"
+
+msgid "Only one file can be uploaded at a time"
+msgstr "Apenas um arquivo pode ser carregado por vez"
+
+msgid "Only pending documents you have permission to manage will be cancelled."
+msgstr "Só serão cancelados os documentos pendentes que você tem permissão para gerenciar."
+
+msgid "Open"
+msgstr "Abrir"
+
+msgid "Open menu"
+msgstr "Abrir menu"
+
+msgid "Option 1"
+msgstr "Opção 1"
+
+msgid "Organisation \"{organisationName}\" has been deleted"
+msgstr "A organização \"{organisationName}\" foi excluída"
+
+msgid "Organisation Admin"
+msgstr "Administrador da organização"
+
+msgid "Organisation Group Settings"
+msgstr "Configurações do grupo da organização"
+
+msgid "Organisation ID"
+msgstr "ID da organização"
+
+msgid "Organisation Insights"
+msgstr "Insights da organização"
+
+msgid "Organisation Manager"
+msgstr "Gerente da organização"
+
+msgid "Organisation Member"
+msgstr "Membro da organização"
+
+msgid "Organisation Members"
+msgstr "Membros da organização"
+
+msgid "Organisation Name"
+msgstr "Nome da organização"
+
+msgid "Organisation Review Required"
+msgstr "Sua organização precisa de análise"
+
+msgid "Organisation Role"
+msgstr "Função na organização"
+
+msgid "Organisation Settings"
+msgstr "Configurações da organização"
+
+msgid "Organisation SSO Portal"
+msgstr "Portal SSO da organização"
+
+msgid "Organisation Stats"
+msgstr "Estatísticas das organizações"
+
+msgid "Organisation Teams"
+msgstr "Equipes da organização"
+
+msgid "Organisation Template"
+msgstr "Modelo da organização"
+
+msgid "Organisation templates are shared across all teams within the same organisation. Only the owning team can edit them."
+msgstr "Os modelos da organização são compartilhados com todas as equipes da mesma organização. Só a equipe dona pode editá-los."
+
+msgid "Organisation URL"
+msgstr "URL da organização"
+
+msgid "Organisation usage"
+msgstr "Uso da organização"
+
+msgid "Organisation-level pending invites for this team's parent organisation."
+msgstr "Convites pendentes da organização à qual esta equipe pertence."
+
+msgid "Organisations without a transport use the system default mailer."
+msgstr "Organizações sem serviço de envio usam o envio padrão do sistema."
+
+msgid "Overlapping fields detected"
+msgstr "Há campos sobrepostos"
+
+msgid "Override"
+msgstr "Substituir"
+
+msgid "Owner document completed"
+msgstr "Documento concluído (aviso ao dono)"
+
+msgid "Owner document created"
+msgstr "Documento criado (aviso ao dono)"
+
+msgid "Owner recipient expired"
+msgstr "Prazo do destinatário vencido (aviso ao dono)"
+
+msgid "Passkey"
+msgstr "Chave de acesso"
+
+msgid "Passkey already exists for the provided authenticator"
+msgstr "Já existe uma chave de acesso para este autenticador"
+
+msgid "Passkey creation cancelled due to one of the following reasons:"
+msgstr "A criação da chave de acesso foi cancelada por um dos seguintes motivos:"
+
+msgid "Passkey has been removed"
+msgstr "A chave de acesso foi removida"
+
+msgid "Passkey has been updated"
+msgstr "A chave de acesso foi atualizada"
+
+msgid "Passkey name"
+msgstr "Nome da chave de acesso"
+
+msgid "Passkey Re-Authentication"
+msgstr "Reautenticação por chave de acesso"
+
+msgid "Passkeys"
+msgstr "Chaves de acesso"
+
+msgid "Passkeys allow you to sign in and authenticate using biometrics, password managers, etc."
+msgstr "As chaves de acesso permitem que você entre e se autentique usando biometria, gerenciadores de senhas etc."
+
+msgid "Passkeys are not supported on this browser"
+msgstr "Este navegador não é compatível com chaves de acesso"
+
+msgid "Password Re-Authentication"
+msgstr "Reautenticação por senha"
+
+msgid "Password Reset Requested"
+msgstr "Redefinição de senha solicitada"
+
+msgid "Password Reset Successful"
+msgstr "Senha redefinida com sucesso"
+
+msgctxt "Subscription status"
+msgid "Past Due"
+msgstr "Em atraso"
+
+msgid "Payment required"
+msgstr "Pagamento necessário"
+
+msgid "Pending Documents"
+msgstr "Documentos pendentes"
+
+msgid "Pending documents will have their signing process cancelled"
+msgstr "Os documentos pendentes terão a assinatura cancelada"
+
+msgid "Pending Organisation Invites"
+msgstr "Convites pendentes da organização"
+
+msgid "Pending since"
+msgstr "Pendente desde"
+
+msgid "People with access to this organisation."
+msgstr "Pessoas com acesso a esta organização."
+
+msgid "Period"
+msgstr "Período"
+
+msgid "Permanently delete this organisation. Documents will be orphaned (not deleted) so they remain accessible via the deleted-account service account."
+msgstr "Excluir esta organização definitivamente. Os documentos ficam sem dono (não são excluídos) e continuam acessíveis pela conta de serviço de contas excluídas."
+
+msgid "Personal Account"
+msgstr "Conta pessoal"
+
+msgid "Personal Inbox"
+msgstr "Caixa de entrada pessoal"
+
+msgid "Pick any of the following agreements below and start signing to get started"
+msgstr "Escolha um dos documentos abaixo para começar a assinar"
+
+msgid "Plans without a transport use the system default mailer."
+msgstr "Planos sem serviço de envio usam o envio padrão do sistema."
+
+msgid "Please {recipientActionVerb} this document created by your direct template"
+msgstr "Por favor, {recipientActionVerb} este documento criado pelo seu modelo de link direto"
+
+msgid "Please check the CSV file and make sure it is according to our format"
+msgstr "Confira o arquivo CSV e veja se ele segue o nosso formato"
+
+msgid "Please check with the parent application for more information."
+msgstr "Consulte o aplicativo principal para mais informações."
+
+msgid "Please check your email for updates."
+msgstr "Confira seu e-mail para ver as atualizações."
+
+msgid "Please choose your new password"
+msgstr "Escolha sua nova senha"
+
+msgid "Please configure the document first"
+msgstr "Configure o documento primeiro"
+
+msgid "Please confirm your email"
+msgstr "Confirme seu e-mail"
+
+msgid "Please confirm your email address"
+msgstr "Confirme seu endereço de e-mail"
+
+msgid "Please contact <0>support</0> if you have any questions."
+msgstr "Se tiver alguma dúvida, fale com o <0>suporte</0>."
+
+msgid "Please contact support at {SUPPORT_EMAIL} and we will review your account."
+msgstr "Fale com o suporte pelo e-mail {SUPPORT_EMAIL}. Vamos analisar sua conta."
+
+msgid "Please contact support if you would like to revert this action."
+msgstr "Se quiser desfazer esta ação, entre em contato com o suporte."
+
+msgid "Please contact the site owner for further assistance."
+msgstr "Entre em contato com o responsável pelo site para mais ajuda."
+
+msgid "Please enter a number"
+msgstr "Digite um número"
+
+msgid "Please enter a valid number"
+msgstr "Insira um número válido"
+
+msgid "Please enter a value"
+msgstr "Digite um valor"
+
+msgid "Please enter your email address"
+msgstr "Digite seu e-mail"
+
+msgid "Please enter your full name"
+msgstr "Digite seu nome completo"
+
+msgid "Please enter your initials"
+msgstr "Digite suas iniciais"
+
+msgid "Please note that anyone who signs in through your portal will be added to your organisation as a member."
+msgstr "Observe que qualquer pessoa que entrar pelo seu portal será adicionada à sua organização como membro."
+
+msgid "Please note that proceeding will remove direct linking recipient and turn it into a placeholder."
+msgstr "Ao continuar, o destinatário do link direto será removido e passará a ser um espaço reservado."
+
+msgid "Please note that this action is <0>irreversible</0>. Once confirmed, this document will be permanently deleted."
+msgstr "Observe que esta ação é <0>irreversível</0>. Após a confirmação, este documento será excluído permanentemente."
+
+msgid "Please note that this action is <0>irreversible</0>. Once confirmed, this template will be permanently deleted."
+msgstr "Atenção: esta ação é <0>irreversível</0>. Ao confirmar, este modelo será excluído definitivamente."
+
+msgid "Please note that this action is irreversible. Once confirmed, your token will be permanently deleted."
+msgstr "Observe que esta ação é irreversível. Após a confirmação, seu token será excluído permanentemente."
+
+msgid "Please note that this action is irreversible. Once confirmed, your webhook will be permanently deleted."
+msgstr "Observe que esta ação é irreversível. Após a confirmação, seu webhook será excluído permanentemente."
+
+msgid "Please open your authenticator app and enter the 6-digit code for this document."
+msgstr "Abra seu aplicativo autenticador e insira o código de 6 dígitos para este documento."
+
+msgid "Please provide a token from the authenticator, or a backup code. If you do not have a backup code available, please contact support."
+msgstr "Informe o código do aplicativo autenticador ou um código de recuperação. Se você não tiver um código de recuperação, entre em contato com o suporte."
+
+msgid "Please provide a token from your authenticator, or a backup code."
+msgstr "Informe o código do seu aplicativo autenticador ou um código de recuperação."
+
+msgid "Please review the document before approving."
+msgstr "Revise o documento antes de aprovar."
+
+msgid "Please review the document before signing."
+msgstr "Revise o documento antes de assinar."
+
+msgid "Please select a PDF file"
+msgstr "Selecione um arquivo PDF"
+
+msgid "Please select at least one member to add to the team."
+msgstr "Selecione pelo menos um membro para adicionar à equipe."
+
+msgid "Please sign: Example.pdf"
+msgstr "Documento para assinar: Exemplo.pdf"
+
+msgid "Please try a different domain."
+msgstr "Tente um domínio diferente."
+
+msgid "Please try again and make sure you enter the correct email address."
+msgstr "Tente novamente e confira se digitou o endereço de e-mail correto."
+
+msgid "Please try again or contact our support."
+msgstr "Tente novamente ou entre em contato com nosso suporte."
+
+msgid "Please type {0} to confirm"
+msgstr "Digite {0} para confirmar"
+
+msgid "Please type <0>{0}</0> to confirm."
+msgstr "Digite <0>{0}</0> para confirmar."
+
+msgid "Please upload a document to continue"
+msgstr "Carregue um documento para continuar"
+
+msgid "Please upload a logo"
+msgstr "Carregue um logotipo"
+
+msgid "Polish"
+msgstr "Polonês"
+
+msgid "Port"
+msgstr "Porta"
+
+msgid "Portuguese (Brazil)"
+msgstr "Português (Brasil)"
+
+msgid "Pos X:"
+msgstr "Pos. X:"
+
+msgid "Pos Y:"
+msgstr "Pos. Y:"
+
+msgid "Preview Mode"
+msgstr "Modo de visualização"
+
+msgid "Primary"
+msgstr "Principal"
+
+msgid "Primary action colour."
+msgstr "Cor das ações principais."
+
+msgid "Primary Foreground"
+msgstr "Texto do botão principal"
+
+msgid "Private Template"
+msgstr "Modelo privado"
+
+msgid "Public Profile"
+msgstr "Perfil público"
+
+msgid "Public Template"
+msgstr "Modelo público"
+
+msgid "Put your own brand on every document you send. Branding is available on the Teams plan and above."
+msgstr "Coloque sua marca em todos os documentos que você envia. A marca está disponível a partir do plano Teams."
+
+msgid "Quick Actions"
+msgstr "Ações rápidas"
+
+msgid "Radio"
+msgstr "Botão de opção"
+
+msgid "Radio Settings"
+msgstr "Configurações do botão de opção"
+
+msgid "Radio values"
+msgstr "Valores do botão de opção"
+
+msgid "Re-register"
+msgstr "Registrar novamente"
+
+msgid "Re-register Email Domain"
+msgstr "Registrar novamente o domínio de e-mail"
+
+msgid "Read Only"
+msgstr "Somente leitura"
+
+msgid "Read Status"
+msgstr "Status de leitura"
+
+msgid "Reason (optional)"
+msgstr "Motivo (opcional)"
+
+msgid "Reason for rejection: "
+msgstr "Motivo da recusa: "
+
+msgid "Reauthentication is required to sign this field"
+msgstr "É necessário se autenticar novamente para assinar este campo"
+
+msgid "Recipient approved the document"
+msgstr "O destinatário aprovou o documento"
+
+msgid "Recipient authenticated with the signing provider"
+msgstr "O destinatário se autenticou no provedor de assinatura"
+
+msgid "Recipient authorised the remote signature"
+msgstr "O destinatário autorizou a assinatura remota"
+
+msgid "Recipient CC'd the document"
+msgstr "O destinatário recebeu o documento em cópia"
+
+msgid "Recipient completed their task"
+msgstr "O destinatário concluiu a etapa dele"
+
+msgid "Recipient Count"
+msgstr "Número de destinatários"
+
+msgid "Recipient failed to validate a 2FA token for the document"
+msgstr "O destinatário não conseguiu validar um código 2FA do documento"
+
+msgid "Recipient ID:"
+msgstr "ID do destinatário:"
+
+msgid "Recipient rejected the document"
+msgstr "O destinatário recusou o documento"
+
+msgid "Recipient rejected the document externally"
+msgstr "O destinatário recusou o documento externamente"
+
+msgid "Recipient removed"
+msgstr "Destinatário removido"
+
+msgid "Recipient removed email"
+msgstr "E-mail quando o destinatário é removido"
+
+msgid "Recipient requested a 2FA token for the document"
+msgstr "O destinatário pediu um código 2FA para o documento"
+
+msgid "Recipient requested a remote signature"
+msgstr "O destinatário pediu uma assinatura remota"
+
+msgid "Recipient signed"
+msgstr "Destinatário assinou"
+
+msgid "Recipient signed email"
+msgstr "E-mail quando o destinatário assina"
+
+msgid "Recipient signed the document"
+msgstr "O destinatário assinou o documento"
+
+msgid "Recipient signing request"
+msgstr "Pedido de assinatura ao destinatário"
+
+msgctxt "Audit log format"
+msgid "Recipient signing window expired"
+msgstr "Prazo de assinatura do destinatário vencido"
+
+msgid "Recipient validated a 2FA token for the document"
+msgstr "O destinatário validou um código 2FA do documento"
+
+msgid "Recipient viewed the document"
+msgstr "O destinatário visualizou o documento"
+
+msgid "Recipient's remote signature was applied"
+msgstr "A assinatura remota do destinatário foi aplicada"
+
+msgid "Recipient's signing provider authentication failed"
+msgstr "Falha na autenticação do destinatário no provedor de assinatura"
+
+msgid "Recipients cannot use this direct link template because the following signers are missing a signature field"
+msgstr "Os destinatários não podem usar este modelo de link direto porque estes signatários estão sem campo de assinatura"
+
+msgid "Recipients that will be automatically added to new documents."
+msgstr "Destinatários que serão adicionados automaticamente aos novos documentos."
+
+msgid "Recipients will be notified that the document was cancelled"
+msgstr "Os destinatários serão avisados de que o documento foi cancelado"
+
+msgid "Record"
+msgstr "Registro"
+
+msgid "Record Name"
+msgstr "Nome do registro"
+
+msgid "Record Type"
+msgstr "Tipo de registro"
+
+msgid "Record Value"
+msgstr "Valor do registro"
+
+msgid "Redirect URI"
+msgstr "URI de redirecionamento"
+
+msgid "Redirect URL"
+msgstr "URL de redirecionamento"
+
+msgid "Redirecting to {0}..."
+msgstr "Redirecionando para {0}..."
+
+msgid "Redirecting to your identity provider"
+msgstr "Redirecionando para o seu provedor de identidade"
+
+msgid "Registration Successful"
+msgstr "Cadastro concluído"
+
+msgid "Rejected"
+msgstr "Recusado"
+
+msgid "Reminder preferences updated"
+msgstr "Preferências de lembrete atualizadas"
+
+msgid "Reminders"
+msgstr "Lembretes"
+
+msgid "Remove member"
+msgstr "Remover membro"
+
+msgid "Remove Organisation Member"
+msgstr "Remover membro da organização"
+
+msgid "Remove rate limit"
+msgstr "Remover limite de solicitações"
+
+msgid "Remove Team Member"
+msgstr "Remover membro da equipe"
+
+msgid "Rename"
+msgstr "Renomear"
+
+msgid "Rename Document"
+msgstr "Renomear documento"
+
+msgid "Rename Template"
+msgstr "Renomear modelo"
+
+msgid "Repeat Password"
+msgstr "Repetir senha"
+
+msgid "Replace failed"
+msgstr "Não foi possível substituir"
+
+msgid "Replace PDF"
+msgstr "Substituir PDF"
+
+msgid "Reply To Email <0>(Optional)</0>"
+msgstr "E-mail para resposta <0>(opcional)</0>"
+
+msgid "Reports"
+msgstr "Relatórios"
+
+msgid "Requesting Organisation"
+msgstr "Organização solicitante"
+
+msgid "Require 2FA"
+msgstr "Exigir 2FA"
+
+msgid "Require account"
+msgstr "Exigir conta"
+
+msgid "Require passkey"
+msgstr "Exigir chave de acesso"
+
+msgid "Require password"
+msgstr "Exigir senha"
+
+msgid "Required Field"
+msgstr "Campo obrigatório"
+
+msgid "Reseal"
+msgstr "Selar novamente"
+
+msgid "Resend Confirmation Email"
+msgstr "Reenviar e-mail de confirmação"
+
+msgid "Resend Document"
+msgstr "Reenviar documento"
+
+msgid "Resend Envelope"
+msgstr "Reenviar envelope"
+
+msgid "Reset branding preferences"
+msgstr "Redefinir preferências de marca"
+
+msgid "Reset document preferences"
+msgstr "Redefinir preferências de documento"
+
+msgid "Reset Password"
+msgstr "Redefinir senha"
+
+msgid "Reset the users two factor authentication. This action is irreversible and will disable two factor authentication for the user."
+msgstr "Redefinir a verificação em duas etapas (2FA) do usuário. Esta ação é irreversível e desativará a verificação em duas etapas desse usuário."
+
+msgid "Reset to defaults"
+msgstr "Voltar ao padrão"
+
+msgid "Reset Two Factor Authentication"
+msgstr "Redefinir verificação em duas etapas (2FA)"
+
+msgid "Resetting Password..."
+msgstr "Redefinindo senha..."
+
+msgid "Resource blocked"
+msgstr "Recurso bloqueado"
+
+msgid "Response Code"
+msgstr "Código de resposta"
+
+msgid "Response Headers"
+msgstr "Cabeçalhos de resposta"
+
+msgid "Restrict sign-ins by email domain and choose the default role"
+msgstr "Limitar quem pode entrar pelo domínio do e-mail e escolher a função padrão"
+
+msgid "Restricted Access"
+msgstr "Acesso restrito"
+
+msgid "Retention of Documents"
+msgstr "Retenção de documentos"
+
+msgid "Return to Documenso sign in page here"
+msgstr "Voltar para a página de entrada do portal Bethof"
+
+msgid "Return to sign in"
+msgstr "Voltar para a tela de entrada"
+
+msgid "Ring"
+msgstr "Contorno"
+
+msgid "Save as Template"
+msgstr "Salvar como modelo"
+
+msgid "Save changes"
+msgstr "Salvar alterações"
+
+msgid "Save Template"
+msgstr "Salvar modelo"
+
+msgid "Seal job triggered"
+msgstr "Selagem iniciada"
+
+msgid "Sealing job started"
+msgstr "Selagem do documento iniciada"
+
+msgid "Search by claim ID or name"
+msgstr "Pesquisar por ID ou nome da liberação do plano"
+
+msgid "Search by document title, recipient:123, team:123 or user:123"
+msgstr "Pesquisar por título do documento, recipient:123, team:123 ou user:123"
+
+msgid "Search by domain or organisation name"
+msgstr "Pesquisar por domínio ou nome da organização"
+
+msgid "Search by name or from address"
+msgstr "Pesquisar por nome ou e-mail do remetente"
+
+msgid "Search by organisation name, URL or ID"
+msgstr "Pesquisar por nome, URL ou ID da organização"
+
+msgid "Search documents, users, organisations…"
+msgstr "Pesquisar documentos, usuários, organizações…"
+
+msgid "Search groups by name"
+msgstr "Pesquisar grupos pelo nome"
+
+msgid "Search languages…"
+msgstr "Pesquisar idiomas…"
+
+msgid "Search members by name or email"
+msgstr "Pesquisar membros por nome ou e-mail"
+
+msgid "Search members..."
+msgstr "Pesquisar membros..."
+
+msgid "Search organisations…"
+msgstr "Pesquisar organizações…"
+
+msgid "Search teams…"
+msgstr "Pesquisar equipes…"
+
+msgid "Search themes…"
+msgstr "Pesquisar temas…"
+
+msgid "See Documentation"
+msgstr "Ver documentação"
+
+msgid "Select a field type"
+msgstr "Selecione um tipo de campo"
+
+msgid "Select a section"
+msgstr "Selecione uma seção"
+
+msgid "Select all"
+msgstr "Selecionar tudo"
+
+msgid "Select an organisation"
+msgstr "Selecione uma organização"
+
+msgid "Select Option"
+msgstr "Selecionar opção"
+
+msgid "Select Options"
+msgstr "Selecione as opções"
+
+msgid "Select or add recipients"
+msgstr "Selecione ou adicione destinatários"
+
+msgid "Select or enter email address"
+msgstr "Selecione ou digite um e-mail"
+
+msgid "Select passkey"
+msgstr "Selecionar chave de acesso"
+
+msgid "Select row"
+msgstr "Selecionar linha"
+
+msgid "selected"
+msgstr "selecionados"
+
+msgid "Selected documents will be permanently deleted"
+msgstr "Os documentos selecionados serão excluídos definitivamente"
+
+msgid "Selected items have been moved."
+msgstr "Os itens selecionados foram movidos."
+
+msgid "Selected Recipient"
+msgstr "Destinatário selecionado"
+
+msgid "Selected templates will be permanently deleted"
+msgstr "Os modelos selecionados serão excluídos definitivamente"
+
+msgid "Selector"
+msgstr "Seletor"
+
+msgid "Send a test email using this transport to verify the configuration."
+msgstr "Envie um e-mail de teste por este serviço de envio para conferir a configuração."
+
+msgid "Send Document"
+msgstr "Enviar documento"
+
+msgid "Send documents from your own domain. Email domains are available on the Enterprise plan."
+msgstr "Envie documentos a partir do seu próprio domínio. Os domínios de e-mail estão disponíveis no plano Enterprise."
+
+msgid "Send emails to recipients from your domain"
+msgstr "Envie e-mails aos destinatários a partir do seu domínio"
+
+msgid "Send Envelope"
+msgstr "Enviar envelope"
+
+msgid "Send on Behalf of Team"
+msgstr "Enviar em nome da equipe"
+
+msgid "Send Status"
+msgstr "Status de envio"
+
+msgid "Send test"
+msgstr "Enviar teste"
+
+msgid "Send Test Email"
+msgstr "Enviar e-mail de teste"
+
+msgid "Sending from app.documenso.com"
+msgstr "Enviando de app.documenso.com"
+
+msgid "Sending from your domain"
+msgstr "Enviando do seu domínio"
+
+msgid "Sending Reset Email..."
+msgstr "Enviando e-mail de redefinição..."
+
+msgid "Sent this period"
+msgstr "Enviados neste período"
+
+msgid "Separate branding per team"
+msgstr "Marca própria para cada equipe"
+
+msgid "Set Password"
+msgstr "Definir senha"
+
+msgid "Set your password for Documenso"
+msgstr "Defina sua senha do portal Bethof"
+
+msgid "Share Signing Card"
+msgstr "Compartilhar cartão de assinatura"
+
+msgid "Share the Link"
+msgstr "Compartilhar o link"
+
+msgid "Show daily averages for documents, emails and API usages"
+msgstr "Mostrar médias diárias de documentos, e-mails e uso da API"
+
+msgid "Show license key"
+msgstr "Mostrar chave de licença"
+
+msgid "Show usage"
+msgstr "Mostrar uso"
+
+msgid "Show usage with quotas"
+msgstr "Mostrar uso com cotas"
+
+msgid "Sign Document - Documenso"
+msgstr "Assinar documento - Bethof"
+
+msgid "Sign Documents"
+msgstr "Assinar documentos"
+
+msgid "Sign Here"
+msgstr "Assine aqui"
+
+msgid "Sign Signature Field"
+msgstr "Assinar campo de assinatura"
+
+msgid "Sign up"
+msgstr "Criar conta"
+
+msgid "Sign Up"
+msgstr "Criar conta"
+
+msgid "Sign Up with Google"
+msgstr "Criar conta com Google"
+
+msgid "Sign Up with Microsoft"
+msgstr "Criar conta com Microsoft"
+
+msgid "Sign Up with OIDC"
+msgstr "Criar conta com OIDC"
+
+msgid "Signature ID"
+msgstr "ID da assinatura"
+
+msgid "Signature Pad cannot be empty."
+msgstr "A área de assinatura não pode ficar vazia."
+
+msgid "Signature Settings"
+msgstr "Configurações de assinatura"
+
+msgid "Signatures Collected"
+msgstr "Assinaturas coletadas"
+
+msgid "Signed in"
+msgstr "Conectado"
+
+msgid "Signer Events"
+msgstr "Eventos do signatário"
+
+msgid "Signing Certificate"
+msgstr "Certificado de assinatura"
+
+msgid "Signing link expired"
+msgstr "Link de assinatura vencido"
+
+msgid "Signing Links"
+msgstr "Links de assinatura"
+
+msgid "Signing Reminders"
+msgstr "Lembretes de assinatura"
+
+msgid "Signing Status"
+msgstr "Status da assinatura"
+
+msgid "Signing Window Expired"
+msgstr "Prazo de assinatura vencido"
+
+msgid "Signing window expired for {0}"
+msgstr "Prazo de assinatura vencido para {0}"
+
+msgid "Signup is currently disabled or not available for your email domain."
+msgstr "A criação de conta está desativada ou não está disponível para o domínio do seu e-mail."
+
+msgid "Single sign-on"
+msgstr "Acesso único (SSO)"
+
+msgid "Site Banner"
+msgstr "Banner do site"
+
+msgid "Site Settings"
+msgstr "Configurações do site"
+
+msgid "Some fields are placed on top of each other. This may complicate the signing process or cause fields to not work as expected."
+msgstr "Alguns campos estão sobrepostos. Isso pode dificultar a assinatura ou fazer os campos não funcionarem como esperado."
+
+msgid "Some fields were not saved"
+msgstr "Alguns campos não foram salvos"
+
+msgid "Some searches failed — results may be incomplete."
+msgstr "Algumas buscas falharam. Os resultados podem estar incompletos."
+
+msgid "Some signers have not been assigned a signature field. Please assign at least 1 signature field to each signer before proceeding."
+msgstr "Alguns signatários não receberam um campo de assinatura. Atribua pelo menos 1 campo de assinatura a cada signatário antes de continuar."
+
+msgid "Something went wrong while loading your passkeys."
+msgstr "Algo deu errado ao carregar suas chaves de acesso."
+
+msgid "Something went wrong while rendering the document, some fields may be missing or corrupted."
+msgstr "Algo deu errado ao exibir o documento. Alguns campos podem estar faltando ou corrompidos."
+
+msgid "Something went wrong while replacing the PDF"
+msgstr "Algo deu errado ao substituir o PDF"
+
+msgid "Something went wrong while updating the envelope item."
+msgstr "Algo deu errado ao atualizar o item do envelope."
+
+msgid "Something went wrong while updating the team billing subscription, please contact support."
+msgstr "Algo deu errado ao atualizar a assinatura do plano da equipe. Entre em contato com o suporte."
+
+msgid "Something went wrong while uploading this file"
+msgstr "Algo deu errado ao carregar este arquivo"
+
+msgid "Something went wrong. Please try again later."
+msgstr "Algo deu errado. Tente novamente mais tarde."
+
+msgid "Something went wrong. Please try again or contact support."
+msgstr "Algo deu errado. Tente novamente ou entre em contato com o suporte."
+
+msgid "Something went wrong. Please try again."
+msgstr "Algo deu errado. Tente novamente."
+
+msgid "Sorry, we were unable to download the audit logs. Please try again later."
+msgstr "Desculpe, não conseguimos baixar o histórico de auditoria. Tente novamente mais tarde."
+
+msgid "Sorry, we were unable to download the certificate. Please try again later."
+msgstr "Desculpe, não conseguimos baixar o certificado. Tente novamente mais tarde."
+
+msgid "Source"
+msgstr "Origem"
+
+msgid "Spanish"
+msgstr "Espanhol"
+
+msgid "Stop"
+msgstr "Parar"
+
+msgid "Stripe Customer ID"
+msgstr "ID do cliente Stripe"
+
+msgid "Stuck For"
+msgstr "Parado há"
+
+msgid "Subscribe"
+msgstr "Assinar plano"
+
+msgid "Subscription"
+msgstr "Assinatura do plano"
+
+msgid "Subscription claim created successfully."
+msgstr "Liberação do plano criada com sucesso."
+
+msgid "Subscription claim deleted successfully."
+msgstr "Liberação do plano excluída com sucesso."
+
+msgid "Subscription claim updated successfully."
+msgstr "Liberação do plano atualizada com sucesso."
+
+msgid "Subscription Claims"
+msgstr "Liberações de plano"
+
+msgid "Subscription invalid"
+msgstr "Assinatura do plano inválida"
+
+msgid "Subscription moved successfully"
+msgstr "Assinatura do plano transferida com sucesso"
+
+msgid "Subscription Status"
+msgstr "Status da assinatura do plano"
+
+msgid "Subscription synced"
+msgstr "Assinatura do plano sincronizada"
+
+msgid "Subscriptions"
+msgstr "Assinaturas de plano"
+
+msgid "Successfully created passkey"
+msgstr "Chave de acesso criada com sucesso"
+
+msgid "Support ticket created"
+msgstr "Chamado de suporte aberto"
+
+msgid "Sync claims. This will overwrite the current claim with the one resolved from the Stripe subscription."
+msgstr "Sincronizar liberações do plano. Isso vai substituir a liberação atual pela que vem da assinatura do plano no Stripe."
+
+msgid "Sync Email Domains"
+msgstr "Sincronizar domínios de e-mail"
+
+msgid "Sync license from server"
+msgstr "Sincronizar licença com o servidor"
+
+msgid "Sync Stripe subscription"
+msgstr "Sincronizar assinatura do plano no Stripe"
+
+msgid "System Requirements"
+msgstr "Requisitos do sistema"
+
+msgid "System Theme"
+msgstr "Tema do sistema"
+
+msgid "Target Organisation"
+msgstr "Organização de destino"
+
+msgid "Team \"{0}\" has been deleted on Documenso"
+msgstr "A equipe \"{0}\" foi excluída no portal Bethof"
+
+msgid "Team Admin"
+msgstr "Administrador da equipe"
+
+msgid "Team Assignments"
+msgstr "Atribuições da equipe"
+
+msgid "Team Count"
+msgstr "Número de equipes"
+
+msgid "Team details"
+msgstr "Dados da equipe"
+
+msgid "Team Email"
+msgstr "E-mail da equipe"
+
+msgid "Team email name"
+msgstr "Nome do e-mail da equipe"
+
+msgid "Team email removed for {teamName} on Documenso"
+msgstr "E-mail da equipe removido para {teamName} no portal Bethof"
+
+msgid "Team Groups"
+msgstr "Grupos da equipe"
+
+msgid "Team ID"
+msgstr "ID da equipe"
+
+msgid "Team Manager"
+msgstr "Gerente da equipe"
+
+msgid "Team Member"
+msgstr "Membro da equipe"
+
+msgid "Team Members"
+msgstr "Membros da equipe"
+
+msgid "Team Memberships"
+msgstr "Participação em equipes"
+
+msgid "Team Name"
+msgstr "Nome da equipe"
+
+msgid "Team Only"
+msgstr "Somente a equipe"
+
+msgid "Team role"
+msgstr "Função na equipe"
+
+msgid "Team Role"
+msgstr "Função na equipe"
+
+msgid "Team Settings"
+msgstr "Configurações da equipe"
+
+msgid "Team URL"
+msgstr "URL da equipe"
+
+msgid "Teams that belong to this organisation."
+msgstr "Equipes que pertencem a esta organização."
+
+msgid "Teams that this user is a member of and their roles."
+msgstr "Equipes de que este usuário é membro e a função dele em cada uma."
+
+msgid "Template (Legacy)"
+msgstr "Modelo (legado)"
+
+msgid "Template Created"
+msgstr "Modelo criado"
+
+msgid "Template document uploaded"
+msgstr "Documento do modelo carregado"
+
+msgid "Template Duplicated"
+msgstr "Modelo duplicado"
+
+msgid "Template Editor"
+msgstr "Editor de modelo"
+
+msgid "Template hidden"
+msgstr "Modelo ocultado"
+
+msgid "Template ID (Legacy)"
+msgstr "ID do modelo (legado)"
+
+msgid "Template Renamed"
+msgstr "Modelo renomeado"
+
+msgid "Template resent"
+msgstr "Modelo reenviado"
+
+msgid "Template Settings"
+msgstr "Configurações do modelo"
+
+msgid "Template type"
+msgstr "Tipo de modelo"
+
+msgid "Template Updated"
+msgstr "Modelo atualizado"
+
+msgid "Template uploaded"
+msgstr "Modelo carregado"
+
+msgid "Templates deleted"
+msgstr "Modelos excluídos"
+
+msgid "Templates partially deleted"
+msgstr "Modelos excluídos em parte"
+
+msgid "Test email sent."
+msgstr "E-mail de teste enviado."
+
+msgid "Test failed."
+msgstr "O teste falhou."
+
+msgid "Test Webhook"
+msgstr "Testar webhook"
+
+msgid "test@example.com"
+msgstr "teste@exemplo.com"
+
+msgid "Text Align"
+msgstr "Alinhamento do texto"
+
+msgid "Text Color"
+msgstr "Cor do texto"
+
+msgid "Text colour on primary buttons."
+msgstr "Cor do texto nos botões principais."
+
+msgid "Text Settings"
+msgstr "Configurações de texto"
+
+msgid "Thank you for using Documenso to perform your electronic document signing. The purpose of this disclosure is to inform you about the process, legality, and your rights regarding the use of electronic signatures on our platform. By opting to use an electronic signature, you are agreeing to the terms and conditions outlined below."
+msgstr "Obrigado por usar o portal Bethof para assinar seus documentos eletronicamente. Este aviso explica o processo, a validade jurídica e os seus direitos no uso de assinaturas eletrônicas na nossa plataforma. Ao optar por usar uma assinatura eletrônica, você concorda com os termos e condições descritos abaixo."
+
+msgid "The deletion will run in the background, and can take up to a few minutes to complete. Do not re-run this deletion."
+msgstr "A exclusão vai rodar em segundo plano e pode levar alguns minutos. Não repita esta exclusão."
+
+msgid "The document could not be created because of missing or invalid information. Please review the template's recipients and fields."
+msgstr "Não foi possível criar o documento porque há informações faltando ou inválidas. Confira os destinatários e os campos do modelo."
+
+msgid "The document could not be sent because some signers do not have a signature field. Please edit the template and add a signature field for each signer."
+msgstr "Não foi possível enviar o documento porque alguns signatários não têm campo de assinatura. Edite o modelo e adicione um campo de assinatura para cada signatário."
+
+msgid "The Document has been deleted successfully."
+msgstr "O documento foi excluído com sucesso."
+
+msgid "The document is now completed, please follow any instructions provided within the parent application."
+msgstr "O documento foi concluído. Siga as instruções do aplicativo principal."
+
+msgctxt "Audit log format"
+msgid "The document ownership was delegated to {0} on behalf of {1}"
+msgstr "{0} passou a ser dono do documento, em nome de {1}"
+
+msgid "The document signing process will be stopped"
+msgstr "O processo de assinatura do documento será interrompido"
+
+msgid "The document was rejected externally by {onBehalfOf} on behalf of {user}"
+msgstr "O documento foi recusado externamente por {onBehalfOf} em nome de {user}"
+
+msgid "The document was rejected externally by {onBehalfOf} on behalf of the recipient"
+msgstr "O documento foi recusado externamente por {onBehalfOf} em nome do destinatário"
+
+msgid "The document was rejected externally on behalf of {user}"
+msgstr "O documento foi recusado externamente em nome de {user}"
+
+msgid "The document was rejected externally on behalf of the recipient"
+msgstr "O documento foi recusado externamente em nome do destinatário"
+
+msgid "The document will be immediately sent to recipients if this is checked."
+msgstr "Se esta opção estiver marcada, o documento será enviado na hora aos destinatários."
+
+msgid "The document will remain in your dashboard marked as Cancelled"
+msgstr "O documento vai continuar no seu painel, marcado como cancelado"
+
+msgid "The documents will remain in your dashboard marked as Cancelled"
+msgstr "Os documentos vão continuar no seu painel, marcados como cancelados"
+
+msgid "The email blocklist has been updated successfully."
+msgstr "A lista de bloqueio de e-mails foi atualizada com sucesso."
+
+msgid "The email or password provided is incorrect."
+msgstr "O e-mail ou a senha estão incorretos."
+
+msgid "The file is not a valid PDF."
+msgstr "O arquivo não é um PDF válido."
+
+msgid "The folder you are trying to move the items to does not exist."
+msgstr "A pasta para onde você quer mover os itens não existe."
+
+msgid "The following organisation has been deleted by an administrator. You and your members will no longer be able to access this organisation, its teams, or its associated data."
+msgstr "A organização abaixo foi excluída por um administrador. Você e seus membros não vão mais conseguir acessar esta organização, as equipes dela ou os dados ligados a ela."
+
+msgid "The following organisation has been deleted. You and your members will no longer be able to access this organisation, its teams, or its associated data."
+msgstr "A organização abaixo foi excluída. Você e seus membros não vão mais conseguir acessar esta organização, as equipes dela ou os dados ligados a ela."
+
+msgid "The following recipients require an email address:"
+msgstr "Os seguintes destinatários precisam de um endereço de e-mail:"
+
+msgid "The license key has been copied to your clipboard"
+msgstr "A chave de licença foi copiada para a área de transferência"
+
+msgid "The next recipient to sign this document will be <0>{0}</0> (<1>{1}</1>)."
+msgstr "O próximo destinatário a assinar este documento será <0>{0}</0> (<1>{1}</1>)."
+
+msgid "The organisation subscription has been synced with Stripe."
+msgstr "A assinatura do plano da organização foi sincronizada com o Stripe."
+
+msgid "The organisation will be deleted in the background. Documents will be orphaned, not deleted."
+msgstr "A organização será excluída em segundo plano. Os documentos ficarão sem dono, mas não serão excluídos."
+
+msgid "The SES identity has been deleted and recreated with the same keys. DNS records remain unchanged."
+msgstr "A identidade SES foi excluída e recriada com as mesmas chaves. Os registros DNS continuam iguais."
+
+msgid "The sharing link could not be created at this time. Please try again."
+msgstr "O link de compartilhamento não pôde ser criado neste momento. Tente novamente."
+
+msgid "The template or one of its recipients could not be found."
+msgstr "Não foi possível encontrar o modelo ou um dos destinatários dele."
+
+msgid "The token you have used to reset your password is either expired or it never existed. If you have still forgotten your password, please request a new reset link."
+msgstr "O token que você usou para redefinir sua senha expirou ou nunca existiu. Se ainda não lembra sua senha, solicite um novo link de redefinição."
+
+msgid "The two-factor authentication code provided is incorrect."
+msgstr "O código da verificação em duas etapas (2FA) está incorreto."
+
+msgid "The URL for Documenso to send webhook events to."
+msgstr "A URL para onde o portal Bethof enviará os eventos de webhook."
+
+msgid "The user's two factor authentication has been reset successfully."
+msgstr "A verificação em duas etapas do usuário foi redefinida com sucesso."
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "There are no active drafts at the current moment. You can upload a document to start drafting."
+msgstr "Não há rascunhos ativos no momento. Você pode carregar um documento para começar um rascunho."
+
+msgid "There are no cancelled documents. Documents you cancel will remain here as a record that they were distributed."
+msgstr "Não há documentos cancelados. Os documentos que você cancelar ficam aqui como registro de que foram enviados."
+
+msgid "There are no documents with expired signing links. You can redistribute a document to renew its expiration."
+msgstr "Não há documentos com link de assinatura vencido. Você pode reenviar um documento para renovar o prazo."
+
+msgid "There are no rejected documents. Documents that a recipient declines to sign will appear here."
+msgstr "Não há documentos recusados. Os documentos que algum destinatário se recusar a assinar vão aparecer aqui."
+
+msgid "There was an error uploading your file. Please try again."
+msgstr "Houve um erro ao carregar seu arquivo. Tente novamente."
+
+msgid "They will be able to view documents associated with this email."
+msgstr "A equipe poderá ver os documentos ligados a este e-mail."
+
+msgid "This action is not reversible. Please be certain."
+msgstr "Esta ação não pode ser desfeita. Confirme apenas se tiver certeza."
+
+msgid "This claim is locked and cannot be deleted."
+msgstr "Esta liberação do plano está bloqueada e não pode ser excluída."
+
+msgid "This direct link template cannot be used because one or more signers do not have a signature field assigned."
+msgstr "Este modelo de link direto não pode ser usado porque um ou mais signatários não têm campo de assinatura."
+
+msgid "This direct link template cannot be used because one or more signers do not have a signature field assigned. Please contact the sender to update the template."
+msgstr "Este modelo de link direto não pode ser usado porque um ou mais signatários não têm campo de assinatura. Fale com o remetente para atualizar o modelo."
+
+msgid "This document can no longer be signed. It may have been removed by the sender, or your signing access may have been revoked. Please contact the sender for a new signing link."
+msgstr "Este documento não pode mais ser assinado. Ele pode ter sido removido pelo remetente, ou o seu acesso para assinar foi cancelado. Fale com o remetente para receber um novo link de assinatura."
+
+msgid "This document can not be recovered, if you would like to dispute the reason for future documents please contact support."
+msgstr "Este documento não pode ser recuperado. Se você quiser contestar o motivo para documentos futuros, entre em contato com o suporte."
+
+msgid "This document could not be cancelled at this time. Please try again."
+msgstr "Não foi possível cancelar este documento agora. Tente novamente."
+
+msgid "This document could not be deleted at this time. Please try again."
+msgstr "Este documento não pôde ser excluído neste momento. Tente novamente."
+
+msgid "This document could not be downloaded at this time. Please try again."
+msgstr "Este documento não pôde ser baixado neste momento. Tente novamente."
+
+msgid "This document could not be duplicated at this time. Please try again."
+msgstr "Este documento não pôde ser duplicado neste momento. Tente novamente."
+
+msgid "This document could not be saved as a template at this time. Please try again."
+msgstr "Não foi possível salvar este documento como modelo agora. Tente novamente."
+
+msgid "This document has already been completed and no further signatures can be added."
+msgstr "Este documento já foi concluído e não aceita mais assinaturas."
+
+msgid "This document has been cancelled"
+msgstr "Este documento foi cancelado"
+
+msgid "This document has been cancelled by the sender and can no longer be signed. Please contact the sender if you believe this is a mistake."
+msgstr "Este documento foi cancelado pelo remetente e não pode mais ser assinado. Se você acha que é um engano, fale com o remetente."
+
+msgid "This document has been rejected by a recipient"
+msgstr "Este documento foi recusado por um destinatário"
+
+msgid "This document has been rejected by a recipient and can no longer be signed."
+msgstr "Este documento foi recusado por um destinatário e não pode mais ser assinado."
+
+msgid "This document has not been sent for signing yet. Please wait for the sender to send it before signing."
+msgstr "Este documento ainda não foi enviado para assinatura. Aguarde o remetente enviar antes de assinar."
+
+msgid "This document has too many recipients. Please remove some recipients or contact support if you need more."
+msgstr "Este documento tem destinatários demais. Remova alguns ou fale com o suporte se precisar de mais."
+
+msgid "This document is available in your Documenso account. You can view more details, recipients, and audit logs there."
+msgstr "Este documento está disponível na sua conta do portal Bethof. Lá você pode ver mais detalhes, os destinatários e o histórico de auditoria."
+
+msgid "This document is currently a draft and has not been sent"
+msgstr "Este documento ainda é um rascunho e não foi enviado"
+
+msgid "This document is signed in a set order and other recipients must sign before you. You will receive an email when it is your turn."
+msgstr "Este documento segue uma ordem de assinatura e outros destinatários precisam assinar antes de você. Você vai receber um e-mail quando chegar a sua vez."
+
+msgid "This document is using legacy field insertion, we recommend using the new field insertion method for more accurate results."
+msgstr "Este documento usa o método antigo de inserção de campos. Recomendamos usar o novo método, que dá resultados mais precisos."
+
+msgid "This email is already being used as a team email. Please contact your team for assistance."
+msgstr "Este e-mail já está em uso como e-mail de equipe. Fale com a sua equipe para pedir ajuda."
+
+msgid "This email is sent to the document owner when a recipient has signed the document."
+msgstr "Este e-mail é enviado ao dono do documento quando um destinatário assina o documento."
+
+msgid "This envelope cannot have more than {recipientCountLimit} recipients. Please contact support if you need more."
+msgstr "Este envelope não pode ter mais de {recipientCountLimit} destinatários. Fale com o suporte se precisar de mais."
+
+msgid "This feature is not available on your current plan"
+msgstr "Este recurso não está disponível no seu plano atual"
+
+msgid "This file type isn't supported. Please upload a PDF or Word document."
+msgstr "Este tipo de arquivo não é aceito. Carregue um PDF ou um documento do Word."
+
+msgid "This is the claim that this organisation was initially created with. Any feature flag changes to this claim will be backported into this organisation."
+msgstr "Esta é a liberação do plano com que esta organização foi criada. Qualquer mudança nos recursos desta liberação do plano será aplicada também a esta organização."
+
+msgid "This member is inherited from a group and cannot be removed from the team directly."
+msgstr "Este membro vem de um grupo e não pode ser removido diretamente da equipe."
+
+msgid "This organisation is awaiting payment. Complete checkout to unlock it."
+msgstr "Esta organização está aguardando pagamento. Conclua o pagamento para liberar o acesso."
+
+msgid "This passkey has already been registered."
+msgstr "Esta chave de acesso já foi registrada."
+
+msgid "This passkey is not configured for this application. Please login and add one in the user settings."
+msgstr "Esta chave de acesso não está configurada para este aplicativo. Entre na sua conta e adicione uma nas configurações do usuário."
+
+msgid "This session has expired. Please try again."
+msgstr "Esta sessão expirou. Tente novamente."
+
+msgid "This template could not be deleted at this time. Please try again."
+msgstr "Este modelo não pôde ser excluído neste momento. Tente novamente."
+
+msgid "This template could not be duplicated at this time. Please try again."
+msgstr "Não foi possível duplicar este modelo agora. Tente novamente."
+
+msgid "This template is using legacy field insertion, we recommend using the new field insertion method for more accurate results."
+msgstr "Este modelo usa o método antigo de inserção de campos. Recomendamos usar o novo método, que dá resultados mais precisos."
+
+msgid "This will be sent to the document owner once the document has been fully completed."
+msgstr "Isso será enviado ao dono do documento assim que o documento for totalmente concluído."
+
+msgid "This will delete the existing SES identity for <0>{0}</0> and recreate it using the same DKIM keys. The user will not need to update their DNS records. The domain status will be reset to Pending."
+msgstr "Isso vai excluir a identidade SES atual de <0>{0}</0> e recriá-la com as mesmas chaves DKIM. O usuário não vai precisar atualizar os registros DNS. O status do domínio voltará para pendente."
+
+msgid "This will move the subscription from \"{sourceOrganisationName}\" to \"{0}\". The source organisation will be reset to the free plan."
+msgstr "Isso vai transferir a assinatura do plano de \"{sourceOrganisationName}\" para \"{0}\". A organização de origem voltará para o plano gratuito."
+
+msgid "This will ONLY backport feature flags which are set to true, anything disabled in the initial claim will not be backported"
+msgstr "Isso aplica SOMENTE os recursos ativados. O que estiver desativado na liberação do plano inicial não será aplicado"
+
+msgid "This will reset all branding preferences to their default values and save the changes immediately."
+msgstr "Isso vai restaurar todas as preferências de marca para os valores padrão e salvar as alterações na hora."
+
+msgid "This will reset all document preferences to their default values and save the changes immediately."
+msgstr "Isso vai restaurar todas as preferências de documento para os valores padrão e salvar as alterações na hora."
+
+msgid "Time Zone"
+msgstr "Fuso horário"
+
+msgid "To add members to this team, they must first be invited to the organisation. Only organisation admins and managers can invite new members — please contact one of them to invite members on your behalf."
+msgstr "Para adicionar membros a esta equipe, primeiro eles precisam ser convidados para a organização. Só administradores e gerentes da organização podem convidar novos membros. Peça a um deles para convidar por você."
+
+msgid "To add members to this team, you must first add them to the organisation."
+msgstr "Para adicionar membros a esta equipe, primeiro adicione-os à organização."
+
+msgid "To enable two-factor authentication, scan the following QR code using your authenticator app."
+msgstr "Para ativar a verificação em duas etapas, escaneie o código QR abaixo com seu aplicativo autenticador."
+
+msgid "To get started, please set your password by clicking the button below:"
+msgstr "Para começar, defina sua senha clicando no botão abaixo:"
+
+msgid "To mark this document as viewed, you need to be logged in as <0>{0}</0>"
+msgstr "Para marcar este documento como visualizado, você precisa estar conectado como <0>{0}</0>"
+
+msgid "To mark this document as viewed, you need to be logged in."
+msgstr "Para marcar este documento como visualizado, você precisa estar conectado."
+
+msgid "To view this document you need to be signed into your account, please sign in to continue."
+msgstr "Para visualizar este documento, você precisa entrar na sua conta. Entre para continuar."
+
+msgid "Token has expired. Please try again."
+msgstr "O token expirou. Tente novamente."
+
+msgid "Token Not Found"
+msgstr "Token não encontrado"
+
+msgid "Too many recipients"
+msgstr "Destinatários demais"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Total Documents"
+msgstr "Total de documentos"
+
+msgid "Total Recipients"
+msgstr "Total de destinatários"
+
+msgid "Total Signers that Signed Up"
+msgstr "Total de signatários que criaram conta"
+
+msgid "Total Users"
+msgstr "Total de usuários"
+
+msgid "Transfer documents to a different team"
+msgstr "Transferir documentos para outra equipe"
+
+msgid "Transport created."
+msgstr "Serviço de envio de e-mail criado."
+
+msgid "Transport deleted."
+msgstr "Serviço de envio de e-mail excluído."
+
+msgid "Transport type"
+msgstr "Tipo de serviço de envio"
+
+msgid "Transport type cannot be changed after creation."
+msgstr "O tipo de serviço de envio não pode ser alterado depois de criado."
+
+msgid "Transport updated."
+msgstr "Serviço de envio de e-mail atualizado."
+
+msgid "Try a different search or switch category."
+msgstr "Tente outra busca ou mude de categoria."
+
+msgid "Turn on AI detection to automatically find recipients and fields in your documents. AI providers do not retain your data for training."
+msgstr "Ative a detecção por IA para encontrar automaticamente destinatários e campos nos seus documentos. Os provedores de IA não guardam seus dados para treinamento."
+
+msgid "Two factor authentication"
+msgstr "Verificação em duas etapas"
+
+msgid "Two factor authentication recovery codes are used to access your account in the event that you lose access to your authenticator app."
+msgstr "Os códigos de recuperação da verificação em duas etapas servem para acessar sua conta caso você perca o acesso ao seu aplicativo autenticador."
+
+msgid "Two-Factor Authentication"
+msgstr "Verificação em duas etapas"
+
+msgid "Two-factor authentication disabled"
+msgstr "Verificação em duas etapas desativada"
+
+msgid "Two-factor authentication enabled"
+msgstr "Verificação em duas etapas ativada"
+
+msgid "Two-factor authentication has been disabled for your account. You will no longer be required to enter a code from your authenticator app when signing in."
+msgstr "A verificação em duas etapas foi desativada na sua conta. Você não precisará mais digitar um código do seu aplicativo autenticador ao entrar."
+
+msgid "Two-Factor Re-Authentication"
+msgstr "Nova verificação em duas etapas"
+
+msgid "Type an email address to add a recipient"
+msgstr "Digite um e-mail para adicionar um destinatário"
+
+msgid "Typed signature"
+msgstr "Assinatura digitada"
+
+msgid "Typed signatures are not allowed. Please draw your signature."
+msgstr "Assinaturas digitadas não são permitidas. Desenhe sua assinatura."
+
+msgid "Uh oh! Looks like you're missing a token"
+msgstr "Ops! Parece que está faltando um token"
+
+msgid "Unable to change the language at this time. Please try again later."
+msgstr "Não foi possível alterar o idioma neste momento. Tente novamente mais tarde."
+
+msgid "Unable to create direct template access. Please try again later."
+msgstr "Não foi possível criar o link direto do modelo. Tente novamente mais tarde."
+
+msgid "Unable to delete invitation. Please try again."
+msgstr "Não foi possível excluir o convite. Tente novamente."
+
+msgid "Unable to disable two-factor authentication"
+msgstr "Não foi possível desativar a verificação em duas etapas"
+
+msgid "Unable to load your public profile templates at this time"
+msgstr "Não foi possível carregar os modelos do seu perfil público neste momento"
+
+msgid "Unable to remove email verification at this time. Please try again."
+msgstr "Não foi possível remover a verificação de e-mail neste momento. Tente novamente."
+
+msgid "Unable to remove team email at this time. Please try again."
+msgstr "Não foi possível remover o e-mail da equipe neste momento. Tente novamente."
+
+msgid "Unable to resend invitation. Please try again."
+msgstr "Não foi possível reenviar o convite. Tente novamente."
+
+msgid "Unable to resend verification at this time. Please try again."
+msgstr "Não foi possível reenviar a verificação neste momento. Tente novamente."
+
+msgid "Unable to setup two-factor authentication"
+msgstr "Não foi possível configurar a verificação em duas etapas"
+
+msgid "Unlock Branding Preferences"
+msgstr "Desbloquear preferências de marca"
+
+msgid "Unlock Email Domains"
+msgstr "Desbloquear domínios de e-mail"
+
+msgid "Unlock the Organisation SSO Portal"
+msgstr "Desbloquear o portal SSO da organização"
+
+msgid "Unsaved changes"
+msgstr "Alterações não salvas"
+
+msgid "Unsealed Documents"
+msgstr "Documentos não selados"
+
+msgid "Update Banner"
+msgstr "Atualizar banner"
+
+msgid "Update Billing"
+msgstr "Atualizar cobrança"
+
+msgid "Update Blocklist"
+msgstr "Atualizar lista de bloqueio"
+
+msgid "Update Claim"
+msgstr "Atualizar liberação do plano"
+
+msgid "Update Document"
+msgstr "Atualizar documento"
+
+msgid "Update Fields"
+msgstr "Atualizar campos"
+
+msgid "Update passkey"
+msgstr "Atualizar chave de acesso"
+
+msgid "Update Recipient"
+msgstr "Atualizar destinatário"
+
+msgid "Update Subscription Claim"
+msgstr "Atualizar liberação do plano"
+
+msgid "Update Template"
+msgstr "Atualizar modelo"
+
+msgid "Update the role and add fields as required for the direct recipient. The individual who uses the direct link will sign the document as the direct recipient."
+msgstr "Atualize a função e adicione os campos necessários para o destinatário direto. A pessoa que usar o link direto assinará o documento como destinatário direto."
+
+msgid "Update the title or replace the PDF file."
+msgstr "Atualize o título ou substitua o arquivo PDF."
+
+msgid "Updated {organisationMemberName} to {roleLabel}."
+msgstr "Função de {organisationMemberName} alterada para {roleLabel}."
+
+msgid "Updating Document"
+msgstr "Atualizando documento"
+
+msgid "Updating Template"
+msgstr "Atualizando modelo"
+
+msgid "Updating Your Information"
+msgstr "Atualizando suas informações"
+
+msgid "Upgrade Plan"
+msgstr "Mudar de plano"
+
+msgid "Upgrade your plan to upload more documents"
+msgstr "Faça upgrade do seu plano para carregar mais documentos"
+
+msgid "Upload"
+msgstr "Carregar"
+
+msgctxt "Upload signature"
+msgid "Upload"
+msgstr "Carregar"
+
+msgid "Upload a CSV file to create multiple documents from this template. Each row represents one document with its recipient details."
+msgstr "Carregue um arquivo CSV para criar vários documentos a partir deste modelo. Cada linha representa um documento com os dados do destinatário."
+
+msgid "Upload a custom document to use instead of the template's default document"
+msgstr "Carregue um documento personalizado para usar no lugar do documento padrão do modelo"
+
+msgid "Upload and Process"
+msgstr "Carregar e processar"
+
+msgid "Upload Avatar"
+msgstr "Carregar avatar"
+
+msgid "Upload CSV"
+msgstr "Carregar CSV"
+
+msgid "Upload custom document"
+msgstr "Carregar documento personalizado"
+
+msgid "Upload disabled"
+msgstr "Carregamento desativado"
+
+msgid "Upload Document"
+msgstr "Carregar documento"
+
+msgid "Upload documents and add recipients"
+msgstr "Carregue documentos e adicione destinatários"
+
+msgid "Upload failed"
+msgstr "Falha ao carregar"
+
+msgid "Upload signature"
+msgstr "Assinatura carregada"
+
+msgid "Upload Signature"
+msgstr "Carregar assinatura"
+
+msgid "Upload Template"
+msgstr "Carregar modelo"
+
+msgid "Upload Template Document"
+msgstr "Carregar documento do modelo"
+
+msgid "Upload your brand logo (max 5MB, JPG, PNG, or WebP)"
+msgstr "Carregue o logotipo da sua marca (máx. 5 MB, JPG, PNG ou WebP)"
+
+msgid "Uploaded by"
+msgstr "Carregado por"
+
+msgid "Uploaded file is too large"
+msgstr "O arquivo carregado é muito grande"
+
+msgid "Uploaded file is too small"
+msgstr "O arquivo carregado é muito pequeno"
+
+msgid "Uploaded file not an allowed file type"
+msgstr "O tipo do arquivo carregado não é permitido"
+
+msgid "Uploading"
+msgstr "Carregando"
+
+msgid "Use a duration with a unit, e.g. 5m, 1h, or 24h"
+msgstr "Use uma duração com unidade, por exemplo 5m, 1h ou 24h"
+
+msgid "Use a unique window for each rate limit"
+msgstr "Use um intervalo diferente para cada limite de requisições"
+
+msgid "Use API tokens to authenticate with the Documenso API."
+msgstr "Use tokens de API para se autenticar na API do Documenso."
+
+msgid "Use Authenticator"
+msgstr "Usar autenticador"
+
+msgid "Use Backup Code"
+msgstr "Usar código de recuperação"
+
+msgid "Use Template"
+msgstr "Usar modelo"
+
+msgid "Use your passkey for authentication"
+msgstr "Use sua chave de acesso para se autenticar"
+
+msgid "Used by claims"
+msgstr "Usado pelas liberações do plano"
+
+msgid "User Agent"
+msgstr "Agente de usuário"
+
+msgid "User created and welcome email sent"
+msgstr "Usuário criado e e-mail de boas-vindas enviado"
+
+msgid "User ID"
+msgstr "ID do usuário"
+
+msgid "User Organisations"
+msgstr "Organizações do usuário"
+
+msgid "User profiles are here!"
+msgstr "Os perfis de usuário chegaram!"
+
+msgid "Username"
+msgstr "Nome de usuário"
+
+msgid "Verification Email Sent"
+msgstr "E-mail de verificação enviado"
+
+msgid "Verify & Complete"
+msgstr "Verificar e concluir"
+
+msgid "Verify Domain"
+msgstr "Verificar domínio"
+
+msgid "Verify email"
+msgstr "Confirmar e-mail"
+
+msgid "Verify Email"
+msgstr "Confirmar e-mail"
+
+msgid "Verify Now"
+msgstr "Verificar agora"
+
+msgid "Verify team email"
+msgstr "Confirmar e-mail da equipe"
+
+msgid "Verify your email to upload documents."
+msgstr "Verifique seu e-mail para carregar documentos."
+
+msgid "Vertical Align"
+msgstr "Alinhamento vertical"
+
+msgid "View all folders"
+msgstr "Ver todas as pastas"
+
+msgid "View all results"
+msgstr "Ver todos os resultados"
+
+msgid "View and manage all login methods linked to your account."
+msgstr "Visualizar e gerenciar todas as formas de entrar vinculadas à sua conta."
+
+msgid "View Audit Logs"
+msgstr "Ver histórico de auditoria"
+
+msgid "View Codes"
+msgstr "Visualizar códigos"
+
+msgid "View DNS Records"
+msgstr "Visualizar registros DNS"
+
+msgid "View JSON"
+msgstr "Ver JSON"
+
+msgid "View organisation template"
+msgstr "Ver modelo da organização"
+
+msgid "View Recovery Codes"
+msgstr "Visualizar códigos de recuperação"
+
+msgid "View, sort and filter monthly usage stats across organisations"
+msgstr "Veja, ordene e filtre as estatísticas mensais de uso das organizações"
+
+msgid "Want to send slick signing links like this one? <0>Check out Documenso</0>."
+msgstr "Quer enviar links de assinatura práticos como este? <0>Conheça o Documenso</0>."
+
+msgid "Warning, this email transport is currently being used by:"
+msgstr "Atenção: este serviço de envio de e-mail está em uso por:"
+
+msgid "Warning: Assistant as last signer"
+msgstr "Aviso: assistente como último signatário"
+
+msgid "We are unable to proceed to the billing portal at this time. Please try again, or contact support."
+msgstr "Não conseguimos abrir o portal de cobrança neste momento. Tente novamente ou entre em contato com o suporte."
+
+msgid "We are unable to remove this passkey at the moment. Please try again later."
+msgstr "Não conseguimos remover esta chave de acesso no momento. Tente novamente mais tarde."
+
+msgid "We are unable to update this passkey at the moment. Please try again later."
+msgstr "Não conseguimos atualizar esta chave de acesso no momento. Tente novamente mais tarde."
+
+msgid "We couldn’t complete the search. Try again."
+msgstr "Não foi possível concluir a busca. Tente novamente."
+
+msgid "We couldn't convert this file. Please check it's a valid Word document or upload a PDF instead."
+msgstr "Não foi possível converter este arquivo. Confira se é um documento do Word válido ou carregue um PDF."
+
+msgid "We couldn't create a Stripe customer. Please try again."
+msgstr "Não conseguimos criar um cliente Stripe. Tente novamente."
+
+msgid "We couldn't enable AI features right now. Please try again."
+msgstr "Não foi possível ativar os recursos de IA agora. Tente novamente."
+
+msgid "We couldn't remove this member. Please try again later."
+msgstr "Não foi possível remover este membro. Tente novamente mais tarde."
+
+msgid "We couldn't update the group. Please try again."
+msgstr "Não conseguimos atualizar o grupo. Tente novamente."
+
+msgid "We couldn't update the organisation. Please try again."
+msgstr "Não conseguimos atualizar a organização. Tente novamente."
+
+msgid "We couldn't update the provider. Please try again."
+msgstr "Não conseguimos atualizar o provedor. Tente novamente."
+
+msgid "We encountered an error while attempting to delete this organisation. Please try again later."
+msgstr "Ocorreu um erro ao excluir esta organização. Tente novamente mais tarde."
+
+msgid "We encountered an error while creating the email. Please try again later."
+msgstr "Encontramos um erro ao criar o e-mail. Tente novamente mais tarde."
+
+msgid "We encountered an error while creating the user. Please try again later."
+msgstr "Ocorreu um erro ao criar o usuário. Tente novamente mais tarde."
+
+msgid "We encountered an error while removing the direct template link. Please try again later."
+msgstr "Encontramos um erro ao remover o link direto do modelo. Tente novamente mais tarde."
+
+msgid "We encountered an error while sending the test webhook. Please check your endpoint and try again."
+msgstr "Encontramos um erro ao enviar o webhook de teste. Verifique seu endpoint e tente novamente."
+
+msgid "We encountered an error while updating the webhook. Please try again later."
+msgstr "Encontramos um erro ao atualizar o webhook. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to add team members. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar adicionar membros à equipe. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to add this email. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar adicionar este e-mail. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to add your domain. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar adicionar seu domínio. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to create a group. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar criar um grupo. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to create a organisation. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar criar uma organização. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to create a team. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar criar uma equipe. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to delete it. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar excluí-lo. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to delete this organisation. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar excluir esta organização. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to delete this team. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar excluir esta equipe. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to delete this token. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar excluir este token. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to delete your account. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar excluir sua conta. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to delete your document. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar excluir seu documento. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to invite organisation members. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar convidar membros da organização. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to leave this organisation. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar sair desta organização. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to remove this email domain. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar remover este domínio de e-mail. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to remove this email. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar remover este e-mail. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to remove this envelope item. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar remover este item do envelope. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to remove this group. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar remover este grupo. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to remove this template from your profile. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar remover este modelo do seu perfil. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to remove this user. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar remover este usuário. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to request the two-factor authentication code. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar solicitar o código da verificação em duas etapas. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to reset your password. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar redefinir sua senha. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to revoke access. Please try again or contact support."
+msgstr "Encontramos um erro desconhecido ao tentar revogar o acesso. Tente novamente ou entre em contato com o suporte."
+
+msgid "We encountered an unknown error while attempting to sign you In. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar entrar na sua conta. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to sign you Up. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar criar sua conta. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update the banner. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar o banner. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update the email blocklist. Please try again later."
+msgstr "Ocorreu um erro desconhecido ao atualizar a lista de bloqueio de e-mails. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update the envelope. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar o envelope. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update the template. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar o modelo. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update this organisation member. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar este membro da organização. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update this team member. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar este membro da equipe. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update your organisation. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar sua organização. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update your password. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar sua senha. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update your public profile. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar seu perfil público. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting to update your team. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar sua equipe. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting update the team email. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar o e-mail da equipe. Tente novamente mais tarde."
+
+msgid "We encountered an unknown error while attempting update your profile. Please try again later."
+msgstr "Encontramos um erro desconhecido ao tentar atualizar seu perfil. Tente novamente mais tarde."
+
+msgid "We were unable to add you to <0>{organisationName}</0> at this time. Please try again later, or contact the organisation administrator."
+msgstr "Não foi possível adicionar você a <0>{organisationName}</0> agora. Tente novamente mais tarde ou fale com o administrador da organização."
+
+msgid "We were unable to copy your recovery code to your clipboard. Please try again."
+msgstr "Não conseguimos copiar seu código de recuperação para a área de transferência. Tente novamente."
+
+msgid "We were unable to create your account. If you already have an account, try signing in instead."
+msgstr "Não foi possível criar sua conta. Se você já tem uma conta, tente entrar."
+
+msgid "We were unable to create your account. Please review the information you provided and try again."
+msgstr "Não conseguimos criar sua conta. Revise as informações fornecidas e tente novamente."
+
+msgid "We were unable to disable two-factor authentication for your account. Please ensure that you have entered your password and backup code correctly and try again."
+msgstr "Não conseguimos desativar a verificação em duas etapas da sua conta. Confira se digitou sua senha e o código de recuperação corretamente e tente novamente."
+
+msgid "We were unable to set your public profile to public. Please try again."
+msgstr "Não conseguimos tornar seu perfil público. Tente novamente."
+
+msgid "We were unable to setup two-factor authentication for your account. Please ensure that you have entered your code correctly and try again."
+msgstr "Não conseguimos configurar a verificação em duas etapas da sua conta. Confira se digitou o código corretamente e tente novamente."
+
+msgid "We were unable to submit this document at this time. Please try again later."
+msgstr "Não conseguimos enviar este documento neste momento. Tente novamente mais tarde."
+
+msgid "We were unable to update your branding preferences at this time, please try again later"
+msgstr "Não conseguimos atualizar suas preferências de marca neste momento. Tente novamente mais tarde"
+
+msgid "We were unable to update your certificate preferences at this time, please try again later"
+msgstr "Não foi possível atualizar suas preferências de certificado agora. Tente novamente mais tarde"
+
+msgid "We were unable to update your document preferences at this time, please try again later"
+msgstr "Não conseguimos atualizar suas preferências de documento neste momento. Tente novamente mais tarde"
+
+msgid "We were unable to update your email preferences at this time, please try again later"
+msgstr "Não conseguimos atualizar suas preferências de e-mail neste momento. Tente novamente mais tarde"
+
+msgid "We were unable to update your reminder preferences at this time, please try again later"
+msgstr "Não foi possível atualizar suas preferências de lembrete agora. Tente novamente mais tarde"
+
+msgid "We were unable to verify that you're human. Please try again."
+msgstr "Não foi possível confirmar que você é uma pessoa. Tente novamente."
+
+msgid "We were unable to verify this email at this time. Please try again later."
+msgstr "Não foi possível confirmar este e-mail agora. Tente novamente mais tarde."
+
+msgid "We were unable to verify your details. Please try again or contact support"
+msgstr "Não conseguimos verificar seus dados. Tente novamente ou entre em contato com o suporte"
+
+msgid "We were unable to verify your email. If your email is not verified already, please try again."
+msgstr "Não conseguimos verificar seu e-mail. Se seu e-mail ainda não foi verificado, tente novamente."
+
+msgid "We're all empty"
+msgstr "Nada por aqui"
+
+msgid "We've noticed API activity on your account that exceeds the fair use limits of your current plan. As a precaution, new API activity has been temporarily paused pending review."
+msgstr "Notamos na sua conta um uso da API acima dos limites de uso justo do seu plano atual. Por precaução, novos usos da API foram pausados por um tempo, até a nossa análise."
+
+msgid "We've noticed document activity on your account that exceeds the fair use limits of your current plan. As a precaution, new document activity has been temporarily paused pending review."
+msgstr "Notamos na sua conta uma atividade de documentos acima dos limites de uso justo do seu plano atual. Por precaução, novas atividades com documentos foram pausadas por um tempo, até a nossa análise."
+
+msgid "We've noticed email sending activity on your account that exceeds the fair use limits of your current plan. As a precaution, new email activity has been temporarily paused pending review."
+msgstr "Notamos na sua conta um envio de e-mails acima dos limites de uso justo do seu plano atual. Por precaução, novos envios de e-mail foram pausados por um tempo, até a nossa análise."
+
+msgid "We've sent a confirmation email to <0>{email}</0>. Please check your inbox and click the link in the email to verify your account."
+msgstr "Enviamos um e-mail de confirmação para <0>{email}</0>. Verifique sua caixa de entrada e clique no link do e-mail para confirmar sua conta."
+
+msgid "Webhook Details"
+msgstr "Detalhes do webhook"
+
+msgid "Webhook queued for resend"
+msgstr "Webhook na fila para reenvio"
+
+msgid "Webhook URL"
+msgstr "URL do webhook"
+
+msgid "Welcome"
+msgstr "Boas-vindas"
+
+msgid "Welcome back, we are lucky to have you."
+msgstr "Que bom ver você de novo. É um prazer ter você aqui."
+
+msgid "Welcome back! Here's an overview of your account."
+msgstr "Que bom ver você de novo! Aqui está um resumo da sua conta."
+
+msgid "Welcome to {0}"
+msgstr "Boas-vindas a {0}"
+
+msgid "Welcome to {organisationName}"
+msgstr "Boas-vindas à {organisationName}"
+
+msgid "Welcome to Documenso"
+msgstr "Boas-vindas ao portal Bethof"
+
+msgid "Welcome to Documenso!"
+msgstr "Boas-vindas ao portal Bethof!"
+
+msgid "Well-known URL is required"
+msgstr "A URL well-known é obrigatória"
+
+msgid "When enabled, users signing in via SSO for the first time will also receive their own personal organisation."
+msgstr "Quando ativado, os usuários que entrarem pela primeira vez pelo SSO também vão receber uma organização pessoal própria."
+
+msgid "While waiting for them to do so you can create your own Documenso account and get started with document signing right away."
+msgstr "Enquanto espera, você pode criar sua própria conta no portal Bethof e começar a assinar documentos agora mesmo."
+
+msgid "Whitelabeling, unlimited members and more"
+msgstr "Marca própria, membros ilimitados e mais"
+
+msgid "Width:"
+msgstr "Largura:"
+
+msgid "Window"
+msgstr "Intervalo"
+
+msgid "Withdrawing Consent"
+msgstr "Retirada de consentimento"
+
+msgid "Within limit"
+msgstr "Dentro do limite"
+
+msgid "Works with any OIDC provider — Okta, Entra ID, Google and more"
+msgstr "Funciona com qualquer provedor OIDC: Okta, Entra ID, Google e outros"
+
+msgid "You added a field"
+msgstr "Você adicionou um campo"
+
+msgid "You added a recipient"
+msgstr "Você adicionou um destinatário"
+
+msgid "You approved the document"
+msgstr "Você aprovou o documento"
+
+msgid "You are about to cancel <0>\"{title}\"</0>"
+msgstr "Você está prestes a cancelar <0>\"{title}\"</0>"
+
+msgid "You are about to complete assisting the following document"
+msgstr "Você está prestes a concluir sua participação como assistente no seguinte documento"
+
+msgid "You are about to delete <0>{organisationName}</0>. This action is not reversible. All teams will be removed and all documents will be orphaned to the deleted-account service account."
+msgstr "Você está prestes a excluir <0>{organisationName}</0>. Esta ação não pode ser desfeita. Todas as equipes serão removidas e todos os documentos vão passar para a conta de serviço das contas excluídas."
+
+msgid "You are about to delete <0>\"{title}\"</0>"
+msgstr "Você está prestes a excluir <0>\"{title}\"</0>"
+
+msgid "You are about to give all organisation members access to this team under their organisation role."
+msgstr "Você está prestes a dar acesso a esta equipe a todos os membros da organização, conforme a função de cada um na organização."
+
+msgid "You are about to hide <0>\"{title}\"</0>"
+msgstr "Você está prestes a ocultar <0>\"{title}\"</0>"
+
+msgid "You are about to remove the <0>{provider}</0> login method from your account."
+msgstr "Você está prestes a remover o acesso por <0>{provider}</0> da sua conta."
+
+msgctxt "Removing group from organisation"
+msgid "You are about to remove the following group from <0>{0}</0>."
+msgstr "Você está prestes a remover o grupo abaixo da organização <0>{0}</0>."
+
+msgctxt "Removing group from team"
+msgid "You are about to remove the following group from <0>{0}</0>."
+msgstr "Você está prestes a remover o grupo abaixo da equipe <0>{0}</0>."
+
+msgid "You are about to remove the following user from the organisation <0>{organisationName}</0>:"
+msgstr "Você está prestes a remover o usuário abaixo da organização <0>{organisationName}</0>:"
+
+msgid "You are about to remove the following user from the team <0>{teamName}</0>:"
+msgstr "Você está prestes a remover o usuário abaixo da equipe <0>{teamName}</0>:"
+
+msgid "You are about to subscribe to the {planName}"
+msgstr "Você está prestes a contratar o {planName}"
+
+msgid "You are already a member of <0>{0}</0>."
+msgstr "Você já é membro de <0>{0}</0>."
+
+msgid "You are currently on the <0>Free Plan</0>."
+msgstr "Você está no <0>plano gratuito</0>."
+
+msgid "You are currently subscribed to <0>{currentProductName}</0> which is set to automatically renew on <1>{0}</1>."
+msgstr "Você assina o plano <0>{currentProductName}</0>, com renovação automática em <1>{0}</1>."
+
+msgid "You are currently subscribed to <0>{currentProductName}</0> which is set to end on <1>{0}</1>."
+msgstr "Você assina o plano <0>{currentProductName}</0>, que termina em <1>{0}</1>."
+
+msgid "You are currently subscribed to <0>{currentProductName}</0>."
+msgstr "Você assina o plano <0>{currentProductName}</0>."
+
+msgid "You are currently updating <0>{memberName}</0>."
+msgstr "Você está editando <0>{memberName}</0>."
+
+msgid "You are currently updating <0>{organisationMemberName}</0>."
+msgstr "Você está editando <0>{organisationMemberName}</0>."
+
+msgid "You are currently updating the <0>{passkeyName}</0> passkey."
+msgstr "Você está atualizando a chave de acesso <0>{passkeyName}</0>."
+
+msgid "You are not allowed to move these items."
+msgstr "Você não tem permissão para mover estes itens."
+
+msgid "You are not authorized to reset two factor authentcation for this user."
+msgstr "Você não está autorizado a redefinir a verificação em duas etapas deste usuário."
+
+msgid "You authenticated with the signing provider"
+msgstr "Você se autenticou no provedor de assinatura"
+
+msgid "You authorised the remote signature"
+msgstr "Você autorizou a assinatura remota"
+
+msgid "You can also copy and paste this link into your browser: {resetPasswordLink} (link expires in 24 hours)"
+msgstr "Você também pode copiar e colar este link no navegador: {resetPasswordLink} (o link vence em 24 horas)"
+
+msgid "You can copy and share these links to recipients so they can action the document."
+msgstr "Você pode copiar e compartilhar esses links com os destinatários para que eles concluam a ação no documento."
+
+msgid "You can manage your email preferences here."
+msgstr "Aqui você pode gerenciar suas preferências de e-mail."
+
+msgid "You can revoke access at any time in your team settings on Documenso <0>here</0>."
+msgstr "Você pode cancelar o acesso quando quiser nas configurações da equipe no portal Bethof, <0>aqui</0>."
+
+msgid "You cancelled the document"
+msgstr "Você cancelou o documento"
+
+msgid "You cannot delete this item because the document has been sent to recipients."
+msgstr "Você não pode excluir este item porque o documento já foi enviado aos destinatários."
+
+msgid "You cannot remove a member with a role higher than your own."
+msgstr "Você não pode remover um membro com função acima da sua."
+
+msgid "You cannot remove members from this team while the inherit member feature is enabled."
+msgstr "Você não pode remover membros desta equipe enquanto a opção de herdar membros estiver ativada."
+
+msgid "You cannot remove the organisation owner from the team."
+msgstr "Você não pode remover o dono da organização desta equipe."
+
+msgid "You cannot upload documents at this time."
+msgstr "Você não pode carregar documentos neste momento."
+
+msgid "You cannot upload encrypted PDFs."
+msgstr "Você não pode carregar PDFs criptografados."
+
+msgid "You CC'd the document"
+msgstr "Você recebeu o documento em cópia"
+
+msgid "You completed your task"
+msgstr "Você concluiu sua tarefa"
+
+msgid "You created an envelope item with title {0}"
+msgstr "Você criou um item do envelope com o título {0}"
+
+msgid "You created the document"
+msgstr "Você criou o documento"
+
+msgid "You currently have an active plan which is set to automatically renew on <0>{0}</0>."
+msgstr "Você tem um plano ativo, com renovação automática em <0>{0}</0>."
+
+msgid "You currently have an active plan which is set to end on <0>{0}</0>."
+msgstr "Você tem um plano ativo, que termina em <0>{0}</0>."
+
+msgid "You currently have an active plan."
+msgstr "Você tem um plano ativo."
+
+msgid "You currently have an inactive <0>{currentProductName}</0> subscription."
+msgstr "Sua assinatura do plano <0>{currentProductName}</0> está inativa."
+
+msgid "You currently have no access to any teams within this organisation. Please contact your organisation to request access."
+msgstr "Você não tem acesso a nenhuma equipe desta organização. Entre em contato com sua organização para pedir acesso."
+
+msgid "You deleted an envelope item with title {0}"
+msgstr "Você excluiu um item do envelope com o título {0}"
+
+msgid "You deleted the document"
+msgstr "Você excluiu o documento"
+
+msgid "You do not have permission to create a token for this team."
+msgstr "Você não tem permissão para criar um token para esta equipe."
+
+msgid "You don't have permission to manage this organisation. Switch to another one above, or continue in your team settings below."
+msgstr "Você não tem permissão para gerenciar esta organização. Troque por outra acima ou continue nas configurações da equipe abaixo."
+
+msgid "You don't manage billing for any organisations."
+msgstr "Você não gerencia a cobrança de nenhuma organização."
+
+msgid "You failed to validate a 2FA token for the document"
+msgstr "Você não conseguiu validar um código 2FA para o documento"
+
+msgid "You have accepted an invitation from <0>{organisationName}</0> to join their organisation."
+msgstr "Você aceitou o convite de <0>{organisationName}</0> para entrar na organização."
+
+msgid "You have been invited by <0>{organisationName}</0> to join their organisation."
+msgstr "<0>{organisationName}</0> convidou você para entrar na organização."
+
+msgid "You have been invited to join {0} on Documenso"
+msgstr "Você foi convidado para participar de {0} no portal Bethof"
+
+msgid "You have been invited to join <0>{organisationName}</0> on Documenso."
+msgstr "Você foi convidado para entrar em <0>{organisationName}</0> no portal Bethof."
+
+msgid "You have declined the invitation from <0>{organisationName}</0> to join their organisation."
+msgstr "Você recusou o convite de <0>{organisationName}</0> para entrar na organização."
+
+msgid "You have initiated the document {0} that requires you to {recipientActionVerb} it."
+msgstr "Você iniciou o documento {0}, que você precisa {recipientActionVerb}."
+
+msgid "You have no API tokens yet. Your tokens will be shown here once you create them."
+msgstr "Você ainda não tem tokens de API. Eles vão aparecer aqui quando você criar."
+
+msgid "You have not yet created any templates. To create a template please upload one."
+msgstr "Você ainda não criou nenhum modelo. Para criar um modelo, carregue um arquivo."
+
+msgid "You have not yet created or received any documents. To create a document please upload one."
+msgstr "Você ainda não criou nem recebeu nenhum documento. Para criar um documento, carregue um arquivo."
+
+msgid "You have reached the limit of the number of files per envelope."
+msgstr "Você atingiu o limite de arquivos por envelope."
+
+msgid "You have reached the maximum limit of {0} direct templates. <0>Upgrade your account to continue!</0>"
+msgstr "Você atingiu o limite máximo de {0} modelos de link direto. <0>Atualize sua conta para continuar!</0>"
+
+msgid "You have reached your document limit for this month. Please upgrade your plan."
+msgstr "Você atingiu seu limite de documentos para este mês. Atualize seu plano."
+
+msgid "You have reached your document limit for this plan. Please upgrade your plan."
+msgstr "Você atingiu o limite de documentos deste plano. Mude para um plano maior."
+
+msgid "You have successfully registered. Please verify your account by clicking on the link you received in the email."
+msgstr "Você se registrou com sucesso. Verifique sua conta clicando no link que você recebeu por e-mail."
+
+msgid "You have unsaved changes"
+msgstr "Você tem alterações não salvas"
+
+msgid "You have verified your email address for <0>{teamName}</0>."
+msgstr "Você confirmou seu e-mail para <0>{teamName}</0>."
+
+msgid "You moved the document to team"
+msgstr "Você moveu o documento para a equipe"
+
+msgid "You need to be logged in as <0>{email}</0> to view this page."
+msgstr "Você precisa estar conectado como <0>{email}</0> para visualizar esta página."
+
+msgid "You need to be logged in to view this page."
+msgstr "Você precisa estar conectado para visualizar esta página."
+
+msgid "You need to setup 2FA to mark this document as viewed."
+msgstr "Você precisa configurar a verificação em duas etapas (2FA) para marcar este documento como visualizado."
+
+msgid "You opened the document"
+msgstr "Você abriu o documento"
+
+msgid "You prefilled a field"
+msgstr "Você pré-preencheu um campo"
+
+msgid "You rejected the document"
+msgstr "Você recusou o documento"
+
+msgid "You removed a field"
+msgstr "Você removeu um campo"
+
+msgid "You removed a recipient"
+msgstr "Você removeu um destinatário"
+
+msgid "You replaced the PDF for envelope item {0}"
+msgstr "Você substituiu o PDF do item do envelope {0}"
+
+msgid "You requested a 2FA token for the document"
+msgstr "Você pediu um código 2FA para o documento"
+
+msgid "You requested a remote signature"
+msgstr "Você pediu uma assinatura remota"
+
+msgid "You resent an email to {0}"
+msgstr "Você reenviou um e-mail para {0}"
+
+msgid "You sent an email to {0}"
+msgstr "Você enviou um e-mail para {0}"
+
+msgid "You sent the document"
+msgstr "Você enviou o documento"
+
+msgid "You signed a field"
+msgstr "Você assinou um campo"
+
+msgid "You signed the document"
+msgstr "Você assinou o documento"
+
+msgid "You unsigned a field"
+msgstr "Você removeu a assinatura de um campo"
+
+msgid "You updated a field"
+msgstr "Você atualizou um campo"
+
+msgid "You updated a recipient"
+msgstr "Você atualizou um destinatário"
+
+msgid "You updated an envelope item"
+msgstr "Você atualizou um item do envelope"
+
+msgid "You updated the document"
+msgstr "Você atualizou o documento"
+
+msgid "You updated the document access auth requirements"
+msgstr "Você atualizou as exigências de autenticação para acessar o documento"
+
+msgid "You updated the document external ID"
+msgstr "Você atualizou o ID externo do documento"
+
+msgid "You updated the document signing auth requirements"
+msgstr "Você atualizou as exigências de autenticação para assinar o documento"
+
+msgid "You updated the document title"
+msgstr "Você atualizou o título do documento"
+
+msgid "You updated the document visibility"
+msgstr "Você atualizou a visibilidade do documento"
+
+msgid "You validated a 2FA token for the document"
+msgstr "Você validou um código 2FA para o documento"
+
+msgid "You viewed the document"
+msgstr "Você visualizou o documento"
+
+msgid "You will need to configure any claims or subscription after creating this organisation"
+msgstr "Você precisará configurar a liberação do plano ou a assinatura do plano depois de criar esta organização"
+
+msgid "You will now be required to enter a code from your authenticator app when signing in."
+msgstr "Agora será necessário digitar um código do seu aplicativo autenticador ao entrar."
+
+msgid "You're an admin. You can enable AI features for this team right away. Everyone on the team will see AI detection once enabled."
+msgstr "Você é administrador. Pode ativar os recursos de IA para esta equipe agora mesmo. Depois de ativada, todos da equipe vão ver a detecção por IA."
+
+msgid "You've made too many detection requests. Please wait a minute before trying again."
+msgstr "Você fez muitas solicitações de detecção. Aguarde um minuto antes de tentar novamente."
+
+msgid "Your Account"
+msgstr "Sua conta"
+
+msgid "Your certificate preferences have been updated"
+msgstr "Suas preferências de certificado foram atualizadas"
+
+msgid "Your current {currentProductName} plan is past due. Please update your payment information."
+msgstr "O pagamento do seu plano atual {currentProductName} está atrasado. Atualize seus dados de pagamento."
+
+msgid "Your current license does not include these features."
+msgstr "Sua licença atual não inclui estes recursos."
+
+msgid "Your current plan is past due."
+msgstr "O pagamento do seu plano atual está atrasado."
+
+msgid "Your direct signing templates"
+msgstr "Seus modelos de link direto"
+
+msgid "Your document content will be sent securely to our AI provider solely for detection and will not be stored or used for training."
+msgstr "O conteúdo do seu documento será enviado com segurança ao nosso provedor de IA só para a detecção. Ele não será guardado nem usado para treinamento."
+
+msgid "Your document failed to upload."
+msgstr "Falha ao carregar seu documento."
+
+msgid "Your document has been resent successfully."
+msgstr "Seu documento foi reenviado com sucesso."
+
+msgid "Your document has been saved as a template."
+msgstr "Seu documento foi salvo como modelo."
+
+msgid "Your document has been successfully renamed."
+msgstr "Seu documento foi renomeado com sucesso."
+
+msgid "Your document has been updated successfully"
+msgstr "Seu documento foi atualizado com sucesso"
+
+msgid "Your document has been uploaded successfully."
+msgstr "Seu documento foi carregado com sucesso."
+
+msgid "Your document has been uploaded successfully. You will be redirected to the template page."
+msgstr "Seu documento foi carregado com sucesso. Você será redirecionado para a página do modelo."
+
+msgid "Your email has already been confirmed. You can now use all features of Documenso."
+msgstr "Seu e-mail já foi confirmado. Agora você pode usar todos os recursos do portal Bethof."
+
+msgid "Your email has been successfully confirmed! You can now use all features of Documenso."
+msgstr "Seu e-mail foi confirmado com sucesso! Agora você pode usar todos os recursos do portal Bethof."
+
+msgid "Your envelope has been distributed successfully."
+msgstr "Seu envelope foi enviado com sucesso."
+
+msgid "Your logo on signing pages and emails"
+msgstr "Seu logo nas páginas de assinatura e nos e-mails"
+
+msgid "Your new API token"
+msgstr "Seu novo token de API"
+
+msgid "Your organisation has been deleted"
+msgstr "Sua organização foi excluída"
+
+msgid "Your organisation has exceeded a fair use limit"
+msgstr "Sua organização passou de um limite de uso justo"
+
+msgid "Your organisation has exceeded a fair use limit. Please contact <0>support</0> to review your plan's limits."
+msgstr "Sua organização passou de um limite de uso justo. Fale com o <0>suporte</0> para rever os limites do seu plano."
+
+msgid "Your organisation has reached its plan's fair use limit. Please contact your organisation administrator or support to continue."
+msgstr "Sua organização atingiu o limite de uso justo do plano. Fale com o administrador da organização ou com o suporte para continuar."
+
+msgid "Your organisation is approaching a fair use limit"
+msgstr "Sua organização está perto de um limite de uso justo"
+
+msgid "Your organisation is approaching a fair use limit. If you expect to need higher limits, please contact <0>support</0> to review your plan's limits."
+msgstr "Sua organização está perto de um limite de uso justo. Se você acha que vai precisar de limites maiores, fale com o <0>suporte</0> para rever os limites do seu plano."
+
+msgid "Your organisation is generating API requests faster than normal, so some requests are being temporarily throttled."
+msgstr "Sua organização está fazendo requisições à API mais rápido que o normal. Por isso, algumas requisições estão sendo limitadas por um tempo."
+
+msgid "Your organisation is generating documents faster than normal, so some requests are being temporarily throttled."
+msgstr "Sua organização está gerando documentos mais rápido que o normal. Por isso, alguns pedidos estão sendo limitados por um tempo."
+
+msgid "Your organisation is generating emails faster than normal, so some requests are being temporarily throttled."
+msgstr "Sua organização está gerando e-mails mais rápido que o normal. Por isso, alguns pedidos estão sendo limitados por um tempo."
+
+msgid "Your organisation is nearing its fair use limits for creating documents on your current plan. Once the limit is reached, new document activity will be temporarily paused."
+msgstr "Sua organização está perto dos limites de uso justo para criar documentos no plano atual. Quando o limite for atingido, novas atividades com documentos serão pausadas por um tempo."
+
+msgid "Your organisation is nearing its fair use limits for making API requests on your current plan. Once the limit is reached, new API activity will be temporarily paused."
+msgstr "Sua organização está perto dos limites de uso justo para fazer requisições à API no plano atual. Quando o limite for atingido, novos usos da API serão pausados por um tempo."
+
+msgid "Your organisation is nearing its fair use limits for sending email on your current plan. Once the limit is reached, new email activity will be temporarily paused."
+msgstr "Sua organização está perto dos limites de uso justo para enviar e-mails no plano atual. Quando o limite for atingido, novos envios de e-mail serão pausados por um tempo."
+
+msgid "Your payment is overdue. Please settle the payment to avoid any service disruptions."
+msgstr "Seu pagamento está atrasado. Regularize o pagamento para evitar interrupções no serviço."
+
+msgid "Your plan does not support inviting members. Please upgrade or your plan or contact sales at <0>{SUPPORT_EMAIL}</0> if you would like to discuss your options."
+msgstr "Seu plano não permite convidar membros. Faça upgrade do seu plano ou fale com vendas em <0>{SUPPORT_EMAIL}</0> se quiser conversar sobre as opções."
+
+msgid "Your plan is no longer valid. Please subscribe to a new plan to continue using Documenso."
+msgstr "Seu plano não é mais válido. Contrate um novo plano para continuar usando o portal Bethof."
+
+msgid "Your recovery codes are listed below. Please store them in a safe place."
+msgstr "Seus códigos de recuperação estão listados abaixo. Guarde-os em um local seguro."
+
+msgid "Your reminder preferences have been updated"
+msgstr "Suas preferências de lembrete foram atualizadas"
+
+msgid "Your remote signature was applied"
+msgstr "Sua assinatura remota foi aplicada"
+
+msgid "Your signing link has expired. Please contact the sender to request a new one."
+msgstr "Seu link de assinatura venceu. Fale com o remetente para pedir um novo."
+
+msgid "Your signing provider authentication failed"
+msgstr "Sua autenticação no provedor de assinatura falhou"
+
+msgid "Your signing window for this document has expired. Please contact the sender for a new invitation."
+msgstr "O prazo para você assinar este documento venceu. Fale com o remetente para receber um novo convite."
+
+msgid "Your template has been resent successfully."
+msgstr "Seu modelo foi reenviado com sucesso."
+
+msgid "Your template has been successfully duplicated."
+msgstr "Seu modelo foi duplicado com sucesso."
+
+msgid "Your template has been successfully renamed."
+msgstr "Seu modelo foi renomeado com sucesso."
+
+msgid "Your template has been updated successfully"
+msgstr "Seu modelo foi atualizado com sucesso"
+
+msgid "Your template has been uploaded successfully."
+msgstr "Seu modelo foi carregado com sucesso."

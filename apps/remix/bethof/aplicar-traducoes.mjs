@@ -1,13 +1,18 @@
-// Bethof: aplica apps/remix/bethof/traducoes-pt-BR.po por cima do catálogo pt-BR oficial.
+// Bethof: aplica os arquivos apps/remix/bethof/traducoes-pt-BR*.po por cima do catálogo pt-BR oficial.
 // Roda na montagem, depois do "lingui extract" e antes do "lingui compile" (apps/remix/.bin/build.sh).
 // Só troca o msgstr de msgids que já existem no catálogo. Avisa quando um msgid sumiu do código oficial.
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const raiz = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const catalogo = path.join(raiz, 'packages/lib/translations/pt-BR/web.po');
-const correcoes = path.join(raiz, 'apps/remix/bethof/traducoes-pt-BR.po');
+// Todos os arquivos traducoes-pt-BR*.po da pasta. O traducoes-pt-BR.po (tela de assinatura e e-mails) é aplicado por último e prevalece.
+const pasta = path.join(raiz, 'apps/remix/bethof');
+const correcoes = readdirSync(pasta)
+  .filter((nome) => /^traducoes-pt-BR.*\.po$/.test(nome))
+  .sort((a, b) => (a === 'traducoes-pt-BR.po') - (b === 'traducoes-pt-BR.po') || a.localeCompare(b))
+  .map((nome) => path.join(pasta, nome));
 
 // Lê um campo do PO (msgid ou msgstr), juntando as linhas de continuação.
 const lerCampo = (bloco, campo) => {
@@ -30,9 +35,11 @@ const chave = (bloco) => {
 };
 
 const mapa = new Map();
-for (const bloco of blocos(readFileSync(correcoes, 'utf8'))) {
-  const id = chave(bloco);
-  if (id) mapa.set(id, lerCampo(bloco, 'msgstr'));
+for (const arquivo of correcoes) {
+  for (const bloco of blocos(readFileSync(arquivo, 'utf8'))) {
+    const id = chave(bloco);
+    if (id) mapa.set(id, lerCampo(bloco, 'msgstr'));
+  }
 }
 
 const usados = new Set();
