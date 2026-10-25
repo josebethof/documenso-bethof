@@ -63,6 +63,17 @@ type ExtractLocaleDataOptions = {
  * Will return the default fallback language if not found.
  */
 export const extractLocaleData = ({ headers }: ExtractLocaleDataOptions): I18nLocaleData => {
+  // Bethof: NEXT_PUBLIC_DEFAULT_LANGUAGE (e.g. "pt-BR") is the app language when the user has not picked one,
+  // whatever language the browser sends. A choice made in the language menu (cookie) still wins.
+  const defaultLanguage = env('NEXT_PUBLIC_DEFAULT_LANGUAGE');
+
+  if (defaultLanguage && APP_I18N_OPTIONS.supportedLangs.includes(defaultLanguage as SupportedLanguageCodes)) {
+    return {
+      lang: defaultLanguage as SupportedLanguageCodes,
+      locales: [defaultLanguage],
+    };
+  }
+
   const headerLocales = (headers.get('accept-language') ?? '').split(',');
 
   const unknownLanguages = headerLocales
