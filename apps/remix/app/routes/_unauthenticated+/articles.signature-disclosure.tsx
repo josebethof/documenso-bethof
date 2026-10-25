@@ -1,146 +1,98 @@
-import { SUPPORT_EMAIL } from '@documenso/lib/constants/app';
 import { Button } from '@documenso/ui/primitives/button';
 import { Trans } from '@lingui/react/macro';
 import { Link } from 'react-router';
 
+// Bethof: electronic signature terms under Brazilian law (draft dated 25/10/2026, pending review by the Bethof lawyer),
+// replacing the original Documenso disclosure, which followed US law (E-Sign Act). The text is Portuguese only.
 export default function SignatureDisclosure() {
   return (
     <div>
       <article className="prose dark:prose-invert">
-        <h1>
-          <Trans>Electronic Signature Disclosure</Trans>
-        </h1>
+        <h1>Termo de consentimento para assinatura eletrônica</h1>
 
-        <h2>
-          <Trans>Welcome</Trans>
-        </h2>
+        <h2>Boas-vindas</h2>
         <p>
-          <Trans>
-            Thank you for using Documenso to perform your electronic document signing. The purpose of this disclosure is
-            to inform you about the process, legality, and your rights regarding the use of electronic signatures on our
-            platform. By opting to use an electronic signature, you are agreeing to the terms and conditions outlined
-            below.
-          </Trans>
+          Este é o portal de assinatura eletrônica da Bethof Solutions Ltda. Por aqui você recebe, lê e assina documentos
+          enviados pela Bethof sem precisar imprimir nada. Leia este termo antes de continuar: ele explica como a
+          assinatura funciona e quais são os seus direitos.
         </p>
 
-        <h2>
-          <Trans>Acceptance and Consent</Trans>
-        </h2>
+        <h2>Aceite e consentimento</h2>
         <p>
-          <Trans>
-            When you use our platform to affix your electronic signature to documents, you are consenting to do so under
-            the Electronic Signatures in Global and National Commerce Act (E-Sign Act) and other applicable laws. This
-            action indicates your agreement to use electronic means to sign documents and receive notifications.
-          </Trans>
+          Ao seguir para a assinatura, você declara que leu este termo e concorda em receber e assinar documentos em
+          formato eletrônico. Você também aceita como válido o meio usado pelo portal para comprovar quem assinou e que o
+          documento não foi alterado, nos termos do art. 10, § 2º, da Medida Provisória 2.200-2/2001.
         </p>
 
-        <h2>
-          <Trans>Legality of Electronic Signatures</Trans>
-        </h2>
+        <h2>Validade jurídica das assinaturas eletrônicas</h2>
         <p>
-          <Trans>
-            An electronic signature provided by you on our platform, achieved through clicking through to a document and
-            entering your name, or any other electronic signing method we provide, is legally binding. It carries the
-            same weight and enforceability as a manual signature written with ink on paper.
-          </Trans>
+          A assinatura feita neste portal tem validade jurídica. A lei brasileira não exige forma especial para a maioria
+          dos contratos (Código Civil, art. 107) e admite a assinatura eletrônica como prova de autoria e integridade
+          (Medida Provisória 2.200-2/2001, art. 10, § 2º). Cada assinatura fica registrada com nome, e-mail, data, hora,
+          endereço de internet e o código de verificação enviado ao seu e-mail. Ao final, o documento recebe o selo
+          digital da Bethof Solutions Ltda e um carimbo de tempo, e qualquer alteração posterior fica visível. Quando for
+          o caso, o documento assinado vale como título executivo (Código de Processo Civil, art. 784, § 4º).
         </p>
 
-        <h2>
-          <Trans>System Requirements</Trans>
-        </h2>
-        <p>
-          <Trans>To use our electronic signature service, you must have access to:</Trans>
-        </p>
+        <h2>Requisitos do sistema</h2>
+        <p>Para assinar, você precisa de:</p>
         <ul>
-          <li>
-            <Trans>A stable internet connection</Trans>
-          </li>
-          <li>
-            <Trans>An email account</Trans>
-          </li>
-          <li>
-            <Trans>A device capable of accessing, opening, and reading documents</Trans>
-          </li>
-          <li>
-            <Trans>A means to print or download documents for your records</Trans>
-          </li>
+          <li>acesso à internet;</li>
+          <li>um navegador atualizado, como Chrome, Edge, Firefox ou Safari, no computador ou no celular;</li>
+          <li>um endereço de e-mail válido, que só você acesse, para receber o convite e o código de verificação;</li>
+          <li>um programa que abra arquivos PDF, para ler e guardar a sua cópia.</li>
         </ul>
 
-        <h2>
-          <Trans>Electronic Delivery of Documents</Trans>
-        </h2>
+        <h2>Entrega eletrônica de documentos</h2>
         <p>
-          <Trans>
-            All documents related to the electronic signing process will be provided to you electronically through our
-            platform or via email. It is your responsibility to ensure that your email address is current and that you
-            can receive and open our emails.
-          </Trans>
+          Os documentos, os avisos e as cópias assinadas são entregues por e-mail e ficam disponíveis neste portal. A
+          Bethof também pode avisar pelo WhatsApp que há um documento esperando por você. Se preferir receber uma cópia em
+          papel, peça pelo e-mail solutions@bethof.com.br.
         </p>
 
-        <h2>
-          <Trans>Consent to Electronic Transactions</Trans>
-        </h2>
+        <h2>Consentimento para transações eletrônicas</h2>
         <p>
-          <Trans>
-            By using the electronic signature feature, you are consenting to conduct transactions and receive
-            disclosures electronically. You acknowledge that your electronic signature on documents is binding and that
-            you accept the terms outlined in the documents you are signing.
-          </Trans>
+          Você concorda em fazer por meio eletrônico esta assinatura e os atos ligados a ela, como receber o documento,
+          confirmar a sua identidade pelo código e receber a cópia final. Se a lei exigir outra forma para algum documento
+          específico, a Bethof avisará antes.
         </p>
 
-        <h2>
-          <Trans>Withdrawing Consent</Trans>
-        </h2>
+        <h2>Retirada do consentimento</h2>
         <p>
-          <Trans>
-            You have the right to withdraw your consent to use electronic signatures at any time before completing the
-            signing process. To withdraw your consent, please contact the sender of the document. In failing to contact
-            the sender you may reach out to <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> for assistance. Be
-            aware that withdrawing consent may delay or halt the completion of the related transaction or service.
-          </Trans>
+          Você pode desistir da assinatura eletrônica a qualquer momento antes de assinar. Basta recusar o documento no
+          próprio portal ou avisar pelo e-mail solutions@bethof.com.br, e a Bethof combinará outra forma de assinatura. A
+          desistência não afeta os documentos que você já assinou.
         </p>
 
-        <h2>
-          <Trans>Updating Your Information</Trans>
-        </h2>
+        <h2>Atualização dos seus dados</h2>
         <p>
-          <Trans>
-            It is crucial to keep your contact information, especially your email address, up to date with us. Please
-            notify us immediately of any changes to ensure that you continue to receive all necessary communications.
-          </Trans>
+          Se o seu e-mail ou telefone mudar, avise a Bethof antes de assinar. O convite e o código de verificação vão para
+          o e-mail cadastrado, e um endereço errado pode atrasar ou impedir a sua assinatura.
         </p>
 
-        <h2>
-          <Trans>Retention of Documents</Trans>
-        </h2>
+        <h2>Guarda dos documentos</h2>
         <p>
-          <Trans>
-            After signing a document electronically, you will be provided the opportunity to view, download, and print
-            the document for your records. It is highly recommended that you retain a copy of all electronically signed
-            documents for your personal records. We will also retain a copy of the signed document for our records
-            however we may not be able to provide you with a copy of the signed document after a certain period of time.
-          </Trans>
+          Ao final, você recebe por e-mail o documento assinado, com o certificado de conclusão e o registro de cada etapa.
+          Guarde essa cópia. A Bethof mantém o documento e o registro de assinatura pelo prazo necessário para cumprir a
+          lei e defender os direitos das partes, em geral por 10 anos. Os seus dados são tratados para executar o contrato
+          e para o exercício regular de direitos (Lei 13.709/2018, art. 7º, V e VI), e você pode exercer os direitos do
+          art. 18 da mesma lei pelos contatos abaixo.
         </p>
 
-        <h2>
-          <Trans>Acknowledgment</Trans>
-        </h2>
+        <h2>Ciência</h2>
         <p>
-          <Trans>
-            By proceeding to use the electronic signature service provided by Documenso, you affirm that you have read
-            and understood this disclosure. You agree to all terms and conditions related to the use of electronic
-            signatures and electronic transactions as outlined herein.
-          </Trans>
+          Ao clicar para assinar, você confirma que leu e entendeu o documento e este termo, que os seus dados estão
+          corretos e que a sua assinatura eletrônica tem o mesmo valor da sua assinatura em papel.
         </p>
 
-        <h2>
-          <Trans>Contact Information</Trans>
-        </h2>
+        <h2>Contato</h2>
         <p>
-          <Trans>
-            For any questions regarding this disclosure, electronic signatures, or any related process, please contact
-            us at: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
-          </Trans>
+          Bethof Solutions Ltda, CNPJ 27.886.567/0001-63, CRC-SC 010982. Rua Walter Schmoegel, 93, Sala 02, Centro,
+          Agrolândia/SC, CEP 88420-000. E-mail solutions@bethof.com.br, WhatsApp (47) 98915-6977. Política de
+          privacidade:{' '}
+          <a href="https://bethof.com.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer">
+            https://bethof.com.br/politica-de-privacidade
+          </a>
         </p>
       </article>
 
