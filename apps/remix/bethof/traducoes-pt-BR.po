@@ -629,8 +629,10 @@ msgstr "Este e-mail vai para o dono quando o prazo de assinatura de um destinat�
 msgid "Subject <0>(Optional)</0>"
 msgstr "Assunto <0>(opcional)</0>"
 
+# O rótulo fica numa linha flex (ícone de ajuda ao lado), que apaga o espaço comum entre "Mensagem" e "(opcional)".
+# Por isso o espaço aqui é o não separável (U+00A0).
 msgid "Message <0>(Optional)</0>"
-msgstr "Mensagem<0> (opcional)</0>"
+msgstr "Mensagem <0>(opcional)</0>"
 
 msgid "Return to documents"
 msgstr "Voltar para documentos"
