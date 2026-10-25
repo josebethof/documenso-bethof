@@ -13,14 +13,24 @@ Ele roda no portal de assinatura https://assinatura.bethof.com.br.
 | Nome, ícones e prévia de link da Bethof no lugar do Documenso | `apps/remix/app/utils/meta.ts`, `apps/remix/app/routes/_recipient+/`, `apps/remix/public/` |
 | Tradução pt-BR completa e revisada da tela de assinatura e dos e-mails | `apps/remix/bethof/traducoes-pt-BR.po`, `apps/remix/bethof/aplicar-traducoes.mjs`, `apps/remix/.bin/build.sh` |
 | Link "Código-fonte" no rodapé da tela de assinatura (AGPL-3.0, seção 13) | `packages/lib/constants/app.ts`, `apps/remix/app/components/general/public-legal-links.tsx` |
+| Botão "Compartilhar" (propaganda do Documenso nas redes) pode ser escondido na tela de assinatura concluída | `packages/lib/constants/app.ts`, `apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx` |
+| Montagem automática da imagem pelo GitHub | `.github/workflows/bethof-imagem.yml` |
 
 Toda linha alterada nos arquivos originais tem um comentário começando com `Bethof:`.
 
-## Variável nova
+## Variáveis
 
-- `NEXT_PUBLIC_SOURCE_CODE_URL`: endereço deste código. Quando preenchida, aparece o link "Código-fonte".
+- `NEXT_PUBLIC_SOURCE_CODE_URL` (nova): endereço deste código. Quando preenchida, aparece o link "Código-fonte".
+- `NEXT_PUBLIC_HIDE_SIGNING_SHARE_BUTTON` (nova): `true` esconde o botão "Compartilhar" da tela de assinatura concluída.
+- `NEXT_PUBLIC_PRIVACY_POLICY_URL` (já existia no Documenso): link "Política de privacidade" no mesmo rodapé.
+  Na Bethof: `https://bethof.com.br/politica-de-privacidade`.
 
 ## Como montar a imagem
+
+Pelo GitHub (recomendado): criar a etiqueta `v2.20.0-bethof.N` e enviar. O fluxo `bethof-imagem.yml`
+monta `docker/Dockerfile` e publica em `ghcr.io/<dono-do-repositório>/documenso-bethof:v2.20.0-bethof.N`.
+
+No computador (precisa de uns 4 GB de memória livre para o Docker):
 
 ```bash
 docker build -f docker/Dockerfile -t bethof/documenso:v2.20.0-bethof.1 .
