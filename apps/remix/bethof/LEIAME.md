@@ -22,6 +22,7 @@ Ele roda no portal de assinatura https://assinatura.bethof.com.br.
 | Termo de assinatura eletrônica pela lei brasileira (minuta de 25/10/2026, a revisar pelo advogado) no lugar do texto americano | `apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx` |
 | Relógio de 24 horas nas tabelas (`hourCycle: 'h23'`) | 7 tabelas em `apps/remix/app/components/` |
 | Datas do certificado de assinatura e do registro de auditoria em PDF no formato dd/mm/aaaa, 24 horas, horário de Brasília (o original usava 12 horas e UTC) | `packages/lib/constants/time-zones.ts`, `packages/lib/server-only/pdf/render-certificate.ts`, `render-audit-logs.ts` |
+| Nomes dos eventos do registro de auditoria traduzidos (o original mostra o nome técnico, como "DOCUMENT OPENED") e "código de verificação" no lugar de "código 2FA" | `packages/lib/utils/document-audit-logs.ts`, `render-audit-logs.ts`, `apps/remix/app/components/tables/internal-audit-log-table.tsx`, `traducoes-pt-BR.po` |
 | Logo na tela de entrada e imagens de fundo verdes tingidas para o azul da marca | `apps/remix/app/routes/_unauthenticated+/_layout.tsx`, `apps/remix/app/bethof.css` |
 | Tradução completa e revisada do aplicativo inteiro: 860 textos que faltavam e 748 correções de termos e estilo | `apps/remix/bethof/traducoes-pt-BR-completo.po` |
 

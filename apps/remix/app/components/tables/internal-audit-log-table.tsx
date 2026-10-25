@@ -1,6 +1,6 @@
 import { APP_I18N_OPTIONS } from '@documenso/lib/constants/i18n';
 import { DOCUMENT_AUDIT_LOG_TYPE, type TDocumentAuditLog } from '@documenso/lib/types/document-audit-logs';
-import { formatDocumentAuditLogAction } from '@documenso/lib/utils/document-audit-logs';
+import { formatDocumentAuditLogAction, formatDocumentAuditLogType } from '@documenso/lib/utils/document-audit-logs';
 import { cn } from '@documenso/ui/lib/utils';
 import { Card, CardContent } from '@documenso/ui/primitives/card';
 import { msg } from '@lingui/core/macro';
@@ -87,7 +87,7 @@ export const InternalAuditLogTable = ({ logs }: AuditLogDataTableProps) => {
 
                   <div>
                     <div className="font-medium text-muted-foreground text-sm uppercase tracking-wide print:text-[8pt]">
-                      {log.type.replace(/_/g, ' ')}
+                      {formatDocumentAuditLogType(i18n, log.type)}
                     </div>
 
                     <div className="font-medium text-foreground text-sm print:text-[8pt]">

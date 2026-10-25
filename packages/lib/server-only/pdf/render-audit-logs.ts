@@ -19,7 +19,7 @@ import { RECIPIENT_ROLES_DESCRIPTION } from '../../constants/recipient-roles';
 import { BETHOF_DATE_TIME_FORMAT, BETHOF_TIME_ZONE } from '../../constants/time-zones';
 import type { TDocumentAuditLog } from '../../types/document-audit-logs';
 import { DOCUMENT_AUDIT_LOG_TYPE } from '../../types/document-audit-logs';
-import { formatDocumentAuditLogAction } from '../../utils/document-audit-logs';
+import { formatDocumentAuditLogAction, formatDocumentAuditLogType } from '../../utils/document-audit-logs';
 import { ensureFontLibrary } from './helpers';
 
 export type AuditLogRecipient = {
@@ -332,7 +332,7 @@ const renderRow = (options: RenderRowOptions) => {
     x: indicatorWidth + indicatorPaddingRight,
     y: 0,
     width: columnWidth - indicatorWidth - indicatorPaddingRight,
-    text: auditLog.type.replace(/_/g, ' '),
+    text: formatDocumentAuditLogType(i18n, auditLog.type).toUpperCase(),
     fontFamily: 'Inter',
     fontSize: textSm,
     fontStyle: fontMedium,

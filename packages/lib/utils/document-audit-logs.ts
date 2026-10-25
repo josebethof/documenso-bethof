@@ -1,4 +1,4 @@
-import type { I18n } from '@lingui/core';
+import type { I18n, MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import type { DocumentAuditLog, DocumentMeta, Field, Recipient } from '@prisma/client';
 import { RecipientRole } from '@prisma/client';
@@ -10,6 +10,7 @@ import type {
   TDocumentAuditLogDocumentMetaDiffSchema,
   TDocumentAuditLogFieldDiffSchema,
   TDocumentAuditLogRecipientDiffSchema,
+  TDocumentAuditLogType,
 } from '../types/document-audit-logs';
 import {
   DOCUMENT_AUDIT_LOG_TYPE,
@@ -278,6 +279,66 @@ export const diffDocumentMetaChanges = (
 
   return diffs;
 };
+
+/**
+ * Bethof: translated name of each audit log event type, shown above the event description.
+ * The original shows the raw type, for example "DOCUMENT OPENED".
+ */
+const DOCUMENT_AUDIT_LOG_TYPE_LABELS: Record<TDocumentAuditLogType, MessageDescriptor> = {
+  EMAIL_SENT: msg({ message: `Email sent`, context: `Audit log type` }),
+  FIELD_CREATED: msg({ message: `Field added`, context: `Audit log type` }),
+  FIELD_DELETED: msg({ message: `Field removed`, context: `Audit log type` }),
+  FIELD_UPDATED: msg({ message: `Field updated`, context: `Audit log type` }),
+  RECIPIENT_CREATED: msg({ message: `Recipient added`, context: `Audit log type` }),
+  RECIPIENT_DELETED: msg({ message: `Recipient removed`, context: `Audit log type` }),
+  RECIPIENT_UPDATED: msg({ message: `Recipient updated`, context: `Audit log type` }),
+  ENVELOPE_ITEM_CREATED: msg({ message: `File added`, context: `Audit log type` }),
+  ENVELOPE_ITEM_DELETED: msg({ message: `File removed`, context: `Audit log type` }),
+  ENVELOPE_ITEM_UPDATED: msg({ message: `File updated`, context: `Audit log type` }),
+  ENVELOPE_ITEM_PDF_REPLACED: msg({ message: `PDF replaced`, context: `Audit log type` }),
+  DOCUMENT_COMPLETED: msg({ message: `Document completed`, context: `Audit log type` }),
+  DOCUMENT_CREATED: msg({ message: `Document created`, context: `Audit log type` }),
+  DOCUMENT_DELETED: msg({ message: `Document deleted`, context: `Audit log type` }),
+  DOCUMENT_CANCELLED: msg({ message: `Document cancelled`, context: `Audit log type` }),
+  DOCUMENT_FIELDS_AUTO_INSERTED: msg({ message: `Fields filled in automatically`, context: `Audit log type` }),
+  DOCUMENT_FIELD_INSERTED: msg({ message: `Field filled in`, context: `Audit log type` }),
+  DOCUMENT_FIELD_UNINSERTED: msg({ message: `Field cleared`, context: `Audit log type` }),
+  DOCUMENT_FIELD_PREFILLED: msg({ message: `Field prefilled`, context: `Audit log type` }),
+  DOCUMENT_VISIBILITY_UPDATED: msg({ message: `Visibility updated`, context: `Audit log type` }),
+  DOCUMENT_GLOBAL_AUTH_ACCESS_UPDATED: msg({ message: `Access authentication updated`, context: `Audit log type` }),
+  DOCUMENT_GLOBAL_AUTH_ACTION_UPDATED: msg({ message: `Signing authentication updated`, context: `Audit log type` }),
+  DOCUMENT_META_UPDATED: msg({ message: `Settings updated`, context: `Audit log type` }),
+  DOCUMENT_OPENED: msg({ message: `Document opened`, context: `Audit log type` }),
+  DOCUMENT_VIEWED: msg({ message: `Document viewed`, context: `Audit log type` }),
+  DOCUMENT_RECIPIENT_REJECTED: msg({ message: `Document rejected`, context: `Audit log type` }),
+  DOCUMENT_RECIPIENT_COMPLETED: msg({ message: `Recipient completed`, context: `Audit log type` }),
+  DOCUMENT_RECIPIENT_EXPIRED: msg({ message: `Recipient deadline expired`, context: `Audit log type` }),
+  DOCUMENT_SENT: msg({ message: `Document sent`, context: `Audit log type` }),
+  DOCUMENT_TITLE_UPDATED: msg({ message: `Title updated`, context: `Audit log type` }),
+  DOCUMENT_EXTERNAL_ID_UPDATED: msg({ message: `External ID updated`, context: `Audit log type` }),
+  DOCUMENT_MOVED_TO_TEAM: msg({ message: `Document moved to team`, context: `Audit log type` }),
+  DOCUMENT_DELEGATED_OWNER_CREATED: msg({ message: `Delegated owner set`, context: `Audit log type` }),
+  DOCUMENT_ACCESS_AUTH_2FA_REQUESTED: msg({ message: `Verification code requested`, context: `Audit log type` }),
+  DOCUMENT_ACCESS_AUTH_2FA_VALIDATED: msg({ message: `Verification code confirmed`, context: `Audit log type` }),
+  DOCUMENT_ACCESS_AUTH_2FA_FAILED: msg({ message: `Wrong verification code`, context: `Audit log type` }),
+  DOCUMENT_RECIPIENT_CSC_AUTHENTICATED: msg({ message: `Cloud certificate authenticated`, context: `Audit log type` }),
+  DOCUMENT_RECIPIENT_CSC_AUTHENTICATION_FAILED: msg({
+    message: `Cloud certificate authentication failed`,
+    context: `Audit log type`,
+  }),
+  DOCUMENT_RECIPIENT_CSC_SIGN_REQUESTED: msg({
+    message: `Cloud certificate signature requested`,
+    context: `Audit log type`,
+  }),
+  DOCUMENT_RECIPIENT_CSC_AUTHORIZED: msg({
+    message: `Cloud certificate signature authorized`,
+    context: `Audit log type`,
+  }),
+  DOCUMENT_RECIPIENT_CSC_SIGNED: msg({ message: `Signed with cloud certificate`, context: `Audit log type` }),
+};
+
+export const formatDocumentAuditLogType = (i18n: I18n, type: TDocumentAuditLogType) =>
+  DOCUMENT_AUDIT_LOG_TYPE_LABELS[type] ? i18n._(DOCUMENT_AUDIT_LOG_TYPE_LABELS[type]) : type.replace(/_/g, ' ');
 
 /**
  * Formats the audit log into a description of the action.

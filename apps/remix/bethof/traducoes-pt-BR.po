@@ -640,3 +640,199 @@ msgstr "Voltar para documentos"
 msgid "Return to templates"
 msgstr "Voltar para modelos"
 
+# ---------------------------------------------------------------------------
+# Nomes dos eventos no registro de auditoria (bethof.4)
+# ---------------------------------------------------------------------------
+
+msgctxt "Audit log type"
+msgid "Email sent"
+msgstr "E-mail enviado"
+
+msgctxt "Audit log type"
+msgid "Field added"
+msgstr "Campo adicionado"
+
+msgctxt "Audit log type"
+msgid "Field removed"
+msgstr "Campo removido"
+
+msgctxt "Audit log type"
+msgid "Field updated"
+msgstr "Campo alterado"
+
+msgctxt "Audit log type"
+msgid "Recipient added"
+msgstr "Destinatário adicionado"
+
+msgctxt "Audit log type"
+msgid "Recipient removed"
+msgstr "Destinatário removido"
+
+msgctxt "Audit log type"
+msgid "Recipient updated"
+msgstr "Destinatário alterado"
+
+msgctxt "Audit log type"
+msgid "File added"
+msgstr "Arquivo adicionado"
+
+msgctxt "Audit log type"
+msgid "File removed"
+msgstr "Arquivo removido"
+
+msgctxt "Audit log type"
+msgid "File updated"
+msgstr "Arquivo alterado"
+
+msgctxt "Audit log type"
+msgid "PDF replaced"
+msgstr "PDF substituído"
+
+msgctxt "Audit log type"
+msgid "Document completed"
+msgstr "Documento concluído"
+
+msgctxt "Audit log type"
+msgid "Document created"
+msgstr "Documento criado"
+
+msgctxt "Audit log type"
+msgid "Document deleted"
+msgstr "Documento excluído"
+
+msgctxt "Audit log type"
+msgid "Document cancelled"
+msgstr "Documento cancelado"
+
+msgctxt "Audit log type"
+msgid "Fields filled in automatically"
+msgstr "Campos preenchidos automaticamente"
+
+msgctxt "Audit log type"
+msgid "Field filled in"
+msgstr "Campo preenchido"
+
+msgctxt "Audit log type"
+msgid "Field cleared"
+msgstr "Campo limpo"
+
+msgctxt "Audit log type"
+msgid "Field prefilled"
+msgstr "Campo pré-preenchido"
+
+msgctxt "Audit log type"
+msgid "Visibility updated"
+msgstr "Visibilidade alterada"
+
+msgctxt "Audit log type"
+msgid "Access authentication updated"
+msgstr "Autenticação de acesso alterada"
+
+msgctxt "Audit log type"
+msgid "Signing authentication updated"
+msgstr "Autenticação de assinatura alterada"
+
+msgctxt "Audit log type"
+msgid "Settings updated"
+msgstr "Configurações alteradas"
+
+msgctxt "Audit log type"
+msgid "Document opened"
+msgstr "Documento aberto"
+
+msgctxt "Audit log type"
+msgid "Document viewed"
+msgstr "Documento visualizado"
+
+msgctxt "Audit log type"
+msgid "Document rejected"
+msgstr "Documento recusado"
+
+msgctxt "Audit log type"
+msgid "Recipient completed"
+msgstr "Destinatário concluiu"
+
+msgctxt "Audit log type"
+msgid "Recipient deadline expired"
+msgstr "Prazo do destinatário vencido"
+
+msgctxt "Audit log type"
+msgid "Document sent"
+msgstr "Documento enviado"
+
+msgctxt "Audit log type"
+msgid "Title updated"
+msgstr "Título alterado"
+
+msgctxt "Audit log type"
+msgid "External ID updated"
+msgstr "ID externo alterado"
+
+msgctxt "Audit log type"
+msgid "Document moved to team"
+msgstr "Documento movido para a equipe"
+
+msgctxt "Audit log type"
+msgid "Delegated owner set"
+msgstr "Dono delegado definido"
+
+msgctxt "Audit log type"
+msgid "Verification code requested"
+msgstr "Código de verificação pedido"
+
+msgctxt "Audit log type"
+msgid "Verification code confirmed"
+msgstr "Código de verificação confirmado"
+
+msgctxt "Audit log type"
+msgid "Wrong verification code"
+msgstr "Código de verificação incorreto"
+
+msgctxt "Audit log type"
+msgid "Cloud certificate authenticated"
+msgstr "Certificado em nuvem autenticado"
+
+msgctxt "Audit log type"
+msgid "Cloud certificate authentication failed"
+msgstr "Falha na autenticação do certificado em nuvem"
+
+msgctxt "Audit log type"
+msgid "Cloud certificate signature requested"
+msgstr "Assinatura com certificado em nuvem pedida"
+
+msgctxt "Audit log type"
+msgid "Cloud certificate signature authorized"
+msgstr "Assinatura com certificado em nuvem autorizada"
+
+msgctxt "Audit log type"
+msgid "Signed with cloud certificate"
+msgstr "Assinado com certificado em nuvem"
+
+# Descrições do código por e-mail no registro de auditoria: "código de verificação", como no e-mail (bethof.4)
+
+msgid "{user} requested a 2FA token for the document"
+msgstr "{user} pediu um código de verificação para o documento"
+
+msgid "{user} validated a 2FA token for the document"
+msgstr "{user} confirmou o código de verificação do documento"
+
+msgid "{user} failed to validate a 2FA token for the document"
+msgstr "{user} informou um código de verificação incorreto"
+
+msgid "Recipient requested a 2FA token for the document"
+msgstr "O destinatário pediu um código de verificação para o documento"
+
+msgid "Recipient validated a 2FA token for the document"
+msgstr "O destinatário confirmou o código de verificação do documento"
+
+msgid "Recipient failed to validate a 2FA token for the document"
+msgstr "O destinatário informou um código de verificação incorreto"
+
+msgid "You requested a 2FA token for the document"
+msgstr "Você pediu um código de verificação para o documento"
+
+msgid "You validated a 2FA token for the document"
+msgstr "Você confirmou o código de verificação do documento"
+
+msgid "You failed to validate a 2FA token for the document"
+msgstr "Você informou um código de verificação incorreto"
