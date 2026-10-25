@@ -1,0 +1,32 @@
+/*
+ * Bethof: fontes da marca.
+ * Instrument Sans no texto e Sora nos títulos (licença OFL, arquivos em /fonts).
+ * Regras fora de @layer para valer sobre o tema padrão sem editar os arquivos originais.
+ */
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("/fonts/instrument-sans-var.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("/fonts/sora-var.woff2") format("woff2");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-sans: "Instrument Sans", "Inter";
+  --font-heading: "Sora", "Instrument Sans", "Inter";
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
