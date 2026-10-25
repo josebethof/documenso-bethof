@@ -519,3 +519,105 @@ msgstr "Dados da empresa"
 
 msgid "Source code"
 msgstr "Código-fonte"
+
+# ---------------------------------------------------------------------------
+# Visualizador do documento e download (tela do cliente)
+# ---------------------------------------------------------------------------
+
+msgid "Page {pageNumber} of {numPages}"
+msgstr "Página {pageNumber} de {numPages}"
+
+msgid "Error loading page"
+msgstr "Erro ao carregar a página"
+
+msgid "No document found"
+msgstr "Documento não encontrado"
+
+msgid "Something went wrong while rendering the document, please try again or contact our support."
+msgstr "Algo deu errado ao mostrar o documento. Tente de novo ou fale com quem enviou."
+
+msgctxt "Partially signed document (adjective)"
+msgid "Partial"
+msgstr "Parcial"
+
+msgid "{0} field"
+msgstr "Campo {0}"
+
+msgid "Hide field"
+msgstr "Esconder campo"
+
+# ---------------------------------------------------------------------------
+# Telas de configuração usadas pela Bethof (prazos, lembretes, avisos por e-mail)
+# ---------------------------------------------------------------------------
+
+msgid "{amount, plural, one {Day} other {Days}}"
+msgstr "{amount, plural, one {Dia} other {Dias}}"
+
+msgid "{amount, plural, one {Week} other {Weeks}}"
+msgstr "{amount, plural, one {Semana} other {Semanas}}"
+
+msgid "{amount, plural, one {Month} other {Months}}"
+msgstr "{amount, plural, one {Mês} other {Meses}}"
+
+msgid "{amount, plural, one {Year} other {Years}}"
+msgstr "{amount, plural, one {Ano} other {Anos}}"
+
+msgid "Custom duration"
+msgstr "Prazo personalizado"
+
+msgid "Never expires"
+msgstr "Sem prazo"
+
+msgid "Custom interval"
+msgstr "Intervalo personalizado"
+
+msgid "Don't repeat"
+msgstr "Não repetir"
+
+msgid "No reminders"
+msgstr "Sem lembretes"
+
+msgid "Send first reminder after"
+msgstr "Primeiro lembrete depois de"
+
+msgid "Then repeat every"
+msgstr "Depois, repetir a cada"
+
+msgid "Document created from direct template email"
+msgstr "E-mail de documento criado por link de modelo"
+
+msgid "Email recipients when a pending document is deleted"
+msgstr "Avisar os destinatários quando um documento pendente for excluído"
+
+msgid "Email recipients when the document is completed"
+msgstr "Avisar os destinatários quando o documento for concluído"
+
+msgid "Email recipients when they're removed from a pending document"
+msgstr "Avisar os destinatários quando forem retirados de um documento pendente"
+
+msgid "Email recipients with a signing request"
+msgstr "Enviar aos destinatários o pedido de assinatura"
+
+msgid "Email the owner when a document is created from a direct template"
+msgstr "Avisar o dono quando um documento for criado por link de modelo"
+
+msgid "Email the owner when a recipient signs"
+msgstr "Avisar o dono quando um destinatário assinar"
+
+msgid "Email the owner when the document is completed"
+msgstr "Avisar o dono quando o documento for concluído"
+
+msgid "Email the signer if the document is still pending"
+msgstr "Lembrar o signatário se o documento continuar pendente"
+
+msgid "Recipient expired email"
+msgstr "E-mail de prazo encerrado"
+
+msgid "Send recipient expired email to the owner"
+msgstr "Avisar o dono quando o prazo de um destinatário acabar"
+
+msgid "This email is sent to the document owner when a recipient creates a document via a direct template link."
+msgstr "Este e-mail vai para o dono quando alguém cria um documento pelo link de um modelo."
+
+msgid "This will be sent to the document owner when a recipient's signing window has expired."
+msgstr "Este e-mail vai para o dono quando o prazo de assinatura de um destinatário acabar."

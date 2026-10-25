@@ -21,17 +21,24 @@ const lerCampo = (bloco, campo) => {
 
 const blocos = (texto) => texto.replace(/\r\n/g, '\n').split(/\n{2,}/);
 
+// A chave junta o contexto (msgctxt), quando existe, ao texto original.
+const chave = (bloco) => {
+  const id = lerCampo(bloco, 'msgid');
+  if (!id) return null;
+  const contexto = lerCampo(bloco, 'msgctxt');
+  return contexto === null ? id : `${contexto}${id}`;
+};
+
 const mapa = new Map();
 for (const bloco of blocos(readFileSync(correcoes, 'utf8'))) {
-  const id = lerCampo(bloco, 'msgid');
-  const str = lerCampo(bloco, 'msgstr');
-  if (id) mapa.set(id, str);
+  const id = chave(bloco);
+  if (id) mapa.set(id, lerCampo(bloco, 'msgstr'));
 }
 
 const usados = new Set();
 const saida = blocos(readFileSync(catalogo, 'utf8')).map((bloco) => {
-  const id = lerCampo(bloco, 'msgid');
-  if (!id || !mapa.has(id) || /^msgctxt /m.test(bloco)) return bloco;
+  const id = chave(bloco);
+  if (!id || !mapa.has(id)) return bloco;
   usados.add(id);
   const semMsgstr = bloco.split('\n');
   const inicio = semMsgstr.findIndex((l) => l.startsWith('msgstr "'));
@@ -45,4 +52,4 @@ writeFileSync(catalogo, saida.join('\n\n'));
 
 const faltando = [...mapa.keys()].filter((id) => !usados.has(id));
 console.log(`[Bethof] traduções aplicadas: ${usados.size} de ${mapa.size}`);
-for (const id of faltando) console.warn(`[Bethof] texto não existe mais no código oficial: ${id}`);
+for (const id of faltando) console.warn(`[Bethof] texto não existe mais no código oficial: ${id.replace('', ' | ')}`);
