@@ -23,7 +23,7 @@ export type DocumentLogsTableProps = {
 
 const dateFormat: DateTimeFormatOptions = {
   ...DateTime.DATETIME_SHORT,
-  hourCycle: 'h12',
+  hourCycle: 'h23', // Bethof: 24-hour clock
 };
 
 export const DocumentLogsTable = ({ documentId, userId }: DocumentLogsTableProps) => {
