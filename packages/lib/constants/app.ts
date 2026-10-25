@@ -56,6 +56,9 @@ export const NEXT_PUBLIC_IMPRINT_URL = () => env('NEXT_PUBLIC_IMPRINT_URL');
 // Bethof: link to the source code of this modified instance (AGPL-3.0, section 13).
 export const NEXT_PUBLIC_SOURCE_CODE_URL = () => env('NEXT_PUBLIC_SOURCE_CODE_URL');
 
+// Bethof: set to "true" to hide the social "Share" button on the recipient completion page.
+export const NEXT_PUBLIC_HIDE_SIGNING_SHARE_BUTTON = () => env('NEXT_PUBLIC_HIDE_SIGNING_SHARE_BUTTON') === 'true';
+
 export const NEXT_PRIVATE_USE_LEGACY_SIGNING_SUBFILTER = () =>
   env('NEXT_PRIVATE_USE_LEGACY_SIGNING_SUBFILTER') === 'true';
 

@@ -1,6 +1,7 @@
 import signingCelebration from '@documenso/assets/images/signing-celebration.png';
 import { getOptionalSession } from '@documenso/auth/server/lib/utils/get-session';
 import { useOptionalSession } from '@documenso/lib/client-only/providers/session';
+import { NEXT_PUBLIC_HIDE_SIGNING_SHARE_BUTTON } from '@documenso/lib/constants/app';
 import { isSignupEnabledForProvider } from '@documenso/lib/constants/auth';
 import { loadRecipientBrandingByTeamId } from '@documenso/lib/server-only/branding/load-recipient-branding';
 import { getDocumentAndSenderByToken } from '@documenso/lib/server-only/document/get-document-by-token';
@@ -249,11 +250,14 @@ export default function CompletedSigningPage({ loaderData }: Route.ComponentProp
               ))}
 
             <div className="mt-8 flex w-full max-w-xs flex-col items-stretch gap-4 md:w-auto md:max-w-none md:flex-row md:items-center">
-              <DocumentShareButton
-                documentId={document.id}
-                token={recipient.token}
-                className="w-full max-w-none md:flex-1"
-              />
+              {/* Bethof: the social share button can be hidden with NEXT_PUBLIC_HIDE_SIGNING_SHARE_BUTTON=true. */}
+              {!NEXT_PUBLIC_HIDE_SIGNING_SHARE_BUTTON() && (
+                <DocumentShareButton
+                  documentId={document.id}
+                  token={recipient.token}
+                  className="w-full max-w-none md:flex-1"
+                />
+              )}
 
               {isDocumentCompleted(document) && (
                 <EnvelopeDownloadDialog
