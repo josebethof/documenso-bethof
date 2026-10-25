@@ -1,0 +1,521 @@
+# Bethof: correções e complementos da tradução pt-BR do Documenso.
+# Vale só para os textos que o cliente vê (tela de assinatura e e-mails).
+# Aplicado na montagem por apps/remix/bethof/aplicar-traducoes.mjs, por cima de packages/lib/translations/pt-BR/web.po.
+# Regras: frases curtas, sem travessão, letra maiúscula só no início da frase.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Language: pt-BR\n"
+
+# ---------------------------------------------------------------------------
+# Textos que estavam sem tradução (apareciam em inglês)
+# ---------------------------------------------------------------------------
+
+msgid "<0>\"{0}\"</0> is no longer available to sign"
+msgstr "<0>\"{0}\"</0> não está mais disponível para assinatura"
+
+msgid "2FA token"
+msgstr "Código de verificação"
+
+msgid "Applying your signature"
+msgstr "Aplicando a sua assinatura"
+
+msgid "Automatically sign fields"
+msgstr "Assinar campos automaticamente"
+
+msgid "Collapse sidebar"
+msgstr "Recolher painel"
+
+msgid "Expand sidebar"
+msgstr "Abrir painel"
+
+msgid "Did not expect this email? <0>Click here to report the sender</0>. Never sign a document you don't recognize or weren't expecting."
+msgstr "Não esperava este e-mail? <0>Clique aqui para denunciar o remetente</0>. Nunca assine um documento que você não reconhece."
+
+msgid "Document already signed"
+msgstr "Documento já assinado"
+
+msgid "Hi {recipientName},"
+msgstr "Olá, {recipientName}."
+
+msgid "Human verification required"
+msgstr "Confirme que você não é um robô"
+
+msgid "If you did not expect this email or believe it is spam, you can report the sender to our team for review."
+msgstr "Se você não esperava este e-mail ou acha que é golpe, pode denunciar o remetente para análise."
+
+msgid "No document selected"
+msgstr "Nenhum documento selecionado"
+
+msgid "No signing credentials available"
+msgstr "Nenhuma credencial de assinatura disponível"
+
+msgid "Please complete the CAPTCHA challenge before signing in."
+msgstr "Confirme que você não é um robô antes de entrar."
+
+msgid "Please don't close this tab. The signing provider is finalising your signature."
+msgstr "Não feche esta aba. Estamos finalizando a sua assinatura."
+
+msgid "Powered by"
+msgstr "Feito com"
+
+msgid "Reauthorise and retry"
+msgstr "Autorizar de novo e tentar"
+
+msgid "Reminder to {action} {documentName}"
+msgstr "Lembrete: falta você {action} {documentName}"
+
+msgid "Reminder: Please {0} your document<0/>\"{documentName}\""
+msgstr "Lembrete: falta você {0} o documento<0/>\"{documentName}\""
+
+msgid "Reminder: Please {recipientActionVerb} the document \"{0}\""
+msgstr "Lembrete: falta você {recipientActionVerb} o documento \"{0}\""
+
+msgid "Report sender"
+msgstr "Denunciar remetente"
+
+msgid "Report this sender?"
+msgstr "Denunciar este remetente?"
+
+msgid "Return Home"
+msgstr "Voltar ao início"
+
+msgid "Sender reported"
+msgstr "Remetente denunciado"
+
+msgid "Signing algorithm is not supported"
+msgstr "Algoritmo de assinatura não suportado"
+
+msgid "Signing certificate is invalid"
+msgstr "Certificado de assinatura inválido"
+
+msgid "Signing Deadline Expired"
+msgstr "Prazo para assinar encerrado"
+
+msgid "Signing failed"
+msgstr "A assinatura falhou"
+
+msgid "Signing window expired for \"{0}\" on \"{1}\""
+msgstr "Prazo encerrado para \"{0}\" assinar \"{1}\""
+
+msgid "Signing window expired for \"{displayName}\" on \"{documentName}\""
+msgstr "Prazo encerrado para \"{displayName}\" assinar \"{documentName}\""
+
+msgid "Something went wrong while applying your signature. Please retry."
+msgstr "Algo deu errado ao aplicar a sua assinatura. Tente de novo."
+
+msgid "Something went wrong while preparing the remote signature. Please try again."
+msgstr "Algo deu errado ao preparar a assinatura. Tente de novo."
+
+msgid "Thank you for letting us know, we have flagged this sender for review. If you have any concerns please feel free to reach out to our <0>support team</0>."
+msgstr "Obrigado por avisar. Marcamos este remetente para análise. Se tiver dúvidas, fale com o <0>suporte</0>."
+
+msgid "The signing deadline for this document has passed. Please contact the document owner if you need a new copy to sign."
+msgstr "O prazo para assinar este documento acabou. Peça uma nova via a quem enviou o documento."
+
+msgid "The signing provider did not respond in time. Please retry."
+msgstr "O serviço de assinatura não respondeu a tempo. Tente de novo."
+
+msgid "The signing window for \"{recipientName}\" on document \"{documentName}\" has expired."
+msgstr "O prazo para \"{recipientName}\" assinar o documento \"{documentName}\" acabou."
+
+msgid "The signing window for {displayName} on document \"{documentName}\" has expired. You can resend the document to extend their deadline or cancel the document."
+msgstr "O prazo para {displayName} assinar o documento \"{documentName}\" acabou. Você pode reenviar o documento para dar mais prazo ou cancelar o documento."
+
+msgid "This document was already signed and no further action was taken."
+msgstr "Este documento já estava assinado. Nada foi alterado."
+
+msgid "This document was sent using <0>Documenso</0>."
+msgstr "Este documento foi enviado com o <0>Documenso</0>."
+
+msgid "To approve this document, you need to be logged in as <0>{0}</0>"
+msgstr "Para aprovar este documento, entre com a conta <0>{0}</0>"
+
+msgid "To approve this document, you need to be logged in."
+msgstr "Para aprovar este documento, entre na sua conta."
+
+msgid "To approve this field, you need to be logged in as <0>{0}</0>"
+msgstr "Para aprovar este campo, entre com a conta <0>{0}</0>"
+
+msgid "To approve this field, you need to be logged in."
+msgstr "Para aprovar este campo, entre na sua conta."
+
+msgid "To assist with this document, you need to be logged in as <0>{0}</0>"
+msgstr "Para ajudar neste documento, entre com a conta <0>{0}</0>"
+
+msgid "To assist with this document, you need to be logged in."
+msgstr "Para ajudar neste documento, entre na sua conta."
+
+msgid "To assist with this field, you need to be logged in as <0>{0}</0>"
+msgstr "Para ajudar neste campo, entre com a conta <0>{0}</0>"
+
+msgid "To assist with this field, you need to be logged in."
+msgstr "Para ajudar neste campo, entre na sua conta."
+
+msgid "To sign this document, you need to be logged in as <0>{0}</0>"
+msgstr "Para assinar este documento, entre com a conta <0>{0}</0>"
+
+msgid "To sign this document, you need to be logged in."
+msgstr "Para assinar este documento, entre na sua conta."
+
+msgid "To sign this field, you need to be logged in as <0>{0}</0>"
+msgstr "Para assinar este campo, entre com a conta <0>{0}</0>"
+
+msgid "To sign this field, you need to be logged in."
+msgstr "Para assinar este campo, entre na sua conta."
+
+msgid "To view this document, you need to be logged in as <0>{0}</0>"
+msgstr "Para ver este documento, entre com a conta <0>{0}</0>"
+
+msgid "To view this document, you need to be logged in."
+msgstr "Para ver este documento, entre na sua conta."
+
+msgid "To view this field, you need to be logged in as <0>{0}</0>"
+msgstr "Para ver este campo, entre com a conta <0>{0}</0>"
+
+msgid "To view this field, you need to be logged in."
+msgstr "Para ver este campo, entre na sua conta."
+
+msgid "Unable to start the signing flow"
+msgstr "Não foi possível iniciar a assinatura"
+
+msgid "Undo"
+msgstr "Desfazer"
+
+msgid "Waiting for others to complete signing"
+msgstr "Aguardando as outras assinaturas"
+
+msgid "We were unable to report this sender at this time. Please try again later."
+msgstr "Não foi possível denunciar o remetente agora. Tente mais tarde."
+
+msgid "You need to setup 2FA to approve this document."
+msgstr "Ative a verificação em duas etapas para aprovar este documento."
+
+msgid "You need to setup 2FA to approve this field."
+msgstr "Ative a verificação em duas etapas para aprovar este campo."
+
+msgid "You need to setup 2FA to assist with this document."
+msgstr "Ative a verificação em duas etapas para ajudar neste documento."
+
+msgid "You need to setup 2FA to assist with this field."
+msgstr "Ative a verificação em duas etapas para ajudar neste campo."
+
+msgid "You need to setup 2FA to sign this document."
+msgstr "Ative a verificação em duas etapas para assinar este documento."
+
+msgid "You need to setup 2FA to sign this field."
+msgstr "Ative a verificação em duas etapas para assinar este campo."
+
+msgid "You need to setup 2FA to view this document."
+msgstr "Ative a verificação em duas etapas para ver este documento."
+
+msgid "You need to setup 2FA to view this field."
+msgstr "Ative a verificação em duas etapas para ver este campo."
+
+msgid "You need to setup a passkey to approve this document."
+msgstr "Cadastre uma chave de acesso para aprovar este documento."
+
+msgid "You need to setup a passkey to approve this field."
+msgstr "Cadastre uma chave de acesso para aprovar este campo."
+
+msgid "You need to setup a passkey to assist with this document."
+msgstr "Cadastre uma chave de acesso para ajudar neste documento."
+
+msgid "You need to setup a passkey to assist with this field."
+msgstr "Cadastre uma chave de acesso para ajudar neste campo."
+
+msgid "You need to setup a passkey to mark this document as viewed."
+msgstr "Cadastre uma chave de acesso para marcar este documento como visto."
+
+msgid "You need to setup a passkey to sign this document."
+msgstr "Cadastre uma chave de acesso para assinar este documento."
+
+msgid "You need to setup a passkey to sign this field."
+msgstr "Cadastre uma chave de acesso para assinar este campo."
+
+msgid "You need to setup a passkey to view this document."
+msgstr "Cadastre uma chave de acesso para ver este documento."
+
+msgid "You need to setup a passkey to view this field."
+msgstr "Cadastre uma chave de acesso para ver este campo."
+
+msgid "Your browser does not support passkeys, which is required to approve this document."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para aprovar este documento."
+
+msgid "Your browser does not support passkeys, which is required to approve this field."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para aprovar este campo."
+
+msgid "Your browser does not support passkeys, which is required to assist with this document."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para ajudar neste documento."
+
+msgid "Your browser does not support passkeys, which is required to assist with this field."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para ajudar neste campo."
+
+msgid "Your browser does not support passkeys, which is required to mark this document as viewed."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para marcar este documento como visto."
+
+msgid "Your browser does not support passkeys, which is required to sign this document."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para assinar este documento."
+
+msgid "Your browser does not support passkeys, which is required to sign this field."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para assinar este campo."
+
+msgid "Your browser does not support passkeys, which is required to view this document."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para ver este documento."
+
+msgid "Your browser does not support passkeys, which is required to view this field."
+msgstr "Seu navegador não aceita chave de acesso, que é exigida para ver este campo."
+
+msgid "Your signing authorisation expired before the signature could be applied. Please reauthorise to retry."
+msgstr "A sua autorização expirou antes de a assinatura ser aplicada. Autorize de novo para tentar."
+
+msgid "Your signing certificate is invalid, expired, or missing a required key. Contact your administrator or signing provider for assistance."
+msgstr "O certificado de assinatura é inválido, venceu ou está incompleto. Fale com o administrador."
+
+msgid "Your signing provider does not advertise a signing algorithm this document accepts. Contact your administrator or signing provider for assistance."
+msgstr "O serviço de assinatura não oferece um algoritmo aceito por este documento. Fale com o administrador."
+
+msgid "Your signing provider returned no usable credentials for this account. Contact your administrator or signing provider for assistance."
+msgstr "O serviço de assinatura não encontrou credenciais para esta conta. Fale com o administrador."
+
+# ---------------------------------------------------------------------------
+# Correções de traduções existentes (maiúsculas no estilo inglês, frases truncadas)
+# ---------------------------------------------------------------------------
+
+msgid "{0, plural, one {1 Field Remaining} other {# Fields Remaining}}"
+msgstr "{0, plural, one {Falta 1 campo} other {Faltam # campos}}"
+
+msgid "{0, plural, one {1 Field} other {# Fields}}"
+msgstr "{0, plural, one {1 campo} other {# campos}}"
+
+msgid "{recipientReference} has completed signing the document."
+msgstr "{recipientReference} concluiu a assinatura do documento."
+
+msgid "Approve Document"
+msgstr "Aprovar documento"
+
+msgid "Claim account"
+msgstr "Criar minha conta"
+
+msgid "Clear Signature"
+msgstr "Limpar assinatura"
+
+msgid "Completed Document"
+msgstr "Documento concluído"
+
+msgid "Continue by approving the document."
+msgstr "Para continuar, aprove o documento."
+
+msgid "Continue by assisting with the document."
+msgstr "Para continuar, ajude no documento."
+
+msgid "Continue by downloading the document."
+msgstr "Para continuar, baixe o documento."
+
+msgid "Continue by signing the document."
+msgstr "Para continuar, assine o documento."
+
+msgid "Continue by viewing the document."
+msgstr "Para continuar, veja o documento."
+
+msgid "Create your account and start using state-of-the-art document signing."
+msgstr "Crie a sua conta para acessar os documentos assinados quando quiser."
+
+msgid "Document \"{0}\" - Rejected by {1}"
+msgstr "Documento \"{0}\" recusado por {1}"
+
+msgid "Document \"{0}\" - Rejection Confirmed"
+msgstr "Recusa confirmada: \"{0}\""
+
+msgid "Document \"{0}\" Cancelled"
+msgstr "Documento \"{0}\" cancelado"
+
+msgid "Document Approved"
+msgstr "Documento aprovado"
+
+msgid "Document Cancelled"
+msgstr "Documento cancelado"
+
+msgid "Document no longer available to sign"
+msgstr "Documento não está mais disponível para assinatura"
+
+msgid "Document rejected"
+msgstr "Documento recusado"
+
+msgid "Document Rejected"
+msgstr "Documento recusado"
+
+msgid "Document Signed"
+msgstr "Documento assinado"
+
+msgid "Document Viewed"
+msgstr "Documento visto"
+
+msgid "Full Name"
+msgstr "Nome completo"
+
+msgid "Go Back Home"
+msgstr "Voltar ao início"
+
+msgid "Hi {userName}, you need to enter a verification code to complete the document \"{documentTitle}\"."
+msgstr "Olá, {userName}. Use o código abaixo para concluir a assinatura do documento \"{documentTitle}\"."
+
+msgid "Next Field"
+msgstr "Próximo campo"
+
+msgid "Next Recipient Email"
+msgstr "E-mail do próximo destinatário"
+
+msgid "Next Recipient Name"
+msgstr "Nome do próximo destinatário"
+
+msgid "Pending Document"
+msgstr "Documento pendente"
+
+msgid "Please {0} your document<0/>\"{documentName}\""
+msgstr "Documento para {0}<0/>\"{documentName}\""
+
+msgid "Please {action} your document {documentName}"
+msgstr "Documento para {action}: {documentName}"
+
+msgid "Please {recipientActionVerb} this document"
+msgstr "Documento para {recipientActionVerb}"
+
+msgid "Please {recipientActionVerb} your document"
+msgstr "Documento para {recipientActionVerb}"
+
+msgid "Please complete the document once reviewed"
+msgstr "Revise e conclua o documento"
+
+msgid "Please mark as viewed to complete"
+msgstr "Marque como visto para concluir"
+
+msgid "Please mark as viewed to complete."
+msgstr "Marque como visto para concluir."
+
+msgid "Please select how you'd like to receive your verification code."
+msgstr "Escolha como quer receber o código de verificação."
+
+msgid "Read the full <0>signature disclosure</0>."
+msgstr "Leia o <0>termo de assinatura eletrônica</0> completo."
+
+msgid "Reason for rejection: {rejectionReason}"
+msgstr "Motivo da recusa: {rejectionReason}"
+
+msgid "Rejection reason: {reason}"
+msgstr "Motivo da recusa: {reason}"
+
+msgid "Are you sure you want to reject this document? This action cannot be undone."
+msgstr "Tem certeza de que quer recusar este documento? Não dá para desfazer depois."
+
+msgid "Please provide a reason for rejecting this document"
+msgstr "Conte o motivo da recusa"
+
+msgid "An error occurred while rejecting the document. Please try again."
+msgstr "Ocorreu um erro ao recusar o documento. Tente de novo."
+
+msgid "The document has been successfully rejected."
+msgstr "O documento foi recusado."
+
+msgid "Reject"
+msgstr "Recusar"
+
+msgid "Reject Document"
+msgstr "Recusar documento"
+
+msgid "Rejection Confirmed"
+msgstr "Recusa confirmada"
+
+msgid "Reminder: {0} invited you to {recipientActionVerb} a document"
+msgstr "Lembrete: {0} enviou um documento para você {recipientActionVerb}"
+
+msgid "Reminder: Please {recipientActionVerb} this document"
+msgstr "Lembrete: falta você {recipientActionVerb} este documento"
+
+msgid "Reminder: Please {recipientActionVerb} your document"
+msgstr "Lembrete: falta você {recipientActionVerb} o seu documento"
+
+msgid "Return"
+msgstr "Voltar"
+
+msgid "Sign Document"
+msgstr "Assinar documento"
+
+msgid "Signing Complete!"
+msgstr "Assinatura concluída"
+
+msgid "The document owner has been notified of this rejection. No further action is required from you at this time. The document owner may contact you with any questions regarding this rejection."
+msgstr "Quem enviou o documento já foi avisado da recusa. Você não precisa fazer mais nada. Se houver dúvida, essa pessoa pode entrar em contato com você."
+
+msgid "The document owner has been notified of your decision. They may contact you with further instructions if necessary."
+msgstr "Quem enviou o documento já foi avisado. Se for preciso, essa pessoa vai entrar em contato com você."
+
+msgid "This document has been cancelled by the owner and is no longer available for others to sign."
+msgstr "Quem enviou cancelou este documento. Ele não está mais disponível para assinatura."
+
+msgid "This document has been cancelled by the owner."
+msgstr "Quem enviou cancelou este documento."
+
+msgid "This email confirms that you have rejected the document <0>\"{documentName}\"</0> sent by {documentOwnerName}."
+msgstr "Este e-mail confirma que você recusou o documento <0>\"{documentName}\"</0>, enviado por {documentOwnerName}."
+
+msgid "{recipientName} has rejected the document '{documentName}'"
+msgstr "{recipientName} recusou o documento \"{documentName}\""
+
+msgid "{signerName} has rejected the document \"{documentName}\"."
+msgstr "{signerName} recusou o documento \"{documentName}\"."
+
+msgid "You have rejected the document '{documentName}'"
+msgstr "Você recusou o documento \"{documentName}\""
+
+msgid "You have rejected this document"
+msgstr "Você recusou este documento"
+
+msgid "Verification Code Required"
+msgstr "Código de verificação"
+
+msgid "View Document"
+msgstr "Ver documento"
+
+msgid "View document"
+msgstr "Ver documento"
+
+msgid "View Document to approve"
+msgstr "Abrir documento para aprovar"
+
+msgid "View Document to assist"
+msgstr "Abrir documento para ajudar"
+
+msgid "View Document to sign"
+msgstr "Abrir documento para assinar"
+
+msgid "Waiting for Your Turn"
+msgstr "Aguardando a sua vez"
+
+msgid "We've sent a 6-digit verification code to your email. Please enter it below to complete the document."
+msgstr "Enviamos um código de 6 dígitos para o seu e-mail. Digite o código abaixo para concluir."
+
+msgid "Your Email"
+msgstr "Seu e-mail"
+
+msgid "Your Name"
+msgstr "Seu nome"
+
+msgid "Your two-factor authentication code"
+msgstr "Seu código de verificação"
+
+# ---------------------------------------------------------------------------
+# Links do rodapé da tela de assinatura (entram no catálogo na montagem)
+# ---------------------------------------------------------------------------
+
+msgid "Terms of Service"
+msgstr "Termos de uso"
+
+msgid "Privacy Policy"
+msgstr "Política de privacidade"
+
+msgid "Imprint"
+msgstr "Dados da empresa"
+
+msgid "Source code"
+msgstr "Código-fonte"

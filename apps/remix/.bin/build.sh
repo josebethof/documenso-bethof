@@ -19,6 +19,11 @@ start_time=$(date +%s)
 echo "[Build]: Extracting and compiling translations"
 npm run translate --prefix ../../
 
+# Bethof: apply the Bethof pt-BR corrections on top of the extracted catalog, then compile again.
+echo "[Build]: Applying Bethof translations"
+node ./bethof/aplicar-traducoes.mjs
+npm run translate:compile --prefix ../../
+
 echo "[Build]: Building app"
 npm run build:app
 
