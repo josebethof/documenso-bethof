@@ -1,6 +1,7 @@
 import {
   NEXT_PUBLIC_IMPRINT_URL,
   NEXT_PUBLIC_PRIVACY_POLICY_URL,
+  NEXT_PUBLIC_SOURCE_CODE_URL,
   NEXT_PUBLIC_TERMS_OF_SERVICE_URL,
 } from '@documenso/lib/constants/app';
 import { cn } from '@documenso/ui/lib/utils';
@@ -72,11 +73,13 @@ const getPublicLegalLinks = () => {
   const termsUrl = NEXT_PUBLIC_TERMS_OF_SERVICE_URL();
   const privacyUrl = NEXT_PUBLIC_PRIVACY_POLICY_URL();
   const imprintUrl = NEXT_PUBLIC_IMPRINT_URL();
+  const sourceCodeUrl = NEXT_PUBLIC_SOURCE_CODE_URL();
 
   const links = [
     termsUrl ? { label: msg`Terms of Service`, href: termsUrl } : null,
     privacyUrl ? { label: msg`Privacy Policy`, href: privacyUrl } : null,
     imprintUrl ? { label: msg`Imprint`, href: imprintUrl } : null,
+    sourceCodeUrl ? { label: msg`Source code`, href: sourceCodeUrl } : null,
   ];
 
   return links.filter((link) => link !== null);

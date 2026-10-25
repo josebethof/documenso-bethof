@@ -53,6 +53,9 @@ export const NEXT_PUBLIC_PRIVACY_POLICY_URL = () =>
 
 export const NEXT_PUBLIC_IMPRINT_URL = () => env('NEXT_PUBLIC_IMPRINT_URL');
 
+// Bethof: link to the source code of this modified instance (AGPL-3.0, section 13).
+export const NEXT_PUBLIC_SOURCE_CODE_URL = () => env('NEXT_PUBLIC_SOURCE_CODE_URL');
+
 export const NEXT_PRIVATE_USE_LEGACY_SIGNING_SUBFILTER = () =>
   env('NEXT_PRIVATE_USE_LEGACY_SIGNING_SUBFILTER') === 'true';
 
