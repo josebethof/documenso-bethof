@@ -21,11 +21,14 @@ export async function dynamicActivate(locale: string) {
 }
 
 const parseLanguageFromLocale = (locale: string): SupportedLanguageCodes | null => {
-  const [language, _country] = locale.split('-');
+  // Bethof: the original only compared the "pt" part, so "pt-BR" browsers never matched "pt-BR".
+  // Match the full tag first (ignoring ";q=" weights), then the language part.
+  const tag = locale.split(';')[0].trim().toLowerCase();
+  const [language, _country] = tag.split('-');
 
-  const foundSupportedLanguage = APP_I18N_OPTIONS.supportedLangs.find(
-    (lang): lang is SupportedLanguageCodes => lang === language,
-  );
+  const foundSupportedLanguage =
+    APP_I18N_OPTIONS.supportedLangs.find((lang) => lang.toLowerCase() === tag) ??
+    APP_I18N_OPTIONS.supportedLangs.find((lang) => lang.toLowerCase().split('-')[0] === language);
 
   if (!foundSupportedLanguage) {
     return null;
