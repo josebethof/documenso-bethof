@@ -18,6 +18,7 @@ import { NEXT_PUBLIC_WEBAPP_URL } from '../../constants/app';
 import { APP_I18N_OPTIONS } from '../../constants/i18n';
 import { getSignatureFontFamily } from '../../constants/pdf';
 import { RECIPIENT_ROLE_SIGNING_REASONS, RECIPIENT_ROLES_DESCRIPTION } from '../../constants/recipient-roles';
+import { BETHOF_DATE_TIME_FORMAT, BETHOF_TIME_ZONE } from '../../constants/time-zones';
 import type { TDocumentAuditLogBaseSchema } from '../../types/document-audit-logs';
 import { svgToPng } from '../../utils/images/svg-to-png';
 import { ensureFontLibrary } from './helpers';
@@ -426,11 +427,13 @@ const renderColumnThree = (options: RenderColumnOptions) => {
       value: recipient.logs.emailed
         ? DateTime.fromJSDate(recipient.logs.emailed.createdAt)
             .setLocale(APP_I18N_OPTIONS.defaultLocale)
-            .toFormat('yyyy-MM-dd hh:mm:ss a (ZZZZ)')
+            .setZone(BETHOF_TIME_ZONE)
+            .toFormat(BETHOF_DATE_TIME_FORMAT)
         : recipient.logs.sent
           ? DateTime.fromJSDate(recipient.logs.sent.createdAt)
               .setLocale(APP_I18N_OPTIONS.defaultLocale)
-              .toFormat('yyyy-MM-dd hh:mm:ss a (ZZZZ)')
+              .setZone(BETHOF_TIME_ZONE)
+              .toFormat(BETHOF_DATE_TIME_FORMAT)
           : i18n._(msg`Unknown`),
     },
     {
@@ -438,7 +441,8 @@ const renderColumnThree = (options: RenderColumnOptions) => {
       value: recipient.logs.opened
         ? DateTime.fromJSDate(recipient.logs.opened.createdAt)
             .setLocale(APP_I18N_OPTIONS.defaultLocale)
-            .toFormat('yyyy-MM-dd hh:mm:ss a (ZZZZ)')
+            .setZone(BETHOF_TIME_ZONE)
+            .toFormat(BETHOF_DATE_TIME_FORMAT)
         : i18n._(msg`Unknown`),
     },
   ];
@@ -448,7 +452,8 @@ const renderColumnThree = (options: RenderColumnOptions) => {
       label: i18n._(msg`Rejected`),
       value: DateTime.fromJSDate(recipient.logs.rejected.createdAt)
         .setLocale(APP_I18N_OPTIONS.defaultLocale)
-        .toFormat('yyyy-MM-dd hh:mm:ss a (ZZZZ)'),
+        .setZone(BETHOF_TIME_ZONE)
+        .toFormat(BETHOF_DATE_TIME_FORMAT),
       labelFill: textRejectedRed,
       valueFill: textRejectedRed,
     });
@@ -458,7 +463,8 @@ const renderColumnThree = (options: RenderColumnOptions) => {
       value: recipient.logs.completed
         ? DateTime.fromJSDate(recipient.logs.completed.createdAt)
             .setLocale(APP_I18N_OPTIONS.defaultLocale)
-            .toFormat('yyyy-MM-dd hh:mm:ss a (ZZZZ)')
+            .setZone(BETHOF_TIME_ZONE)
+            .toFormat(BETHOF_DATE_TIME_FORMAT)
         : i18n._(msg`Unknown`),
     });
   }

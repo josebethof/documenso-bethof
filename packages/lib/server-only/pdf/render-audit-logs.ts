@@ -9,7 +9,6 @@ import type { I18n } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import type { DocumentMeta, Envelope, RecipientRole } from '@prisma/client';
 import Konva from 'konva';
-import type { DateTimeFormatOptions } from 'luxon';
 import { DateTime } from 'luxon';
 import { match, P } from 'ts-pattern';
 import { UAParser } from 'ua-parser-js';
@@ -17,6 +16,7 @@ import { UAParser } from 'ua-parser-js';
 import { DOCUMENT_STATUS } from '../../constants/document';
 import { APP_I18N_OPTIONS } from '../../constants/i18n';
 import { RECIPIENT_ROLES_DESCRIPTION } from '../../constants/recipient-roles';
+import { BETHOF_DATE_TIME_FORMAT, BETHOF_TIME_ZONE } from '../../constants/time-zones';
 import type { TDocumentAuditLog } from '../../types/document-audit-logs';
 import { DOCUMENT_AUDIT_LOG_TYPE } from '../../types/document-audit-logs';
 import { formatDocumentAuditLogAction } from '../../utils/document-audit-logs';
@@ -242,14 +242,16 @@ const renderOverviewCard = (options: RenderOverviewCardOptions) => {
     label: i18n._(msg`Created At`),
     text: DateTime.fromJSDate(envelope.createdAt)
       .setLocale(APP_I18N_OPTIONS.defaultLocale)
-      .toFormat('yyyy-MM-dd hh:mm:ss a (ZZZZ)'),
+      .setZone(BETHOF_TIME_ZONE)
+      .toFormat(BETHOF_DATE_TIME_FORMAT),
     width: columnWidth,
   });
   const lastUpdatedLabel = renderOverviewCardLabels({
     label: i18n._(msg`Last Updated`),
     text: DateTime.fromJSDate(envelope.updatedAt)
       .setLocale(APP_I18N_OPTIONS.defaultLocale)
-      .toFormat('yyyy-MM-dd hh:mm:ss a (ZZZZ)'),
+      .setZone(BETHOF_TIME_ZONE)
+      .toFormat(BETHOF_DATE_TIME_FORMAT),
     width: columnWidth,
     groupX: columnWidth + columnSpacing,
   });
@@ -350,7 +352,10 @@ const renderRow = (options: RenderRowOptions) => {
   const auditLogTimestampText = new Konva.Text({
     x: columnWidth + columnSpacing,
     width: columnWidth,
-    text: DateTime.fromJSDate(auditLog.createdAt).setLocale(APP_I18N_OPTIONS.defaultLocale).toLocaleString(dateFormat),
+    text: DateTime.fromJSDate(auditLog.createdAt)
+      .setLocale(APP_I18N_OPTIONS.defaultLocale)
+      .setZone(BETHOF_TIME_ZONE)
+      .toFormat(BETHOF_DATE_TIME_FORMAT),
     fontFamily: 'Inter',
     align: 'right',
     fontSize: textSm,
@@ -688,11 +693,6 @@ export async function renderAuditLogs({
 
   return pages;
 }
-
-const dateFormat: DateTimeFormatOptions = {
-  ...DateTime.DATETIME_SHORT,
-  hourCycle: 'h23', // Bethof: 24-hour clock
-};
 
 /**
  * Get the color indicator for the audit log type
