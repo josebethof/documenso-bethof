@@ -1,6 +1,6 @@
 {
-  "name": "Documenso",
-  "short_name": "Documenso",
+  "name": "Bethof | Assinatura eletrônica",
+  "short_name": "Bethof",
   "icons": [
     {
       "src": "./android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#A2E771",
-  "background_color": "#FFFFFF",
+  "theme_color": "#0C0F14",
+  "background_color": "#F5F7FA",
   "display": "standalone"
 }

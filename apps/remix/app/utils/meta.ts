@@ -2,12 +2,12 @@ import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
 import { i18n, type MessageDescriptor } from '@lingui/core';
 
 export const appMetaTags = (title?: MessageDescriptor) => {
-  const description =
-    'Join Documenso, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.';
+  // Bethof: textos da marca no lugar dos textos do Documenso.
+  const description = 'Portal de assinatura eletrônica da Bethof. Atendimento em todo o Brasil.';
 
   return [
     {
-      title: title ? `${i18n._(title)} - Documenso` : 'Documenso',
+      title: title ? `${i18n._(title)} | Bethof` : 'Bethof | Assinatura eletrônica',
     },
     {
       name: 'description',
@@ -15,12 +15,11 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     },
     {
       name: 'keywords',
-      content:
-        'Documenso, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
+      content: 'Bethof, assinatura eletrônica, contrato',
     },
     {
       name: 'author',
-      content: 'Documenso, Inc.',
+      content: 'Bethof Solutions Ltda',
     },
     {
       name: 'robots',
@@ -28,7 +27,7 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     },
     {
       property: 'og:title',
-      content: 'Documenso - The Open Source DocuSign Alternative',
+      content: 'Bethof | Assinatura eletrônica',
     },
     {
       property: 'og:description',
@@ -45,10 +44,6 @@ export const appMetaTags = (title?: MessageDescriptor) => {
     {
       name: 'twitter:card',
       content: 'summary_large_image',
-    },
-    {
-      name: 'twitter:site',
-      content: '@documenso',
     },
     {
       name: 'twitter:description',
