@@ -105,3 +105,9 @@ header:has([data-testid="app-header-container"]) {
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(90deg, #00bcff, #0059a0) 1;
 }
+
+/* Background images drawn in the Documenso green, tinted to the brand blue (sign-in page and signing completion) */
+:root:not(.dark) img[alt="background pattern"],
+img[src*="signing-celebration"] {
+  filter: hue-rotate(105deg) saturate(0.85);
+}

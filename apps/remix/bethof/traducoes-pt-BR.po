@@ -621,3 +621,20 @@ msgstr "Este e-mail vai para o dono quando alguém cria um documento pelo link d
 
 msgid "This will be sent to the document owner when a recipient's signing window has expired."
 msgstr "Este e-mail vai para o dono quando o prazo de assinatura de um destinatário acabar."
+
+# ---------------------------------------------------------------------------
+# Ajustes vistos no teste do painel (bethof.3)
+# ---------------------------------------------------------------------------
+
+msgid "Subject <0>(Optional)</0>"
+msgstr "Assunto <0>(opcional)</0>"
+
+msgid "Message <0>(Optional)</0>"
+msgstr "Mensagem<0> (opcional)</0>"
+
+msgid "Return to documents"
+msgstr "Voltar para documentos"
+
+msgid "Return to templates"
+msgstr "Voltar para modelos"
+

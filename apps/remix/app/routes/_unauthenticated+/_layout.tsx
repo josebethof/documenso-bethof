@@ -1,6 +1,7 @@
 import backgroundPattern from '@documenso/assets/images/background-pattern.png';
 import { Outlet } from 'react-router';
 
+import { BrandingLogo } from '~/components/general/branding-logo';
 import { PublicLegalLinks } from '~/components/general/public-legal-links';
 
 export default function Layout() {
@@ -19,7 +20,9 @@ export default function Layout() {
           />
         </div>
 
-        <div className="relative w-full flex items-center justify-center">
+        <div className="relative w-full flex flex-col items-center justify-center">
+          {/* Bethof: Bethof logo above the sign-in card. */}
+          <BrandingLogo className="mb-8 h-10 w-auto text-foreground" />
           <Outlet />
         </div>
       </div>
