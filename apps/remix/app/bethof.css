@@ -30,3 +30,78 @@ h3 {
   font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
   letter-spacing: -0.01em;
 }
+
+/*
+ * Bethof: brand colours for the whole app, light and dark themes (marca-bethof skill).
+ * Same variable names as packages/ui/styles/theme.css (HSL), outside @layer so they win without editing that file.
+ * Signing pages still take the organisation branding colours on top of these.
+ */
+:root,
+.dark-mode-disabled {
+  --background: 0.0 0.0% 100.0%; /* #FFFFFF */
+  --foreground: 212.0 20.0% 14.7%; /* #1E252D */
+  --muted: 213.3 33.3% 94.7%; /* #EDF1F6 */
+  --muted-foreground: 211.0 13.5% 42.2%; /* #5D6B7A */
+  --popover: 0.0 0.0% 100.0%; /* #FFFFFF */
+  --popover-foreground: 212.0 20.0% 14.7%; /* #1E252D */
+  --card: 0.0 0.0% 100.0%; /* #FFFFFF */
+  --card-border: 212.0 27.3% 89.2%; /* #DCE3EB */
+  --card-foreground: 212.0 20.0% 14.7%; /* #1E252D */
+  --field-card: 148.2 51.5% 93.5%; /* #E6F7EE */
+  --field-card-border: 146.3 67.6% 42.4%; /* #23B563 */
+  --field-card-foreground: 212.0 20.0% 14.7%; /* #1E252D */
+  --widget: 216.0 33.3% 97.1%; /* #F5F7FA */
+  --border: 212.0 27.3% 89.2%; /* #DCE3EB */
+  --input: 212.0 27.3% 89.2%; /* #DCE3EB */
+  --primary: 146.3 67.6% 42.4%; /* #23B563 */
+  --primary-foreground: 143.1 52.0% 4.9%; /* #06130B */
+  --secondary: 213.3 33.3% 94.7%; /* #EDF1F6 */
+  --secondary-foreground: 212.0 20.0% 14.7%; /* #1E252D */
+  --accent: 208.6 60.0% 93.1%; /* #E3EEF8 */
+  --accent-foreground: 206.6 100.0% 31.4%; /* #0059A0 */
+  --destructive: 355.4 63.9% 55.5%; /* #D64550 */
+  --destructive-foreground: 0.0 0.0% 100.0%; /* #FFFFFF */
+  --ring: 199.2 100.0% 41.6%; /* #0090D4 */
+  --warning: 37.2 74.1% 56.1%; /* #E2A33C */
+  --envelope-editor-background: 216.0 33.3% 97.1%; /* #F5F7FA */
+  --card-border-tint: 0 144 212;
+  --radius: 0.75rem;
+}
+
+.dark:not(.dark-mode-disabled) {
+  --background: 217.5 25.0% 6.3%; /* #0C0F14 */
+  --foreground: 215.0 37.5% 93.7%; /* #E9EEF5 */
+  --muted: 217.1 28.0% 14.7%; /* #1B2330 */
+  --muted-foreground: 213.3 13.4% 60.6%; /* #8D99A8 */
+  --popover: 218.8 30.9% 10.8%; /* #131924 */
+  --popover-foreground: 215.0 37.5% 93.7%; /* #E9EEF5 */
+  --card: 218.8 30.9% 10.8%; /* #131924 */
+  --card-border: 216.9 25.5% 20.0%; /* #263040 */
+  --card-foreground: 215.0 37.5% 93.7%; /* #E9EEF5 */
+  --field-card: 148.9 47.4% 11.2%; /* #0F2A1C */
+  --field-card-border: 145.4 63.2% 49.0%; /* #2ECC71 */
+  --field-card-foreground: 215.0 37.5% 93.7%; /* #E9EEF5 */
+  --widget: 218.8 30.9% 10.8%; /* #131924 */
+  --widget-foreground: 217.1 28.0% 14.7%; /* #1B2330 */
+  --border: 216.9 25.5% 20.0%; /* #263040 */
+  --input: 216.9 25.5% 20.0%; /* #263040 */
+  --primary: 145.4 63.2% 49.0%; /* #2ECC71 */
+  --primary-foreground: 143.1 52.0% 4.9%; /* #06130B */
+  --secondary: 217.1 28.0% 14.7%; /* #1B2330 */
+  --secondary-foreground: 215.0 37.5% 93.7%; /* #E9EEF5 */
+  --accent: 210.0 45.0% 15.7%; /* #16283A */
+  --accent-foreground: 195.8 100.0% 50.0%; /* #00BCFF */
+  --destructive: 354.9 79.7% 71.0%; /* #F07A84 */
+  --destructive-foreground: 217.5 25.0% 6.3%; /* #0C0F14 */
+  --ring: 195.8 100.0% 50.0%; /* #00BCFF */
+  --warning: 37.2 74.1% 56.1%; /* #E2A33C */
+  --envelope-editor-background: 217.5 25.0% 6.3%; /* #0C0F14 */
+  --card-border-tint: 0 188 255;
+  --radius: 0.75rem;
+}
+
+/* Brand gradient line under the top bar of the app */
+header:has([data-testid="app-header-container"]) {
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #00bcff, #0059a0) 1;
+}
