@@ -19,11 +19,17 @@ export type SignOptions = {
 let signer: Signer | null = null;
 
 const getSigner = async () => {
+  const transport = NEXT_PRIVATE_SIGNING_TRANSPORT();
+
+  // Bethof: the local signer keeps its own cache, so a certificate fetched again from the FinanceHub replaces a
+  // fallback without a restart.
+  if (transport === 'local') {
+    return await createLocalSigner();
+  }
+
   if (signer) {
     return signer;
   }
-
-  const transport = NEXT_PRIVATE_SIGNING_TRANSPORT();
 
   // eslint-disable-next-line require-atomic-updates
   signer = await match(transport)

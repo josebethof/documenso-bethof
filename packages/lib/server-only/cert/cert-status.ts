@@ -1,6 +1,6 @@
 import { X509Certificate } from 'node:crypto';
 
-import { createLocalSigner } from '@documenso/signing/transports/local';
+import { createLocalSigner, getLocalCertificateSource } from '@documenso/signing/transports/local';
 
 import { NEXT_PRIVATE_SIGNING_TRANSPORT } from '../../constants/app';
 
@@ -30,7 +30,11 @@ export const getCertificateStatus = async () => {
 
     const isWithinValidityPeriod = new Date(certificate.validFrom) <= now && now <= new Date(certificate.validTo);
 
-    return { isAvailable: isWithinValidityPeriod };
+    // Bethof: sealing with the test certificate, or with an old copy because the FinanceHub stopped answering,
+    // turns the health check into a warning.
+    const isFromBridgeOrLocal = ['local', 'bridge'].includes(getLocalCertificateSource());
+
+    return { isAvailable: isWithinValidityPeriod && isFromBridgeOrLocal };
   } catch {
     return { isAvailable: false };
   }
