@@ -33,7 +33,6 @@ const getSigner = async () => {
 
   // eslint-disable-next-line require-atomic-updates
   signer = await match(transport)
-    .with('local', async () => await createLocalSigner())
     .with('gcloud-hsm', async () => await createGoogleCloudSigner())
     .otherwise(() => {
       throw new Error(`Unsupported signing transport: ${transport}`);
