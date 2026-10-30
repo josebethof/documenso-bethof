@@ -489,7 +489,11 @@ const formatAuditLogSentence = (auditLog: TDocumentAuditLog, i18n: I18n) => {
 
   const description = formatDocumentAuditLogAction(i18n, auditLog).description;
 
-  return details.length > 0 ? `${time} ${description} (${details.join(', ')})` : `${time} ${description}`;
+  const sentence = details.length > 0 ? `${time} ${description} (${details.join(', ')})` : `${time} ${description}`;
+
+  // Names, emails and browsers come from users. A line break or a semicolon in them could fake a new event in the
+  // running text, so control characters become spaces and semicolons become commas.
+  return sentence.replace(/[\p{Cc}\p{Zl}\p{Zp}]+/gu, ' ').replace(/;/g, ',');
 };
 
 // Bethof: one paragraph per day, events in chronological order separated by semicolons.
