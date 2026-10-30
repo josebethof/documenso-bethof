@@ -492,9 +492,10 @@ const formatAuditLogSentence = (auditLog: TDocumentAuditLog, i18n: I18n) => {
   const sentence = details.length > 0 ? `${time} ${description} (${details.join(', ')})` : `${time} ${description}`;
 
   // Names, emails and browsers come from users. A line break, a semicolon or a look-alike in them could fake a new
-  // event in the running text. After NFKC, only letters, marks, digits, spaces and the punctuation of names, emails,
-  // IP addresses and browsers are kept; anything else (any kind of semicolon, control or invisible character) is a space.
-  return sentence.normalize('NFKC').replace(/[^\p{L}\p{M}\p{N} @.\/_+(),:'&#*!?=%-]+/gu, ' ');
+  // event in the running text. After NFKC (which composes accented letters), only Latin letters, ASCII digits, spaces
+  // and the punctuation of names, emails, IP addresses and browsers are kept. Anything else becomes a space: any kind of
+  // semicolon, control, invisible or combining character, and letters of other scripts that can look like punctuation.
+  return sentence.normalize('NFKC').replace(/[^\p{Script=Latin}0-9 @.\/_+(),:'&#*!?=%-]+/gu, ' ');
 };
 
 // Bethof: one paragraph per day, events in chronological order separated by semicolons.
