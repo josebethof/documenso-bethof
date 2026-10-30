@@ -491,9 +491,10 @@ const formatAuditLogSentence = (auditLog: TDocumentAuditLog, i18n: I18n) => {
 
   const sentence = details.length > 0 ? `${time} ${description} (${details.join(', ')})` : `${time} ${description}`;
 
-  // Names, emails and browsers come from users. A line break or a semicolon in them could fake a new event in the
-  // running text, so control characters become spaces and semicolons become commas.
-  return sentence.replace(/[\p{Cc}\p{Zl}\p{Zp}]+/gu, ' ').replace(/;/g, ',');
+  // Names, emails and browsers come from users. A line break, a semicolon or a look-alike in them could fake a new
+  // event in the running text. After NFKC, only letters, marks, digits, spaces and the punctuation of names, emails,
+  // IP addresses and browsers are kept; anything else (any kind of semicolon, control or invisible character) is a space.
+  return sentence.normalize('NFKC').replace(/[^\p{L}\p{M}\p{N} @.\/_+(),:'&#*!?=%-]+/gu, ' ');
 };
 
 // Bethof: one paragraph per day, events in chronological order separated by semicolons.
