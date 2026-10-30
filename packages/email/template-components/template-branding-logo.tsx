@@ -3,6 +3,9 @@ import { useBranding } from '../providers/branding';
 import { getEmailAssetUrl } from '../utils/asset-url';
 import { getSafeBrandingUrl } from '../utils/branding-url';
 
+// Bethof: 103 px wide is 24 px high (the former `h-6`) for the Bethof logo, 512 x 119 px.
+const BRANDING_LOGO_WIDTH = 103;
+
 export type TemplateBrandingLogoProps = {
   assetBaseUrl: string;
   className?: string;
@@ -26,7 +29,17 @@ export const TemplateBrandingLogo = ({ assetBaseUrl, className = 'mb-4 h-6' }: T
     return <Img src={documensoLogoUrl} alt="Documenso Logo" className={className} />;
   }
 
-  const brandingLogo = <Img src={branding.brandingLogo} alt="Branding Logo" className={className} />;
+  // Bethof: Outlook for Windows ignores the CSS height (in rem) and showed the logo at its full 512 px.
+  // The width also goes as an HTML attribute, in px, and the height follows the image's proportion.
+  const brandingLogo = (
+    <Img
+      src={branding.brandingLogo}
+      alt="Branding Logo"
+      width={BRANDING_LOGO_WIDTH}
+      className={className.replace(/(^|\s)h-\d+/g, '')}
+      style={{ width: `${BRANDING_LOGO_WIDTH}px`, height: 'auto' }}
+    />
+  );
 
   const safeBrandingUrl = getSafeBrandingUrl(branding.brandingUrl);
 

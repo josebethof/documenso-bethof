@@ -131,7 +131,16 @@ export function LayoutContent({ children }: { children: React.ReactNode }) {
     // `data-theme`/`class` on <html> before hydration (PreventFlashOnWrongTheme),
     // so the server-rendered attributes never match the client render when the
     // theme is resolved from the system preference. Attribute-only, one level deep.
-    <html translate="no" lang={lang} data-theme={theme} className={theme ?? ''} suppressHydrationWarning>
+    // Bethof: the signing pages are drawn light. With a dark system theme, `dark` on <html> turned muted,
+    // secondary and `dark:` pieces dark on the white page (unreadable badges, signature pad and dialog boxes).
+    // `dark-mode-disabled` keeps them light, as the embedded signing pages already do.
+    <html
+      translate="no"
+      lang={lang}
+      data-theme={theme}
+      className={[theme, isRecipientRoute && 'dark-mode-disabled'].filter(Boolean).join(' ')}
+      suppressHydrationWarning
+    >
       <head>
         <meta charSet="utf-8" />
         <link rel="apple-touch-icon" sizes="180x180" href={`${basePath}/apple-touch-icon.png`} />

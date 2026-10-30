@@ -26,6 +26,9 @@ Ele roda no portal de assinatura https://assinatura.bethof.com.br.
 | Certificado do selo buscado no FinanceHub pela rede interna (`ASSINATURA_CERT_URL` e `ASSINATURA_CERT_SECRET`), só em memória; se o FinanceHub não responder, usa a cópia das últimas 24 horas ou o certificado de teste das variáveis `NEXT_PRIVATE_SIGNING_*`, com aviso no log e "warning" no `/api/health`. Sem as variáveis, nada muda | `packages/signing/transports/local.ts`, `packages/signing/index.ts`, `packages/lib/server-only/cert/cert-status.ts` |
 | Logo na tela de entrada e imagens de fundo verdes tingidas para o azul da marca | `apps/remix/app/routes/_unauthenticated+/_layout.tsx`, `apps/remix/app/bethof.css` |
 | Tradução completa e revisada do aplicativo inteiro: 860 textos que faltavam e 748 correções de termos e estilo | `apps/remix/bethof/traducoes-pt-BR-completo.po` |
+| Janela "Enviar documento": frase dizendo que o convite vai sozinho e rótulo "Respostas vão para" no lugar de "E-mail para resposta" (30/10/2026) | `apps/remix/bethof/traducoes-pt-BR-completo.po` |
+| Telas de assinatura sempre no tema claro (`dark-mode-disabled` no `<html>`): com o sistema em tema escuro, etiquetas, quadro de desenhar a assinatura e caixas das janelas ficavam escuros e ilegíveis na página branca | `apps/remix/app/root.tsx` |
+| Logo dos e-mails com largura em px também como atributo HTML: o Outlook do Windows ignorava a altura em CSS e mostrava a logo enorme | `packages/email/template-components/template-branding-logo.tsx` |
 
 Toda linha alterada nos arquivos originais tem um comentário começando com `Bethof:`.
 
