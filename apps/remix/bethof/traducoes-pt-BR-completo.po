@@ -2841,6 +2841,11 @@ msgstr "Os destinatários não podem usar este modelo de link direto porque este
 msgid "Recipients that will be automatically added to new documents."
 msgstr "Destinatários que serão adicionados automaticamente aos novos documentos."
 
+# Janela "Enviar documento": no primeiro uso real, pareceu que era preciso digitar de novo o e-mail dos assinantes.
+# A frase diz que o convite vai sozinho e que os campos de baixo são opcionais (30/10/2026).
+msgid "Recipients will be able to sign the document once sent"
+msgstr "Com a opção E-mail, o convite vai sozinho para cada destinatário cadastrado. Os campos abaixo podem ficar em branco."
+
 msgid "Recipients will be notified that the document was cancelled"
 msgstr "Os destinatários serão avisados de que o documento foi cancelado"
 
@@ -2910,8 +2915,9 @@ msgstr "Não foi possível substituir"
 msgid "Replace PDF"
 msgstr "Substituir PDF"
 
+# "E-mail para resposta" foi lido como o e-mail do assinante. O campo só define para onde vão as respostas (30/10/2026).
 msgid "Reply To Email <0>(Optional)</0>"
-msgstr "E-mail para resposta <0>(opcional)</0>"
+msgstr "Respostas vão para <0>(opcional)</0>"
 
 msgid "Reports"
 msgstr "Relatórios"
