@@ -86,7 +86,8 @@ const textXs = 8;
 const fontMedium = '500';
 
 const columnWidthPercentages = [30, 30, 40];
-const rowPadding = 12;
+// Bethof: tighter rows (12 before) and a smaller signature box, so 5 signers fit in one certificate page.
+const rowPadding = 8;
 const tableHeaderHeight = 38;
 const pageTopMargin = 72;
 const pageBottomMargin = 24;
@@ -282,8 +283,9 @@ const renderColumnTwo = (options: RenderColumnOptions) => {
     // Signature container with green border
     const signatureContainer = new Konva.Group({ x: 0, y: 0 });
 
-    const minSignatureHeight = 40;
-    const maxSignatureWidth = 100;
+    // Bethof: 34 and 90 (40 and 100 before).
+    const minSignatureHeight = 34;
+    const maxSignatureWidth = 90;
 
     // Signature content
     if (recipient.signatureField?.signature?.signatureImageAsBase64) {
@@ -354,7 +356,7 @@ const renderColumnTwo = (options: RenderColumnOptions) => {
     // Signature ID
     const sigIdLabel = new Konva.Text({
       x: 0,
-      y: isRejected ? 0 : signatureHeight + 10,
+      y: isRejected ? 0 : signatureHeight + 6, // Bethof: 10 before.
       text: `${i18n._(msg`Signature ID`)}:`,
       fill: textMutedForeground,
       width: columnWidth,
@@ -394,7 +396,7 @@ const renderColumnTwo = (options: RenderColumnOptions) => {
     label: i18n._(msg`IP Address`),
     text: relevantLog?.ipAddress ?? i18n._(msg`Unknown`),
     width,
-    y: column.getClientRect().height + 6,
+    y: column.getClientRect().height + 3, // Bethof: 6 before.
   });
   column.add(ipLabelAndText);
 
@@ -402,7 +404,7 @@ const renderColumnTwo = (options: RenderColumnOptions) => {
     label: i18n._(msg`Device`),
     text: getDevice(relevantLog?.userAgent),
     width,
-    y: column.getClientRect().height + 6,
+    y: column.getClientRect().height + 3, // Bethof: 6 before.
   });
   column.add(deviceLabelAndText);
 

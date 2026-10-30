@@ -29,6 +29,7 @@ Ele roda no portal de assinatura https://assinatura.bethof.com.br.
 | Janela "Enviar documento": frase dizendo que o convite vai sozinho e rótulo "Respostas vão para" no lugar de "E-mail para resposta" (30/10/2026) | `apps/remix/bethof/traducoes-pt-BR-completo.po` |
 | Telas de assinatura sempre no tema claro (`dark-mode-disabled` no `<html>`): com o sistema em tema escuro, etiquetas, quadro de desenhar a assinatura e caixas das janelas ficavam escuros e ilegíveis na página branca | `apps/remix/app/root.tsx` |
 | Logo dos e-mails com largura em px também como atributo HTML: o Outlook do Windows ignorava a altura em CSS e mostrava a logo enorme | `packages/email/template-components/template-branding-logo.tsx` |
+| Histórico de auditoria do PDF em texto corrido e justificado (7,5 pt), um parágrafo por dia, eventos em ordem cronológica com os mesmos dados; certificado mais compacto. Um contrato com 5 assinantes passa de 9 para 2 páginas de certificado e histórico | `packages/lib/server-only/pdf/render-audit-logs.ts`, `render-certificate.ts` |
 
 Toda linha alterada nos arquivos originais tem um comentário começando com `Bethof:`.
 

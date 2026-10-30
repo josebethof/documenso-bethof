@@ -471,37 +471,108 @@ type GroupRowsIntoPagesOptions = {
   overviewCard: Konva.Group;
 };
 
+// Bethof: the audit log is printed as compact justified text instead of one card per event, so a contract with
+// 5 signers fits in one page. Same data per event: time, what happened and who, email, IP address and browser.
+const compactFontSize = 7.5;
+const compactLineHeight = 1.3;
+
+const formatAuditLogSentence = (auditLog: TDocumentAuditLog, i18n: I18n) => {
+  const time = DateTime.fromJSDate(auditLog.createdAt).setZone(BETHOF_TIME_ZONE).toFormat('HH:mm:ss');
+
+  parser.setUA(auditLog.userAgent || '');
+
+  const details = [
+    auditLog.email,
+    auditLog.ipAddress ? `${i18n._(msg`IP Address`)} ${auditLog.ipAddress}` : null,
+    auditLog.userAgent ? i18n._(formatUserAgent(auditLog.userAgent, parser.getResult())) : null,
+  ].filter(Boolean);
+
+  const description = formatDocumentAuditLogAction(i18n, auditLog).description;
+
+  return details.length > 0 ? `${time} ${description} (${details.join(', ')})` : `${time} ${description}`;
+};
+
+// Bethof: one paragraph per day, events in chronological order separated by semicolons.
+const groupAuditLogSentencesByDay = (auditLogs: TDocumentAuditLog[], i18n: I18n) => {
+  const days: Array<{ day: string; sentences: string[] }> = [];
+
+  const chronological = [...auditLogs].sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime());
+
+  for (const auditLog of chronological) {
+    const day = DateTime.fromJSDate(auditLog.createdAt).setZone(BETHOF_TIME_ZONE).toFormat('dd/MM/yyyy');
+
+    if (days[days.length - 1]?.day !== day) {
+      days.push({ day, sentences: [] });
+    }
+
+    days[days.length - 1].sentences.push(formatAuditLogSentence(auditLog, i18n));
+  }
+
+  return days;
+};
+
+const renderCompactText = (text: string, width: number) =>
+  new Konva.Text({
+    text,
+    width,
+    fontFamily: 'Inter',
+    fontSize: compactFontSize,
+    lineHeight: compactLineHeight,
+    align: 'justify',
+    fill: textForeground,
+  });
 const groupRowsIntoPages = (options: GroupRowsIntoPagesOptions) => {
   const { auditLogs, maxHeight, contentWidth, i18n, overviewCard } = options;
 
-  const groupedRows: Konva.Group[][] = [[]];
+  // Bethof: each page gets one justified text block, filled sentence by sentence until it no longer fits.
+  const groupedRows: Konva.Group[][] = [];
 
-  const overviewCardHeight = overviewCard.getClientRect().height;
+  const days = groupAuditLogSentencesByDay(auditLogs, i18n);
+
+  const firstLog = auditLogs[0];
+  const timeZoneName = firstLog
+    ? DateTime.fromJSDate(firstLog.createdAt).setZone(BETHOF_TIME_ZONE).toFormat('ZZZZ')
+    : BETHOF_TIME_ZONE;
 
   // First page has title + overview card
-  let availableHeight = maxHeight - pageTopMargin - overviewCardHeight;
-  let currentGroupedRowIndex = 0;
+  let availableHeight = maxHeight - pageTopMargin - overviewCard.getClientRect().height - rowPadding;
+  let paragraphs = [`Eventos em ordem cronológica, no horário de Brasília (${timeZoneName}).`];
 
-  // Group rows into pages.
-  for (const auditLog of auditLogs) {
-    const row = renderRow({ auditLog, width: contentWidth, i18n });
+  const closePage = (lastParagraph: string) => {
+    const block = new Konva.Group();
+    block.add(renderCompactText([...paragraphs, lastParagraph].join('\n'), contentWidth));
+    groupedRows.push([block]);
 
-    const rowHeight = row.getClientRect().height;
-    const requiredHeight = rowHeight + rowPadding;
+    // Subsequent pages only have title (no overview card)
+    availableHeight = maxHeight - pageTopMargin - rowPadding;
+    paragraphs = [];
+  };
 
-    if (requiredHeight > availableHeight) {
-      currentGroupedRowIndex++;
-      groupedRows[currentGroupedRowIndex] = [row];
+  for (const { day, sentences } of days) {
+    let paragraph = `${day}:`;
 
-      // Subsequent pages only have title (no overview card)
-      availableHeight = maxHeight - pageTopMargin;
-    } else {
-      groupedRows[currentGroupedRowIndex].push(row);
+    for (const [index, sentence] of sentences.entries()) {
+      const ending = index === sentences.length - 1 ? '.' : ';';
+      const candidate = `${paragraph} ${sentence}${ending}`;
+
+      const height = renderCompactText([...paragraphs, candidate].join('\n'), contentWidth).height();
+
+      if (height > availableHeight && paragraph !== `${day}:`) {
+        closePage(paragraph);
+        paragraph = `${day} (continuação): ${sentence}${ending}`;
+      } else if (height > availableHeight && paragraphs.length > 0) {
+        // The day starts on the next page.
+        closePage(paragraphs.pop() ?? '');
+        paragraph = candidate;
+      } else {
+        paragraph = candidate;
+      }
     }
 
-    // Reduce available height by the row height.
-    availableHeight -= requiredHeight;
+    paragraphs.push(paragraph);
   }
+
+  closePage(paragraphs.pop() ?? '');
 
   return groupedRows;
 };
